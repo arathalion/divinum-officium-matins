@@ -1,9 +1,0 @@
-[Rank]
-Św. Bedy Czcigodnego Wyznawcy i Doktora Kościoła;;Duplex;;3;;vide C5a
-
-[Name]
-Bedo
-
-[Oratio]
-Boże, który przez naukę błogosławionego Bedy, Wyznawcy Twego i Doktora, uświetniłeś Kościół Twój, daj w dobroci swojej, sługom Twoim, by nas oświeciła jego mądrość i wspomagała jego zasługa.
-$Per Dominum

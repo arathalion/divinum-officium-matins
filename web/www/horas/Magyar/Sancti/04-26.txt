@@ -1,7 +1,0 @@
-[Rank]
-S. Cleti et Marcellini Papae Martyrum;;Semiduplex;;2.5;;vide C3
-
-[Rule]
-vide C3;
-9 lectiones
-OPapaeM=Cletus és Marcellinus;

@@ -1,5 +1,0 @@
-[Rank]
-Śś. Urszuli i Towarzyszek Dziewic i Męczennic
-
-[Oratio]
-@Commune/C6a:Oratio:s/N\..*N\./Urszuli i jej Towarzyszek/

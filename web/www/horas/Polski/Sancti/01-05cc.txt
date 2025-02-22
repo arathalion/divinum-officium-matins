@@ -1,5 +1,0 @@
-[Rule] (communi summorum pontificum)
-OPapaM=Telesfora;
-
-[Name]
-Telesfora

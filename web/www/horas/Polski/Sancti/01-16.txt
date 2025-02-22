@@ -1,6 +1,0 @@
-[Rank]
-Św. Marcelego Papieża i Męczennika;;Semiduplex;;2;;vide C2
-
-[Oratio]
-Wysłuchaj łaskawie prośby ludu Twego, prosimy Cię, Panie, i spraw, aby nas wspomogły zasługi Błogosławionego Marcelego Męczennika Twego i Papieża, z którego męczeństwa się weselimy.
-$Per Dominum

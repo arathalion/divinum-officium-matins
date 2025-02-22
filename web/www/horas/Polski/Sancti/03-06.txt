@@ -1,8 +1,0 @@
-[Rank]
-Śś. Perpetuy i Felicyty Męczenniczek;;Duplex;;3;;vide C7
-
-[Oratio]
-@Commune/C7b::s/N\. i N\./Perpetuy i Felicyty/
-
-[Invit]
-@Commune/C7b::s/N\. i N\./Perpetuy i Felicyty/

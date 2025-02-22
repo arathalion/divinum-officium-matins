@@ -1,5 +1,0 @@
-[Rule] (communi summorum pontificum)
-OPapaM=Telésphorum;
-
-[Name]
-Telesphori

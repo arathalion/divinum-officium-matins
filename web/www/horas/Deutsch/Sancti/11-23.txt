@@ -1,7 +1,0 @@
-[Rank]
-Hl. Clemens, Papst und Martyrer
-
-[Rule]
-vide C2;
-9 lectiones
-OPapaM=Clemens;

@@ -1,8 +1,0 @@
-[Rank]
-Hl. Menna, Martyrer
-
-[Name]
-Menna
-
-[Oratio]
-@Commune/C2:Oratio2

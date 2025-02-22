@@ -1,5 +1,0 @@
-[Rank]
-Św. Eustachego i Towarzyszy Męczenników;;Duplex;;3;;vide C3
-
-[Oratio]
-@Commune/C3::s/N\. i N\./Eustachego i Towarzyszy/

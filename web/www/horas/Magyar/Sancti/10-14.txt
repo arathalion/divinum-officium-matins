@@ -1,5 +1,0 @@
-[Rank]
-S. Callisti Papae et Martyri;;Duplex;;3;;vide C3
-
-[Rank] (rubrica 1570)
-S. Callisti Papae et Martyri;;Semiduplex;;2;;vide C3

@@ -1,5 +1,0 @@
-[Rank]
-Św. Pudencjanny Dziewicy
-
-[Oratio]
-@Commune/C6b::s/N\./Pudencjanny/

@@ -1,5 +1,0 @@
-[Rank]
-Św. Wawrzyńca Justiniani Biskupa i Wyznawcy;;Semiduplex;;2;;vide C4
-
-[Oratio]
-@Commune/C4::s/N\./Wawrzyńca/

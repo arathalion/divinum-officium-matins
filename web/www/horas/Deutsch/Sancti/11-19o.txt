@@ -1,6 +1,0 @@
-[Rank]
-Hl. Pontianus, Papst und Martyrer
-
-[Rule]
-vide C4;
-OPapaM=Pontianus;

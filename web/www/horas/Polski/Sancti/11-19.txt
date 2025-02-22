@@ -1,9 +1,0 @@
-[Rank]
-Św. Elżbiety Wdowy;;Duplex;;3;;vide C7a
-
-[Oratio]
-Boże miłosierny, oświeć serca wiernych Twoich i za przyczyną świętej Elżbiety daj nam wzgardzić szczęściem doczesnem, a cieszyć się zawsze weselem niebieskiem.
-$Per Dominum
-
-[Invit]
-@Commune/C7::s/N\./Elżbiecie./

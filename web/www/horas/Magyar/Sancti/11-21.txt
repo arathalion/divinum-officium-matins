@@ -1,5 +1,0 @@
-[Rank]
-In Presentatione Beatae Máriae Virginis;;Duplex majus;;4;;ex C11
-
-[Rank] (rubrica 196)
-In Presentatione Beatae Mariae Virginis;;Duplex;;3;;vide C11

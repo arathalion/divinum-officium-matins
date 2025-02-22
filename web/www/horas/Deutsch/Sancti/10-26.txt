@@ -1,6 +1,0 @@
-[Rank]
-Hl. Evaristus, Papst und Martyrer
-
-[Rule]
-vide C2;
-OPapaM=Evaristus;

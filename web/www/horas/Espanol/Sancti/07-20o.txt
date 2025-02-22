@@ -1,5 +1,0 @@
-[Rank]
-Sta. Margarita, Virgen y Mártir
-
-[Oratio]
-@Commune/C6:Oratio1:s/N\./Margarita/

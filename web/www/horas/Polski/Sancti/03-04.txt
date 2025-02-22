@@ -1,6 +1,0 @@
-[Rank]
-Św. Kazimierza Wyznawcy;;Semiduplex;;2.1;;vide C5
-
-[Oratio]
-Boże, któryś wśród królewskich rozkoszy i ułud światowych umocnił świętego Kazimierza cnotą wytrwałości, spraw, prosimy Cię, aby wierni Twoi za Jego przyczyną gardząc tem, ziemskie, niebieskich rzęczy pożądali.
-$Per Dominum

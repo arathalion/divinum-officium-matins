@@ -1,6 +1,0 @@
-[Rank]
-Feria Secunda infra Hebdomadam III post Octavam Paschae;;Feria;;1
-
-[Rule]
-Una Antiphona
-Feria Te Deum

@@ -1,6 +1,0 @@
-[Rank]
-Św. Piotra Nolasco Wyznawcy;;Duplex;;3;;vide C5
-
-[Oratio]
-Boże, któryś przykładem Twej miłości natchnął świętego Piotra do założenia nowej rodziny w Kościele dla wykupywania wiernych z niewoli, daj nam za jego przyczyną, byśmy z niewoli grzechu wyzwoleni, mogli się radować wieczną wolnością w niebieskiej ojczyźnie.
-$Qui vivis

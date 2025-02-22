@@ -1,5 +1,0 @@
-[Rank]
-Vigile de St Thomas, Apôtre;;Simplex;;1.5;;vide C1v
-
-[Oratio]
-@Commune/C1v ::s/N\./Thomas/

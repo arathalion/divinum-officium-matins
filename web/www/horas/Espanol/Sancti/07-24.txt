@@ -1,5 +1,0 @@
-[Rank]
-In Vigilia S. Jacobi Ap.;;Simplex;;1.5;;ex C1v
-
-[Oratio]
-@Commune/C1v:Oratio1:s/N\./Santiago/
