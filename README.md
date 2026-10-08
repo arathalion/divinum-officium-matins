@@ -1,3 +1,16 @@
+# Matins readings
+
+This fork of Divinum Officium adds the lessons of Matins from the Roman
+Breviary of 1954, with their responsories, in Latin and English: as text files,
+an EPUB, and a four-volume print edition, together with the scripts that
+produce them. See [matins/](matins/README.md). The same scripts prepare the
+daily readings at [matutinum.org](https://matutinum.org).
+
+Everything outside the `matins/` folder is Divinum Officium's own work, and
+their README follows.
+
+---
+
 # divinum-officium
 
 Data files and source code for the
