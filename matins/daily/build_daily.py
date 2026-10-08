@@ -5,6 +5,7 @@ For every date in the window, runs the engine (tools/harvest_day.pl) for the
 calendar and language, and writes OUT/<calendar>/<lang>/<YYYY-MM-DD>.json:
 
   {date, calendar, lang, title: {latin, local}, rank,
+   lessons: [{number, latin, translation}],   # structured, for the public API
    email: {subject, preheader, html, text},   # vernacular only, links to the page
    page:  {title, html}}                       # Latin and vernacular side by side
 
@@ -189,6 +190,28 @@ def body_words(les):
     return " ".join(p for b in les["blocks"] for p in b["paras"] + [t for _, t in b["verses"]])
 
 
+# ---------------------------------------------------------------- API form
+
+def api_text(les):
+    """One language of a lesson, in the shape the public API returns."""
+    parts = []
+    for b in les["blocks"]:
+        part = {"title": b["title"], "citation": b["cite"], "source": b["source"]}
+        if b["verses"]:
+            part["verses"] = [{"n": n, "text": t} for n, t in b["verses"]]
+        part["paragraphs"] = list(b["paras"])
+        parts.append(part)
+    resp = []
+    for item in les["responsory"]:
+        if item[0] == "R":
+            resp.append({"type": "respond", "text": item[1], "repeat": item[2]})
+        elif item[0] == "G":
+            resp.append({"type": "gloria", "text": item[1]})
+        else:
+            resp.append({"type": "verse", "text": item[1]})
+    return {"notes": list(les["rubric"]), "parts": parts, "responsory": resp, "te_deum": les["tedeum"]}
+
+
 # ---------------------------------------------------------------- build
 
 def harvest(date, version, folder):
@@ -213,6 +236,7 @@ def build_one(date, cal, lang, out_dir, corpus_titles):
     doc = {
         "date": date.isoformat(), "calendar": cal, "lang": lang, "version": version,
         "title": {"latin": la_title, "local": title}, "rank": rank,
+        "lessons": [{"number": n, "latin": api_text(la), "translation": api_text(local)} for n, la, local in pairs],
         "email": render_email(day, la_title, title, rank, date, cal_name, vernacular),
         "page": render_page(la_title, title, rank, date, pairs, lang),
     }
