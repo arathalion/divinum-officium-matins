@@ -20,5 +20,5 @@ while d.year==$y:
   [ -s "$tmp/err" ] && cp "$tmp/err" "$out/$y.err"
   rm -rf "$tmp"
   mv "$out/$y.jsonl.gz.part" "$out/$y.jsonl.gz"
-  echo "$y: $(gzcat "$out/$y.jsonl.gz" | wc -l | tr -d ' ') days"
+  echo "$y: $(gzip -dc "$out/$y.jsonl.gz" | wc -l | tr -d ' ') days"
 done
