@@ -21,8 +21,8 @@ C6a          Commune Virginum tantum
 C7a          Commune non Virginum non Martyrum
 C7b          Commune plurimarum non Virginum Martyrum
 C8           Commune Dedicationis Ecclesiae
-C10          Sanctæ Mariæ Sabbato
-C10Pasc      Sanctæ Mariæ Sabbato
-C10b         Sanctæ Mariæ Sabbato
-C10c         Sanctæ Mariæ Sabbato
+C10          Sanctæ Mariæ Sabbato (a Trinitate usque ad Adventum)
+C10Pasc      Sanctæ Mariæ Sabbato (tempore Paschali)
+C10b         Sanctæ Mariæ Sabbato (a Nativitate usque ad Purificationem)
+C10c         Sanctæ Mariæ Sabbato (post Purificationem usque ad Dominicam Palmarum)
 C11          In Festis Beatae Mariae Virginis

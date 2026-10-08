@@ -107,4 +107,12 @@
 \newcommand\RefLine[1]{{\small\itshape\noindent #1\par}}
 \newcommand\TeDeum[1]{\par\addvspace{0.3em}{\centering\small\itshape\rubr{#1}\par}}
 \newenvironment{Resp}{\par\addvspace{0.4em}\raggedright\hangindent=1em\hangafter=1\noindent}{\par}
+% ---- Index of offices (the table of contents, at the back) -------------------
+\setcounter{tocdepth}{3}
+\newcommand\IndexOfOffices{%
+  \renewcommand\contentsname{Index}%
+  \begingroup\footnotesize
+  \setlength{\parskip}{0pt}%
+  \tableofcontents
+  \endgroup}
 \endinput

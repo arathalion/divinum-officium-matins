@@ -16,7 +16,7 @@ and its output is traced back to the files the lessons live in.
 | `text/latin/`, `text/english/` | One plain-text file per office, in `temporale/`, `sanctorale/` and `commune/`, each with an `index.txt` in liturgical order. File names are the Divinum Officium file names (`Adv1-0` = First Sunday of Advent, `11-04` = 4 November, `C4` = Common of a Confessor Bishop, `111-3` = Wednesday of the first week of November). |
 | `data/corpus.json` | The same content, structured: per entry, its title, rank, own lessons (title, scripture citation, patristic source, verses or paragraphs, responsory) and references to lessons read from elsewhere. Use this for the book, a web page or an app. |
 | `output/Matins-Readings-1954.epub` | The whole corpus as one EPUB: Proper of Time, Common of the Saints, Proper of Saints (from 29 November), Latin and English side by side paragraph by paragraph, stacking on narrow screens. References link to the Common or feast they name. |
-| `book/matins.sty`, `book/*.tex` | The print book: 6 × 9 in, Latin and English in two columns kept level paragraph by paragraph (LuaLaTeX, EB Garamond). `matins.sty` holds the page design; the `.tex` files are generated. `output/Advent-sample-6x9.pdf` is a sample. |
+| `book/matins.sty`, `book/*.tex` | The print book: 6 × 9 in, Latin and English in two columns kept level paragraph by paragraph (LuaLaTeX, EB Garamond). `matins.sty` holds the page design; the `.tex` files are generated. `output/Advent-sample-6x9.pdf` is a sample; `output/Winter-6x9.pdf` is the Winter volume. Volumes follow the breviary's four parts: each has its season's Proper of Time, the saints of every date that season can reach (26 Nov – 12 Mar for Winter, as in the Breviarium Romanum of 1942, so dates where two parts meet are printed in both), only the Common lessons its own offices refer to, and an index. |
 | `data/coverage.txt` | Lesson sections that exist in the files but are never read under these rubrics (e.g. a Lenten saint's own 9th lesson, always replaced by the homily of the feria; sections for other rubrical editions). |
 
 How an entry reads:
@@ -47,6 +47,7 @@ perl matins/tools/extract_files.pl < matins/cache/allfiles.txt > matins/cache/fi
 python3 matins/tools/build_corpus.py        # writes text/ and data/
 python3 matins/tools/build_epub.py          # writes output/Matins-Readings-1954.epub
 python3 matins/tools/build_latex.py adv -o advent   # writes book/advent.tex (season ids: see the script)
+python3 matins/tools/build_latex.py --volume winter # a whole breviary part: book/winter.tex
 latexmk -lualatex -cd -outdir=build matins/book/advent.tex
 ```
 

@@ -21,8 +21,8 @@ C6a          Common of a Virgin not a Martyr
 C7a          Common of Widows
 C7b          Common of multiple widowed Martyrs
 C8           Common of the Dedication of Churches
-C10          Our Lady’s Saturday
-C10Pasc      Our Lady’s Saturday
-C10b         Our Lady’s Saturday
-C10c         Our Lady’s Saturday
+C10          Our Lady's Saturday (from Trinity to Advent)
+C10Pasc      Our Lady's Saturday (in Paschaltide)
+C10b         Our Lady's Saturday (from Christmas to the Purification)
+C10c         Our Lady's Saturday (from the Purification to Palm Sunday)
 C11          In Festis Beatae Mariae Virginis

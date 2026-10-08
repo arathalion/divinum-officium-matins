@@ -1215,8 +1215,8 @@
   {
    "file": "Commune/C10.txt",
    "kind": "Commune",
-   "title_latin": "Sanctæ Mariæ Sabbato",
-   "title_english": "Our Lady’s Saturday",
+   "title_latin": "Sanctæ Mariæ Sabbato (a Trinitate usque ad Adventum)",
+   "title_english": "Our Lady's Saturday (from Trinity to Advent)",
    "rank": "Simplex",
    "lessons": [
     {
@@ -1724,13 +1724,3746 @@
      "type": "scriptura"
     }
    ],
-   "won_on": 533
+   "won_on": 533,
+   "won_days": [
+    [
+     "08-26-1950",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "10-21-1950",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-09-1951",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "06-16-1951",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "07-21-1951",
+     "Tempora/Pent09-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "08-11-1951",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "09-01-1951",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "12-01-1951",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M12"
+     ]
+    ],
+    [
+     "09-06-1952",
+     "Tempora/Pent13-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-25-1952",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-20-1953",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "07-11-1953",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-26-1953",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-04-1954",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-25-1954",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-23-1954",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "11-27-1954",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M11"
+     ]
+    ],
+    [
+     "07-09-1955",
+     "Tempora/Pent05-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "07-30-1955",
+     "Tempora/Pent08-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "10-01-1955",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-22-1955",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-29-1955",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-16-1956",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "07-21-1956",
+     "Tempora/Pent08-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "08-11-1956",
+     "Tempora/Pent11-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "09-01-1956",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "12-01-1956",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M12"
+     ]
+    ],
+    [
+     "07-27-1957",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-07-1957",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-05-1957",
+     "Tempora/Pent16-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-12-1957",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "09-06-1958",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-25-1958",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-20-1959",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "07-11-1959",
+     "Tempora/Pent07-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-26-1959",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "07-09-1960",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "07-30-1960",
+     "Tempora/Pent07-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "10-01-1960",
+     "Tempora/Pent16-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-22-1960",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-29-1960",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-17-1961",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "08-26-1961",
+     "Tempora/Pent13-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "10-21-1961",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-21-1962",
+     "Tempora/Pent05-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "08-11-1962",
+     "Tempora/Pent08-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "09-01-1962",
+     "Tempora/Pent11-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "12-01-1962",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M12"
+     ]
+    ],
+    [
+     "07-27-1963",
+     "Tempora/Pent07-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-07-1963",
+     "Tempora/Pent13-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-05-1963",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-12-1963",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-20-1964",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "07-11-1964",
+     "Tempora/Pent07-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-26-1964",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-04-1965",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-25-1965",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-23-1965",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "11-27-1965",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M11"
+     ]
+    ],
+    [
+     "07-09-1966",
+     "Tempora/Pent05-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "07-30-1966",
+     "Tempora/Pent08-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "10-01-1966",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-22-1966",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-29-1966",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-17-1967",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "08-26-1967",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "10-21-1967",
+     "Tempora/Pent22-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-27-1968",
+     "Tempora/Pent07-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-07-1968",
+     "Tempora/Pent13-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-05-1968",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-12-1968",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "09-06-1969",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-25-1969",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-20-1970",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "07-11-1970",
+     "Tempora/Pent07-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-26-1970",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-04-1971",
+     "Tempora/Pent13-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-25-1971",
+     "Tempora/Pent16-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-23-1971",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "11-27-1971",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M11"
+     ]
+    ],
+    [
+     "06-17-1972",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "08-26-1972",
+     "Tempora/Pent13-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "10-21-1972",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-21-1973",
+     "Tempora/Pent05-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "08-11-1973",
+     "Tempora/Pent08-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "09-01-1973",
+     "Tempora/Pent11-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "12-01-1973",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M12"
+     ]
+    ],
+    [
+     "07-27-1974",
+     "Tempora/Pent07-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-07-1974",
+     "Tempora/Pent13-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-05-1974",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-12-1974",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "09-06-1975",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-25-1975",
+     "Tempora/Pent22-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "09-04-1976",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-25-1976",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-23-1976",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "11-27-1976",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M11"
+     ]
+    ],
+    [
+     "07-09-1977",
+     "Tempora/Pent05-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "07-30-1977",
+     "Tempora/Pent08-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "10-01-1977",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-22-1977",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-29-1977",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-17-1978",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "08-26-1978",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "10-21-1978",
+     "Tempora/Pent22-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-21-1979",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "08-11-1979",
+     "Tempora/Pent09-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "09-01-1979",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "12-01-1979",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M12"
+     ]
+    ],
+    [
+     "09-06-1980",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-25-1980",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-11-1981",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-26-1981",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-04-1982",
+     "Tempora/Pent13-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-25-1982",
+     "Tempora/Pent16-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-23-1982",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "11-27-1982",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M11"
+     ]
+    ],
+    [
+     "07-09-1983",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "07-30-1983",
+     "Tempora/Pent09-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "10-01-1983",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-22-1983",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-29-1983",
+     "Tempora/Pent22-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-21-1984",
+     "Tempora/Pent05-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "08-11-1984",
+     "Tempora/Pent08-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "09-01-1984",
+     "Tempora/Pent11-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "12-01-1984",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M12"
+     ]
+    ],
+    [
+     "07-27-1985",
+     "Tempora/Pent08-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-07-1985",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-05-1985",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-12-1985",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "09-06-1986",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-25-1986",
+     "Tempora/Pent22-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-11-1987",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-26-1987",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "07-09-1988",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "07-30-1988",
+     "Tempora/Pent09-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "10-01-1988",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-22-1988",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-29-1988",
+     "Tempora/Pent22-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-17-1989",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "08-26-1989",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "10-21-1989",
+     "Tempora/Pent22-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-21-1990",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "08-11-1990",
+     "Tempora/Pent09-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "09-01-1990",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "12-01-1990",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M12"
+     ]
+    ],
+    [
+     "06-15-1991",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "07-27-1991",
+     "Tempora/Pent09-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-07-1991",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-05-1991",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-12-1991",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-11-1992",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-26-1992",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-04-1993",
+     "Tempora/Pent13-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-25-1993",
+     "Tempora/Pent16-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-23-1993",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "11-27-1993",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M11"
+     ]
+    ],
+    [
+     "07-09-1994",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "07-30-1994",
+     "Tempora/Pent09-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "10-01-1994",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-22-1994",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-29-1994",
+     "Tempora/Pent22-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "08-26-1995",
+     "Tempora/Pent11-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "10-21-1995",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-27-1996",
+     "Tempora/Pent08-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-07-1996",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-05-1996",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-12-1996",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "09-06-1997",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-25-1997",
+     "Tempora/Pent22-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-11-1998",
+     "Tempora/Pent05-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-26-1998",
+     "Tempora/Pent16-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-04-1999",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-25-1999",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-23-1999",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "11-27-1999",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M11"
+     ]
+    ],
+    [
+     "08-26-2000",
+     "Tempora/Pent10-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "10-21-2000",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-21-2001",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "08-11-2001",
+     "Tempora/Pent09-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "09-01-2001",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "12-01-2001",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M12"
+     ]
+    ],
+    [
+     "06-15-2002",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "07-27-2002",
+     "Tempora/Pent09-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-07-2002",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-05-2002",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-12-2002",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "09-06-2003",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-25-2003",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "09-04-2004",
+     "Tempora/Pent13-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-25-2004",
+     "Tempora/Pent16-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-23-2004",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "11-27-2004",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M11"
+     ]
+    ],
+    [
+     "07-09-2005",
+     "Tempora/Pent07-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "07-30-2005",
+     "Tempora/Pent10-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "10-01-2005",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-22-2005",
+     "Tempora/Pent22-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-29-2005",
+     "Tempora/Pent23-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "08-26-2006",
+     "Tempora/Pent11-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "10-21-2006",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-21-2007",
+     "Tempora/Pent07-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "08-11-2007",
+     "Tempora/Pent10-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "09-01-2007",
+     "Tempora/Pent13-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "12-01-2007",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M12"
+     ]
+    ],
+    [
+     "06-07-2008",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "09-06-2008",
+     "Tempora/Pent16-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-25-2008",
+     "Tempora/Pent23-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-11-2009",
+     "Tempora/Pent05-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-26-2009",
+     "Tempora/Pent16-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-04-2010",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-25-2010",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-23-2010",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "11-27-2010",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M11"
+     ]
+    ],
+    [
+     "07-09-2011",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "07-30-2011",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "10-01-2011",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-22-2011",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-29-2011",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-21-2012",
+     "Tempora/Pent07-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "08-11-2012",
+     "Tempora/Pent10-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "09-01-2012",
+     "Tempora/Pent13-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "12-01-2012",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M12"
+     ]
+    ],
+    [
+     "06-15-2013",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "07-27-2013",
+     "Tempora/Pent09-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-07-2013",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-05-2013",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-12-2013",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "09-06-2014",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-25-2014",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-20-2015",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "07-11-2015",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-26-2015",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "07-09-2016",
+     "Tempora/Pent07-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "07-30-2016",
+     "Tempora/Pent10-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "10-01-2016",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-22-2016",
+     "Tempora/Pent22-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-29-2016",
+     "Tempora/Pent23-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "08-26-2017",
+     "Tempora/Pent11-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "10-21-2017",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-16-2018",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "07-21-2018",
+     "Tempora/Pent08-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "08-11-2018",
+     "Tempora/Pent11-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "09-01-2018",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "12-01-2018",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M12"
+     ]
+    ],
+    [
+     "07-27-2019",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-07-2019",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-05-2019",
+     "Tempora/Pent16-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-12-2019",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-11-2020",
+     "Tempora/Pent05-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-26-2020",
+     "Tempora/Pent16-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-04-2021",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-25-2021",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-23-2021",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "11-27-2021",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M11"
+     ]
+    ],
+    [
+     "07-09-2022",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "07-30-2022",
+     "Tempora/Pent07-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "10-01-2022",
+     "Tempora/Pent16-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-22-2022",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-29-2022",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "08-26-2023",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "10-21-2023",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-15-2024",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "07-27-2024",
+     "Tempora/Pent09-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-07-2024",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-05-2024",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-12-2024",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "09-06-2025",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-25-2025",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-20-2026",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "07-11-2026",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-26-2026",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-04-2027",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-25-2027",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-23-2027",
+     "Tempora/Pent22-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "11-27-2027",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M11"
+     ]
+    ],
+    [
+     "08-26-2028",
+     "Tempora/Pent11-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "10-21-2028",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-16-2029",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "07-21-2029",
+     "Tempora/Pent08-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "08-11-2029",
+     "Tempora/Pent11-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "09-01-2029",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "12-01-2029",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M12"
+     ]
+    ],
+    [
+     "07-27-2030",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-07-2030",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-05-2030",
+     "Tempora/Pent16-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-12-2030",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "09-06-2031",
+     "Tempora/Pent13-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-25-2031",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "09-04-2032",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-25-2032",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-23-2032",
+     "Tempora/Pent22-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "11-27-2032",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M11"
+     ]
+    ],
+    [
+     "07-09-2033",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "07-30-2033",
+     "Tempora/Pent07-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "10-01-2033",
+     "Tempora/Pent16-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-22-2033",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-29-2033",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "08-26-2034",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "10-21-2034",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-09-2035",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "06-16-2035",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "07-21-2035",
+     "Tempora/Pent09-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "08-11-2035",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "09-01-2035",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "12-01-2035",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M12"
+     ]
+    ],
+    [
+     "09-06-2036",
+     "Tempora/Pent13-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-25-2036",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-20-2037",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "07-11-2037",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-26-2037",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-04-2038",
+     "Tempora/Pent11-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-25-2038",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-23-2038",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "11-27-2038",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M11"
+     ]
+    ],
+    [
+     "07-09-2039",
+     "Tempora/Pent05-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "07-30-2039",
+     "Tempora/Pent08-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "10-01-2039",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-22-2039",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-29-2039",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-16-2040",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "07-21-2040",
+     "Tempora/Pent08-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "08-11-2040",
+     "Tempora/Pent11-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "09-01-2040",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "12-01-2040",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M12"
+     ]
+    ],
+    [
+     "07-27-2041",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-07-2041",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-05-2041",
+     "Tempora/Pent16-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-12-2041",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "09-06-2042",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-25-2042",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-20-2043",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "07-11-2043",
+     "Tempora/Pent07-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-26-2043",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "07-09-2044",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "07-30-2044",
+     "Tempora/Pent07-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "10-01-2044",
+     "Tempora/Pent16-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-22-2044",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-29-2044",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "08-26-2045",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "10-21-2045",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-09-2046",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "06-16-2046",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "07-21-2046",
+     "Tempora/Pent09-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "08-11-2046",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "09-01-2046",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "12-01-2046",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M12"
+     ]
+    ],
+    [
+     "07-27-2047",
+     "Tempora/Pent07-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-07-2047",
+     "Tempora/Pent13-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-05-2047",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-12-2047",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-20-2048",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "07-11-2048",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-26-2048",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-04-2049",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-25-2049",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-23-2049",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "11-27-2049",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M11"
+     ]
+    ],
+    [
+     "07-09-2050",
+     "Tempora/Pent05-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "07-30-2050",
+     "Tempora/Pent08-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "10-01-2050",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-22-2050",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-29-2050",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-17-2051",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "08-26-2051",
+     "Tempora/Pent13-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "10-21-2051",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-27-2052",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-07-2052",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-05-2052",
+     "Tempora/Pent16-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-12-2052",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "09-06-2053",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-25-2053",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-20-2054",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "07-11-2054",
+     "Tempora/Pent07-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-26-2054",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-04-2055",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-25-2055",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-23-2055",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "11-27-2055",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M11"
+     ]
+    ],
+    [
+     "06-17-2056",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "08-26-2056",
+     "Tempora/Pent13-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "10-21-2056",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-21-2057",
+     "Tempora/Pent05-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "08-11-2057",
+     "Tempora/Pent08-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "09-01-2057",
+     "Tempora/Pent11-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "12-01-2057",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M12"
+     ]
+    ],
+    [
+     "07-27-2058",
+     "Tempora/Pent07-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-07-2058",
+     "Tempora/Pent13-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-05-2058",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-12-2058",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "09-06-2059",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-25-2059",
+     "Tempora/Pent22-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "09-04-2060",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-25-2060",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-23-2060",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "11-27-2060",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M11"
+     ]
+    ],
+    [
+     "07-09-2061",
+     "Tempora/Pent05-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "07-30-2061",
+     "Tempora/Pent08-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "10-01-2061",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-22-2061",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-29-2061",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-17-2062",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "08-26-2062",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "10-21-2062",
+     "Tempora/Pent22-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-21-2063",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "08-11-2063",
+     "Tempora/Pent09-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "09-01-2063",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "12-01-2063",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M12"
+     ]
+    ],
+    [
+     "09-06-2064",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-25-2064",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-20-2065",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "07-11-2065",
+     "Tempora/Pent07-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-26-2065",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-04-2066",
+     "Tempora/Pent13-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-25-2066",
+     "Tempora/Pent16-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-23-2066",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "11-27-2066",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M11"
+     ]
+    ],
+    [
+     "07-09-2067",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "07-30-2067",
+     "Tempora/Pent09-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "10-01-2067",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-22-2067",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-29-2067",
+     "Tempora/Pent22-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-21-2068",
+     "Tempora/Pent05-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "08-11-2068",
+     "Tempora/Pent08-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "09-01-2068",
+     "Tempora/Pent11-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "12-01-2068",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M12"
+     ]
+    ],
+    [
+     "07-27-2069",
+     "Tempora/Pent07-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-07-2069",
+     "Tempora/Pent13-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-05-2069",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-12-2069",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "09-06-2070",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-25-2070",
+     "Tempora/Pent22-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-11-2071",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-26-2071",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "07-09-2072",
+     "Tempora/Pent05-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "07-30-2072",
+     "Tempora/Pent08-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "10-01-2072",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-22-2072",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-29-2072",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "06-17-2073",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "08-26-2073",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "10-21-2073",
+     "Tempora/Pent22-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-21-2074",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "08-11-2074",
+     "Tempora/Pent09-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "09-01-2074",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "12-01-2074",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M12"
+     ]
+    ],
+    [
+     "07-27-2075",
+     "Tempora/Pent08-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-07-2075",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-05-2075",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-12-2075",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-11-2076",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-26-2076",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-04-2077",
+     "Tempora/Pent13-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-25-2077",
+     "Tempora/Pent16-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-23-2077",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "11-27-2077",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M11"
+     ]
+    ],
+    [
+     "07-09-2078",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "07-30-2078",
+     "Tempora/Pent09-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "10-01-2078",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-22-2078",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-29-2078",
+     "Tempora/Pent22-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "08-26-2079",
+     "Tempora/Pent10-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "10-21-2079",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-27-2080",
+     "Tempora/Pent08-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-07-2080",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-05-2080",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-12-2080",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "09-06-2081",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-25-2081",
+     "Tempora/Pent22-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-11-2082",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-26-2082",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-04-2083",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-25-2083",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-23-2083",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "11-27-2083",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M11"
+     ]
+    ],
+    [
+     "06-17-2084",
+     "Tempora/Pent04-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "08-26-2084",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "10-21-2084",
+     "Tempora/Pent22-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-21-2085",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "08-11-2085",
+     "Tempora/Pent09-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "09-01-2085",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "12-01-2085",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M12"
+     ]
+    ],
+    [
+     "06-15-2086",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "07-27-2086",
+     "Tempora/Pent09-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-07-2086",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-05-2086",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-12-2086",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "09-06-2087",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-25-2087",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "09-04-2088",
+     "Tempora/Pent13-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-25-2088",
+     "Tempora/Pent16-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-23-2088",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "11-27-2088",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M11"
+     ]
+    ],
+    [
+     "07-09-2089",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "07-30-2089",
+     "Tempora/Pent09-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "10-01-2089",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-22-2089",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-29-2089",
+     "Tempora/Pent22-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "08-26-2090",
+     "Tempora/Pent11-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "10-21-2090",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-21-2091",
+     "Tempora/Pent07-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "08-11-2091",
+     "Tempora/Pent10-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "09-01-2091",
+     "Tempora/Pent13-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "12-01-2091",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M12"
+     ]
+    ],
+    [
+     "09-06-2092",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-25-2092",
+     "Tempora/Pent22-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-11-2093",
+     "Tempora/Pent05-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-26-2093",
+     "Tempora/Pent16-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-04-2094",
+     "Tempora/Pent14-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-25-2094",
+     "Tempora/Pent17-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-23-2094",
+     "Tempora/Pent21-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "11-27-2094",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M11"
+     ]
+    ],
+    [
+     "07-09-2095",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "07-30-2095",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "10-01-2095",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-22-2095",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-29-2095",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-21-2096",
+     "Tempora/Pent06-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "08-11-2096",
+     "Tempora/Pent09-6.txt",
+     [
+      "Lectio M08"
+     ]
+    ],
+    [
+     "09-01-2096",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "12-01-2096",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M12"
+     ]
+    ],
+    [
+     "06-15-2097",
+     "Tempora/Pent03-6.txt",
+     [
+      "Lectio M06"
+     ]
+    ],
+    [
+     "07-27-2097",
+     "Tempora/Pent09-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-07-2097",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-05-2097",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "10-12-2097",
+     "Tempora/Pent20-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "09-06-2098",
+     "Tempora/Pent12-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-25-2098",
+     "Tempora/Pent19-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "07-11-2099",
+     "Tempora/Pent05-6.txt",
+     [
+      "Lectio M07"
+     ]
+    ],
+    [
+     "09-26-2099",
+     "Tempora/Pent16-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-04-2100",
+     "Tempora/Pent15-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "09-25-2100",
+     "Tempora/Pent18-6.txt",
+     [
+      "Lectio M09"
+     ]
+    ],
+    [
+     "10-23-2100",
+     "Tempora/Pent22-6.txt",
+     [
+      "Lectio M10"
+     ]
+    ],
+    [
+     "11-27-2100",
+     "Tempora/Pent24-6.txt",
+     [
+      "Lectio M11"
+     ]
+    ]
+   ]
   },
   {
    "file": "Commune/C10Pasc.txt",
    "kind": "Commune",
-   "title_latin": "Sanctæ Mariæ Sabbato",
-   "title_english": "Our Lady’s Saturday",
+   "title_latin": "Sanctæ Mariæ Sabbato (tempore Paschali)",
+   "title_english": "Our Lady's Saturday (in Paschaltide)",
    "rank": "Simplex",
    "lessons": [
     {
@@ -2238,13 +5971,694 @@
      "type": "scriptura"
     }
    ],
-   "won_on": 97
+   "won_on": 97,
+   "won_days": [
+    [
+     "04-07-1951",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "04-18-1953",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-22-1954",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "05-14-1955",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-19-1958",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-14-1960",
+     "Tempora/Pasc3-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "05-21-1960",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-15-1961",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-11-1963",
+     "Tempora/Pasc3-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "05-22-1965",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "05-14-1966",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-08-1967",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-11-1968",
+     "Tempora/Pasc3-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-19-1969",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "04-15-1972",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-11-1974",
+     "Tempora/Pasc3-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-12-1975",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-22-1976",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "05-14-1977",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-08-1978",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "04-19-1980",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-23-1981",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-16-1983",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "04-20-1985",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-11-1985",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-12-1986",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-23-1987",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-16-1988",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "04-08-1989",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-23-1992",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-16-1994",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "04-20-1996",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-11-1996",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-12-1997",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "04-17-1999",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-24-2003",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-09-2005",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "04-19-2008",
+     "Tempora/Pasc3-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "04-17-2010",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-21-2011",
+     "Tempora/Pasc3-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "05-24-2014",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-18-2015",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "04-09-2016",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "04-17-2021",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-14-2022",
+     "Tempora/Pasc3-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "05-21-2022",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "05-24-2025",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-18-2026",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "04-10-2027",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "04-10-2032",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-14-2033",
+     "Tempora/Pasc3-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "05-21-2033",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-07-2035",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "04-18-2037",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-22-2038",
+     "Tempora/Pasc3-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "05-14-2039",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-19-2042",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-14-2044",
+     "Tempora/Pasc3-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "05-21-2044",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-07-2046",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-11-2047",
+     "Tempora/Pasc3-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-18-2048",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-22-2049",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "05-14-2050",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-15-2051",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "04-19-2053",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-22-2055",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-15-2056",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-11-2058",
+     "Tempora/Pasc3-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-12-2059",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-22-2060",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "05-14-2061",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-08-2062",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "04-19-2064",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "04-16-2067",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-11-2069",
+     "Tempora/Pasc3-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-12-2070",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-23-2071",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "05-14-2072",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-08-2073",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "04-20-2075",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-11-2075",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "05-23-2076",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-16-2078",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "04-20-2080",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-11-2080",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-12-2081",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-23-2082",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-17-2083",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "04-08-2084",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-24-2087",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-16-2089",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "04-12-2092",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "04-17-2094",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ],
+    [
+     "05-21-2095",
+     "Tempora/Pasc3-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "05-24-2098",
+     "Tempora/Pasc4-6.txt",
+     [
+      "Lectio M05"
+     ]
+    ],
+    [
+     "04-10-2100",
+     "Tempora/Pasc1-6.txt",
+     [
+      "Lectio M04"
+     ]
+    ]
+   ]
   },
   {
    "file": "Commune/C10b.txt",
    "kind": "Commune",
-   "title_latin": "Sanctæ Mariæ Sabbato",
-   "title_english": "Our Lady’s Saturday",
+   "title_latin": "Sanctæ Mariæ Sabbato (a Nativitate usque ad Purificationem)",
+   "title_english": "Our Lady's Saturday (from Christmas to the Purification)",
    "rank": "Simplex",
    "lessons": [
     {
@@ -2752,13 +7166,162 @@
      "type": "scriptura"
     }
    ],
-   "won_on": 21
+   "won_on": 21,
+   "won_days": [
+    [
+     "01-19-1952",
+     "Tempora/Epi1-6.txt",
+     [
+      "Lectio M01"
+     ]
+    ],
+    [
+     "01-19-1957",
+     "Tempora/Epi1-6.txt",
+     [
+      "Lectio M01"
+     ]
+    ],
+    [
+     "01-19-1963",
+     "Tempora/Epi1-6.txt",
+     [
+      "Lectio M01"
+     ]
+    ],
+    [
+     "01-19-1974",
+     "Tempora/Epi1-6.txt",
+     [
+      "Lectio M01"
+     ]
+    ],
+    [
+     "01-19-1980",
+     "Tempora/Epi1-6.txt",
+     [
+      "Lectio M01"
+     ]
+    ],
+    [
+     "01-19-1985",
+     "Tempora/Epi1-6.txt",
+     [
+      "Lectio M01"
+     ]
+    ],
+    [
+     "01-19-1991",
+     "Tempora/Epi1-6.txt",
+     [
+      "Lectio M01"
+     ]
+    ],
+    [
+     "01-19-2002",
+     "Tempora/Epi1-6.txt",
+     [
+      "Lectio M01"
+     ]
+    ],
+    [
+     "01-19-2013",
+     "Tempora/Epi1-6.txt",
+     [
+      "Lectio M01"
+     ]
+    ],
+    [
+     "01-19-2019",
+     "Tempora/Epi1-6.txt",
+     [
+      "Lectio M01"
+     ]
+    ],
+    [
+     "01-19-2030",
+     "Tempora/Epi1-6.txt",
+     [
+      "Lectio M01"
+     ]
+    ],
+    [
+     "01-19-2036",
+     "Tempora/Epi1-6.txt",
+     [
+      "Lectio M01"
+     ]
+    ],
+    [
+     "01-19-2041",
+     "Tempora/Epi1-6.txt",
+     [
+      "Lectio M01"
+     ]
+    ],
+    [
+     "01-19-2047",
+     "Tempora/Epi1-6.txt",
+     [
+      "Lectio M01"
+     ]
+    ],
+    [
+     "01-19-2058",
+     "Tempora/Epi1-6.txt",
+     [
+      "Lectio M01"
+     ]
+    ],
+    [
+     "01-19-2064",
+     "Tempora/Epi1-6.txt",
+     [
+      "Lectio M01"
+     ]
+    ],
+    [
+     "01-19-2069",
+     "Tempora/Epi1-6.txt",
+     [
+      "Lectio M01"
+     ]
+    ],
+    [
+     "01-19-2075",
+     "Tempora/Epi1-6.txt",
+     [
+      "Lectio M01"
+     ]
+    ],
+    [
+     "01-19-2086",
+     "Tempora/Epi1-6.txt",
+     [
+      "Lectio M01"
+     ]
+    ],
+    [
+     "01-19-2092",
+     "Tempora/Epi1-6.txt",
+     [
+      "Lectio M01"
+     ]
+    ],
+    [
+     "01-19-2097",
+     "Tempora/Epi1-6.txt",
+     [
+      "Lectio M01"
+     ]
+    ]
+   ]
   },
   {
    "file": "Commune/C10c.txt",
    "kind": "Commune",
-   "title_latin": "Sanctæ Mariæ Sabbato",
-   "title_english": "Our Lady’s Saturday",
+   "title_latin": "Sanctæ Mariæ Sabbato (post Purificationem usque ad Dominicam Palmarum)",
+   "title_english": "Our Lady's Saturday (from the Purification to Palm Sunday)",
    "rank": "Simplex",
    "lessons": [
     {
@@ -3266,7 +7829,1150 @@
      "type": "scriptura"
     }
    ],
-   "won_on": 163
+   "won_on": 163,
+   "won_days": [
+    [
+     "02-18-1950",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-03-1951",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-16-1952",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-14-1953",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-20-1954",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-19-1955",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "03-02-1957",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M03"
+     ]
+    ],
+    [
+     "02-15-1958",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-20-1960",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-27-1960",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-03-1962",
+     "Tempora/Epi4-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-17-1962",
+     "Tempora/Epi6-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "03-03-1962",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M03"
+     ]
+    ],
+    [
+     "02-16-1963",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-20-1965",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-19-1966",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-03-1968",
+     "Tempora/Epi4-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-17-1968",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-15-1969",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-13-1971",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-20-1971",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-03-1973",
+     "Tempora/Epi4-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-17-1973",
+     "Tempora/Epi6-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "03-03-1973",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M03"
+     ]
+    ],
+    [
+     "02-16-1974",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-21-1976",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-19-1977",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-03-1979",
+     "Tempora/Epi4-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-17-1979",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-16-1980",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-21-1981",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-28-1981",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-13-1982",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-20-1982",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-18-1984",
+     "Tempora/Epi6-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "03-03-1984",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M03"
+     ]
+    ],
+    [
+     "02-16-1985",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-21-1987",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-28-1987",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-13-1988",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-03-1990",
+     "Tempora/Epi4-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-17-1990",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-29-1992",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-13-1993",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-20-1993",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-18-1995",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-25-1995",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-03-1996",
+     "Tempora/Epi4-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-17-1996",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-14-1998",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-21-1998",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-13-1999",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-19-2000",
+     "Tempora/Epi6-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-26-2000",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-03-2001",
+     "Tempora/Epi4-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-17-2001",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "03-01-2003",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M03"
+     ]
+    ],
+    [
+     "02-14-2004",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-21-2004",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-18-2006",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-25-2006",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-03-2007",
+     "Tempora/Epi4-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-17-2007",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-14-2009",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-21-2009",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-13-2010",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-19-2011",
+     "Tempora/Epi6-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-26-2011",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "03-05-2011",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M03"
+     ]
+    ],
+    [
+     "02-18-2012",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "03-01-2014",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M03"
+     ]
+    ],
+    [
+     "02-14-2015",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-18-2017",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-25-2017",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-03-2018",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "03-02-2019",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M03"
+     ]
+    ],
+    [
+     "02-15-2020",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-13-2021",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-19-2022",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-26-2022",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-18-2023",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-03-2024",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "03-01-2025",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M03"
+     ]
+    ],
+    [
+     "02-14-2026",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-19-2028",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-26-2028",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-03-2029",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "03-02-2030",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M03"
+     ]
+    ],
+    [
+     "02-15-2031",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-19-2033",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-26-2033",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-18-2034",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-03-2035",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-16-2036",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-14-2037",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-13-2038",
+     "Tempora/Epi5-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-20-2038",
+     "Tempora/Epi6-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-19-2039",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "03-02-2041",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M03"
+     ]
+    ],
+    [
+     "02-15-2042",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-20-2044",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-27-2044",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-18-2045",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-03-2046",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-16-2047",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-15-2048",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-20-2049",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-19-2050",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-03-2052",
+     "Tempora/Epi4-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-17-2052",
+     "Tempora/Epi6-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "03-02-2052",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M03"
+     ]
+    ],
+    [
+     "02-15-2053",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-20-2055",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-03-2057",
+     "Tempora/Epi4-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-17-2057",
+     "Tempora/Epi6-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "03-03-2057",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M03"
+     ]
+    ],
+    [
+     "02-16-2058",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-21-2060",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-19-2061",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-03-2063",
+     "Tempora/Epi4-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-17-2063",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-16-2064",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-13-2066",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-20-2066",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-18-2068",
+     "Tempora/Epi6-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "03-03-2068",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M03"
+     ]
+    ],
+    [
+     "02-16-2069",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-21-2071",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-28-2071",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-13-2072",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-20-2072",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-03-2074",
+     "Tempora/Epi4-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-17-2074",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-16-2075",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-29-2076",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-13-2077",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-20-2077",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-18-2079",
+     "Tempora/Epi6-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-25-2079",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-03-2080",
+     "Tempora/Epi4-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-17-2080",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-21-2082",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-28-2082",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-13-2083",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-03-2085",
+     "Tempora/Epi4-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-17-2085",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "03-01-2087",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M03"
+     ]
+    ],
+    [
+     "02-14-2088",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-21-2088",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-18-2090",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-25-2090",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-03-2091",
+     "Tempora/Epi4-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-17-2091",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-14-2093",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-21-2093",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-13-2094",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-19-2095",
+     "Tempora/Epi6-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-26-2095",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "03-05-2095",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M03"
+     ]
+    ],
+    [
+     "02-18-2096",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "03-01-2098",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M03"
+     ]
+    ],
+    [
+     "02-14-2099",
+     "Tempora/Quadp1-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ],
+    [
+     "02-21-2099",
+     "Tempora/Quadp2-6.txt",
+     [
+      "Lectio M02"
+     ]
+    ]
+   ]
   },
   {
    "file": "Commune/C11.txt",
@@ -134210,8 +139916,8 @@
      "type": "commune",
      "file": "Commune/C10.txt",
      "section": "Lectio M101",
-     "title_latin": "Sanctæ Mariæ Sabbato",
-     "title_english": "Our Lady’s Saturday"
+     "title_latin": "Sanctæ Mariæ Sabbato (a Trinitate usque ad Adventum)",
+     "title_english": "Our Lady's Saturday (from Trinity to Advent)"
     }
    ],
    "won_on": 65

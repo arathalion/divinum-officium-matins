@@ -105,9 +105,24 @@ def month_title(f, lang):
     return f"{DAYS_EN[day]} of the {ORD_EN[week]} week of {mon[1]}"
 
 
+# The forms of the Saturday Office of Our Lady, by season (wording from the
+# files' [Missa] headings).
+SATURDAY_BVM = {
+    "C10": ("a Trinitate usque ad Adventum", "from Trinity to Advent"),
+    "C10a": ("in Adventu", "in Advent"),
+    "C10b": ("a Nativitate usque ad Purificationem", "from Christmas to the Purification"),
+    "C10c": ("post Purificationem usque ad Dominicam Palmarum", "from the Purification to Palm Sunday"),
+    "C10Pasc": ("tempore Paschali", "in Paschaltide"),
+}
+
+
 def title_of(files, f, lang):
     if month_title(f, lang):
         return month_title(f, lang)
+    st = os.path.basename(stem(f))
+    if kind(f) == "Commune" and st in SATURDAY_BVM:
+        season = SATURDAY_BVM[st][0 if lang == "latin" else 1]
+        return f"Sanctæ Mariæ Sabbato ({season})" if lang == "latin" else f"Our Lady's Saturday ({season})"
     d = files.get(f, {})
     latin = (d.get("latin") or {}).get("Officium") or ""
     if not latin:
@@ -396,6 +411,11 @@ def main():
                 refs.append({"n": n, "type": "unknown"})
         e["refs"] = refs
         e["won_on"] = len(days)
+        if kind(w) == "Commune":
+            # A Common said as the office of the day (Saturday of Our Lady): which of
+            # its sections were read, and the Scripture that places the day in a season.
+            e["won_days"] = [[d["date"], d.get("scriptura") or "",
+                              sorted({hs for n, hf, hs in d["slots"] if hf == w})] for d in days]
 
     fold_second_forms(files, entries, entry_for)
     drop_duplicate_variants(entries)
