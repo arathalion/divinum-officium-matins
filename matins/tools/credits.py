@@ -10,10 +10,10 @@ EDITION_CREDIT = ""
 
 CREDITS = [
     ("Divinum Officium", [
-        "The texts, and the program that arranges them by the rubrics, are the work of the "
-        "Divinum Officium Project (divinumofficium.com), created by the late Laszlo Kiss and "
-        "continued since by the Project's team of volunteers. Its code and data are freely "
-        "available at github.com/DivinumOfficium/divinum-officium under the MIT License.",
+        "The texts, and the program that arranges them according to the rubrics, are the work "
+        "of the Divinum Officium Project (divinumofficium.com), begun by the late Laszlo Kiss and "
+        "continued by the Project's volunteers. Its code and data are available at "
+        "github.com/DivinumOfficium/divinum-officium under the MIT License.",
     ]),
     ("Latin", [
         "The Latin text derives from the Ratisbon 1888 edition of the Breviarium Romanum, scanned "
@@ -32,9 +32,9 @@ CREDITS = [
         "St Michael's College, Toronto.",
     ]),
     ("This edition", [
-        "The lessons were gathered by running the Divinum Officium program, unchanged, for every "
-        "day from 1950 to 2100 under the rubrics of 1954, and tracing each lesson it read to the "
-        "office it belongs to. Errors of arrangement in this edition are not the Project's.",
+        "The arrangement of this edition follows the Divinum Officium program's choice of "
+        "lessons for each day under the rubrics of 1954. Any errors in the arrangement are the "
+        "editor's, not the Project's.",
     ]),
     ("Typeface", [
         "Set in EB Garamond, designed by Georg Duffner and Octavio Pardo, under the SIL Open "

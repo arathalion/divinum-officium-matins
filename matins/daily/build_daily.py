@@ -130,21 +130,21 @@ def render_email(day, la_title, title, rank, date, cal_name, vernacular):
 <p style="margin:0;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:{RED}">Matins · {esc(when)}</p>
 <h1 style="margin:8px 0 4px;font-weight:normal;font-size:26px;line-height:1.25">{esc(title)}</h1>
 <p style="margin:0 0 6px;font-style:italic;color:#555;font-size:15px">{esc(la_title)}{(" · " + esc(rank)) if rank else ""}</p>
-<p style="margin:0 0 6px;font-size:15px">{link} →</p>
+<p style="margin:0 0 6px;font-size:15px">{link}</p>
 {body}
 <hr style="border:none;border-top:1px solid #e3d6c4;margin:32px 0 16px">
-<p style="margin:0 0 8px;font-size:15px">{link} →</p>
-<p style="margin:0 0 8px;font-size:13px;color:#777">{esc(cal_name)}. Texts from Divinum Officium (divinumofficium.com): Douay-Rheims and the Marquess of Bute's translation.</p>
-<p style="margin:0;font-size:13px;color:#777"><a href="{{{{preferences_url}}}}" style="color:#777">Change delivery time or calendar</a> · <a href="{{{{unsubscribe_url}}}}" style="color:#777">Unsubscribe</a></p>
+<p style="margin:0 0 8px;font-size:15px">{link}</p>
+<p style="margin:0 0 8px;font-size:13px;color:#777">{esc(cal_name)}. Texts from Divinum Officium (divinumofficium.com).</p>
+<p style="margin:0;font-size:13px;color:#777"><a href="{{{{preferences_url}}}}" style="color:#777">Change settings</a> | <a href="{{{{unsubscribe_url}}}}" style="color:#777">Unsubscribe</a></p>
 </div></body></html>
 """
     text = "\n\n".join([
         f"MATINS · {when}", title, la_title + (f" · {rank}" if rank else ""),
         "Read in Latin and English: {{page_url}}",
         "\n\n".join(email_text_lesson(n, les) for n, les in vernacular),
-        "—",
+        "",
         f"{cal_name}. Texts from Divinum Officium (divinumofficium.com).",
-        "Change delivery time or calendar: {{preferences_url}}",
+        "Change settings: {{preferences_url}}",
         "Unsubscribe: {{unsubscribe_url}}",
     ])
     return {"subject": subject, "preheader": preheader, "html": html_doc, "text": text}
@@ -182,7 +182,7 @@ def render_page(la_title, title, rank, date, lessons_pairs, lang_attr):
                          f'<div class="la" lang="la">{page_cell(kind, a)}</div>'
                          f'<div class="en" lang="{lang_attr}">{page_cell(kind, b)}</div></div>')
         parts.append("</section>")
-    return {"title": f"{title} — {when}", "html": "\n".join(parts)}
+    return {"title": f"Matins for {when}: {title}", "html": "\n".join(parts)}
 
 
 def body_words(les):

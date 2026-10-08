@@ -76,7 +76,7 @@ def office(e, codes):
                    f"{{\\centering\\small\\textsc{{{tex(date)}}} · \\textsc{{{tex(E.sancti_date(e['file'], 'english'))}}}\\par}}")
     out.append(f"\\Office{{{title_la}}}{{{title_en}}}{{{rank}}}")
     when = (tex(date) + " · ") if date else ""
-    out.append(f"\\addcontentsline{{toc}}{{subsection}}{{{when}{title_la} \\textit{{— {title_en}}}}}")
+    out.append(f"\\addcontentsline{{toc}}{{subsection}}{{{when}{title_la}\\enspace\\textit{{{title_en}}}}}")
     out.append(r"\begin{paracol}{2}")
     if e.get("see"):
         code = tex(E.stem(e["see"]))
@@ -256,11 +256,11 @@ def document(selected, title_note, volume=None):
     parts_out = []
     for pid, pla, pen, groups in selected:
         parts_out.append(f"\\PartTitle{{{tex(pla)}}}{{{tex(pen)}}}")
-        parts_out.append(f"\\addcontentsline{{toc}}{{chapter}}{{{tex(pla)} \\textit{{— {tex(pen)}}}}}")
+        parts_out.append(f"\\addcontentsline{{toc}}{{chapter}}{{{tex(pla)}\\enspace\\textit{{{tex(pen)}}}}}")
         for gid, gla, gen, es in groups:
             if len(groups) > 1 or pid != "commune":
                 parts_out.append(f"\\SeasonTitle{{{tex(gla)}}}{{{tex(gen)}}}")
-                parts_out.append(f"\\addcontentsline{{toc}}{{section}}{{{tex(gla)} \\textit{{— {tex(gen)}}}}}")
+                parts_out.append(f"\\addcontentsline{{toc}}{{section}}{{{tex(gla)}\\enspace\\textit{{{tex(gen)}}}}}")
             for e in es:
                 parts_out.append(office(e, {}))
     body = "\n\n".join(parts_out)

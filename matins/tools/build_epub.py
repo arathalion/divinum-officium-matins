@@ -266,7 +266,7 @@ BACK = '<p class="back"><a href="contents.xhtml">Index · Contents</a></p>'
 def entry_list(es):
     return "".join(
         f'<li><a href="{fname(e["file"])}">{esc(e["title_latin"])}</a>'
-        f' <span lang="en" xml:lang="en">— {esc(e["title_english"])}</span></li>' for e in es)
+        f' <i lang="en" xml:lang="en">{esc(e["title_english"])}</i></li>' for e in es)
 
 
 def section_list(groups):
@@ -274,7 +274,7 @@ def section_list(groups):
     if len(groups) == 1:
         return f'<ol class="toc">{entry_list(groups[0][3])}</ol>'
     return '<ol class="toc">' + "".join(
-        f'<li><a href="group-{gid}.xhtml">{esc(gla)}</a> <span lang="en" xml:lang="en">— {esc(gen)}</span></li>'
+        f'<li><a href="group-{gid}.xhtml">{esc(gla)}</a> <i lang="en" xml:lang="en">{esc(gen)}</i></li>'
         for gid, gla, gen, es in groups) + "</ol>"
 
 
@@ -306,22 +306,20 @@ def contents_page(parts):
 def front_pages(corpus):
     title = (f'<div style="margin-top:25%"><h1>{esc(TITLE_LA)}<span class="sub">{esc(SUBTITLE_LA)}</span></h1>'
              f'<h2 lang="en" xml:lang="en">{esc(TITLE_EN)}<span class="sub">{esc(SUBTITLE_EN)}</span></h2></div>')
-    about = f"""<div class="front" lang="en" xml:lang="en">
+    about = """<div class="front" lang="en" xml:lang="en">
 <h1>About this edition</h1>
-<p>This book gives every lesson read at Matins in the Roman Breviary as it stood in 1954, with its
-responsory, in Latin and English: the Proper of Time, the Common of the Saints, and the Proper of
-Saints, in the order of the breviary.</p>
-<p>The texts and their arrangement come from the Divinum Officium project
-(divinumofficium.com). Its program was run for every day from 1950 to 2100 under the rubrics of
-Divino Afflatu as they stood in 1954, and each lesson it read was traced back to the office it
-belongs to. A saint's day therefore gives that saint's own lessons, and says where the others are
-read from: the Scripture of the day (in the Proper of Time), a Common, or a commemorated feast.</p>
-<p>Scripture is printed without verse numbers. Responsories are given as said, with the
-<i>Gloria Patri</i> where it occurs; where the <i>Te Deum</i> follows a lesson, it is noted.
-The English is that of Divinum Officium: the Douay-Rheims for Scripture, and for the other lessons
-chiefly the translation of the Marquess of Bute. Where no English is available, the Latin is given
-and the gap is noted.</p>
-<p>Built {datetime.date.today().isoformat()} from {corpus["harvest_days"]:,} days of the calendar.</p>
+<p>This book contains the lessons of Matins, with their responsories, from the Roman Breviary
+according to the rubrics in force in 1954, in Latin and English. It is arranged as the breviary
+is: the Proper of Time, the Common of the Saints, and the Proper of Saints.</p>
+<p>The Latin and English texts are taken from the Divinum Officium project (divinumofficium.com),
+whose program was used to determine which lessons are read on each day of the year. Each lesson
+is printed under the office to which it belongs. Where a feast takes some of its lessons from
+elsewhere, such as the Scripture of the day or a Common, this is noted at the head of the
+office.</p>
+<p>Scripture is printed without verse numbers. The <i>Gloria Patri</i> is given where it is said,
+and the <i>Te Deum</i> is noted where it follows. The English is from the Douay-Rheims Bible and,
+for the other lessons, chiefly from the translation of the Marquess of Bute. Where no English
+translation is available, the Latin is printed and this is noted.</p>
 </div>"""
     colophon = """<div class="front" lang="en" xml:lang="en">
 <h1>Colophon</h1>
@@ -383,12 +381,12 @@ def build(out_path):
                 href = fname(e["file"])
                 files.append((href, entry_page(e, links)))
                 spine.append(href)
-                enav.append((f'{e["title_latin"]} — {e["title_english"]}', f"text/{href}", []))
+                enav.append((f'{e["title_latin"]} ({e["title_english"]})', f"text/{href}", []))
             if len(groups) > 1:
-                pnav.append((f"{gla} — {gen}", f"text/{ghref}", enav))
+                pnav.append((f"{gla} ({gen})", f"text/{ghref}", enav))
             else:
                 pnav.extend(enav)
-        nav.append((f"{pla} — {pen}", f"text/{phref}", pnav))
+        nav.append((f"{pla} ({pen})", f"text/{phref}", pnav))
 
     for href, label, doc in colophon:  # back matter: credits, colophon
         files.append((href, doc))
