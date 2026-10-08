@@ -1,0 +1,429 @@
+Adv1-0       First Sunday of Advent
+Adv1-1       Monday of the First Week of Advent
+Adv1-2       Tuesday of the First Week of Advent
+Adv1-3       Wednesday of the First Week of Advent
+Adv1-4       Thursday of the First Week of Advent
+Adv1-5       Friday of the First Week of Advent
+Adv1-6       Saturday of the First Week of Advent
+Adv2-0       Second Sunday of Advent
+Adv2-1       Monday of the Second Week of Advent
+Adv2-2       Tuesday of the Second Week of Advent
+Adv2-3       Wednesday of the Second Week of Advent
+Adv2-4       Thursday of the Second Week of Advent
+Adv2-5       Friday of the Second Week of Advent
+Adv2-6       Saturday of the Second Week of Advent
+Adv3-0       Third Sunday of Advent
+Adv3-1       Monday of the Third Week of Advent
+Adv3-2       Tuesday of the Third Week of Advent
+Adv3-3       Ember Wednesday of Advent
+Adv3-4       Thursday of the Third Week of Advent
+Adv3-5       Ember Friday of Advent
+Adv3-6       Ember Saturday of Advent
+Adv4-0       Fourth Sunday of Advent
+Adv4-1       Monday of the Fourth Week of Advent
+Adv4-2       Tuesday of the Fourth Week of Advent
+Adv4-3       Wednesday of the Fourth Week of Advent
+Adv4-4       Thursday of the Fourth Week of Advent
+Adv4-5       Friday of the Fourth Week of Advent
+Nat01        1 January: Epistle to the Romans, chapter 4
+Nat1-0       Sunday Within The Octave of Christmas
+Nat1-0a      Sunday Within The Octave of Christmas
+Nat02        2 January: Epistle to the Romans, chapter 5
+Nat2-0       Most Holy Name of Jesus
+Nat03        3 January: Epistle to the Romans, chapter 6
+Nat04        4 January: Epistle to the Romans, chapter 7
+Nat05        5 January: Epistle to the Romans, chapter 8
+Nat07        7 January: Epistle to the Romans, chapter 9
+Nat08        8 January: Epistle to the Romans, chapter 12
+Nat09        9 January: Epistle to the Romans, chapter 13
+Nat10        10 January: Epistle to the Romans, chapter 14
+Nat11        11 January: Epistle to the Romans, chapter 15
+Nat29        29 December
+Nat30        30 December
+Nat31        31 December
+Epi1-0       Sanctae Familiae Jesu Mariae Joseph
+Epi1-0a      Sunday within the Octave of the Epiphany
+Epi1-0g      Sanctae Familiae Jesu Mariae Joseph
+Epi1-1       Monday of the First Week after Epiphany
+Epi1-2       Tuesday of the First Week after Epiphany
+Epi1-3       Wednesday of the First Week after Epiphany
+Epi1-4       Thursday of the First Week after Epiphany
+Epi1-5       Friday of the First Week after Epiphany
+Epi1-6       Saturday of the First Week after Epiphany
+Epi2-0       Second Sunday after Epiphany
+Epi2-1       Monday of the Second Week after Epiphany
+Epi2-2       Tuesday of the Second Week after Epiphany
+Epi2-3       Wednesday of the Second Week after Epiphany
+Epi2-4       Thursday of the Second Week after Epiphany
+Epi2-5       Friday of the Second Week after Epiphany
+Epi2-6       Saturday of the Second Week after Epiphany
+Epi3-0       Third Sunday after Epiphany
+Epi3-1       Monday of the Third Week after Epiphany
+Epi3-2       Tuesday of the Third Week after Epiphany
+Epi3-3       Wednesday of the Third Week after Epiphany
+Epi3-4       Thursday of the Third Week after Epiphany
+Epi3-5       Friday of the Third Week after Epiphany
+Epi3-6       Saturday of the Third Week after Epiphany
+Epi4-0       Fourth Sunday after Epiphany
+Epi4-1       Monday of the Fourth Week after Epiphany
+Epi4-2       Tuesday of the Fourth Week after Epiphany
+Epi4-3       Wednesday of the Fourth Week after Epiphany
+Epi4-4       Thursday of the Fourth Week after Epiphany
+Epi4-5       Friday of the Fourth Week after Epiphany
+Epi4-6       Saturday of the Fourth Week after Epiphany
+Epi5-0       Fifth Sunday after Epiphany
+Epi5-1       Monday of the Fifth Week after Epiphany
+Epi5-2       Tuesday of the Fifth Week after Epiphany
+Epi5-3       Wednesday of the Fifth Week after Epiphany
+Epi5-4       Thursday of the Fifth Week after Epiphany
+Epi5-5       Friday of the Fifth Week after Epiphany
+Epi5-6       Saturday of the Fifth Week after Epiphany
+Epi6-0       Sixth Sunday after Epiphany
+Epi6-1       Monday of the Sixth Week after Epiphany
+Epi6-2       Tuesday of the Sixth Week after Epiphany
+Epi6-3       Wednesday of the Sixth Week after Epiphany
+Epi6-4       Thursday of the Sixth Week after Epiphany
+Epi6-5       Friday of the Sixth Week after Epiphany
+Epi6-6       Saturday of the Sixth Week after Epiphany
+Quadp1-0     Septuagesima Sunday
+Quadp1-1     Monday after Septuagesima Sunday
+Quadp1-2     Tuesday after Septuagesima Sunday
+Quadp1-3     Wednesday after Septuagesima Sunday
+Quadp1-4     Thursday after Septuagesima Sunday
+Quadp1-5     Friday after Septuagesima Sunday
+Quadp1-6     Saturday after Septuagesima Sunday
+Quadp2-0     Sexagesima Sunday
+Quadp2-1     Monday after Sexagesima Sunday
+Quadp2-2     Tuesday after Sexagesima Sunday
+Quadp2-3     Wednesday after Sexagesima Sunday
+Quadp2-4     Thursday after Sexagesima Sunday
+Quadp2-5     Friday after Sexagesima Sunday
+Quadp2-6     Saturday after Sexagesima Sunday
+Quadp3-0     Quinquagesima Sunday
+Quadp3-1     Monday after Quinquagesima Sunday
+Quadp3-2     Tuesday after Quinquagesima Sunday
+Quadp3-3     Ash Wednesday
+Quadp3-4     Thursday after Ash Wednesday
+Quadp3-5     Friday after Ash Wednesday
+Quadp3-6     Saturday after Ash Wednesday
+Quad1-0      First Sunday of Lent
+Quad1-1      Monday of the First Week of Lent
+Quad1-2      Tuesday of the First Week of Lent
+Quad1-3      Ember Wednesday of Lent
+Quad1-4      Thursday of the First Week of Lent
+Quad1-5      Ember Friday of Lent
+Quad1-6      Ember Saturday of Lent
+Quad2-0      Second Sunday of Lent
+Quad2-1      Monday of the Second Week of Lent
+Quad2-2      Tuesday of the Second Week of Lent
+Quad2-3      Wednesday of the Second Week of Lent
+Quad2-4      Thursday of the Second Week of Lent
+Quad2-5      Friday of the Second Week of Lent
+Quad2-6      Saturday of the Second Week of Lent
+Quad3-0      Third Sunday of Lent
+Quad3-1      Monday of the Third Week of Lent
+Quad3-2      Tuesday of the Third Week of Lent
+Quad3-3      Wednesday of the Third Week of Lent
+Quad3-4      Thursday of the Third Week of Lent
+Quad3-5      Friday of the Third Week of Lent
+Quad3-6      Saturday of the Third Week of Lent
+Quad4-0      Fourth Sunday of Lent
+Quad4-1      Monday of the Fourth Week of Lent
+Quad4-2      Tuesday of the Fourth Week of Lent
+Quad4-3      Wednesday of the Fourth Week of Lent
+Quad4-4      Thursday of the Fourth Week of Lent
+Quad4-5      Friday of the Fourth Week of Lent
+Quad4-6      Saturday of the Fourth Week of Lent
+Quad5-0      Passion Sunday
+Quad5-1      Monday in Passion Week
+Quad5-2      Tuesday in Passion Week
+Quad5-3      Wednesday in Passion Week
+Quad5-4      Thursday in Passion Week
+Quad5-5      Septem Dolorum Beatae Mariae Virginis
+Quad5-6      Saturday in Passion Week
+Quad6-0      Palm Sunday
+Quad6-1      Monday in Holy Week
+Quad6-2      Tuesday in Holy Week
+Quad6-3      Wednesday in Holy Week
+Quad6-4      Maundy Thursday
+Quad6-5      Good Friday
+Quad6-6      Holy Saturday
+Pasc0-0      Easter Sunday
+Pasc0-1      Monday within the Octave of Easter
+Pasc0-2      Tuesday within the Octave of Easter
+Pasc0-3      Wednesday within the Octave of Easter
+Pasc0-4      Thursday within the Octave of Easter
+Pasc0-5      Friday within the Octave of Easter
+Pasc0-6      Saturday in Easter Week
+Pasc1-0      Low Sunday (Octave of Easter)
+Pasc1-1      Monday of the First Week after the Octave of Easter
+Pasc1-2      Tuesday of the First Week after the Octave of Easter
+Pasc1-3      Wednesday of the First Week after the Octave of Easter
+Pasc1-4      Thursday of the First Week after the Octave of Easter
+Pasc1-5      Friday of the First Week after the Octave of Easter
+Pasc1-6      Saturday of the First Week after the Octave of Easter
+Pasc2-0      Second Sunday after Easter
+Pasc2-1      Monday of the Second Week after the Octave of Easter
+Pasc2-2      Tuesday of the Second Week after the Octave of Easter
+Pasc2-3      Patrocinii St. Joseph Confessoris Sponsi B.M.V. confessoris
+Pasc2-4      Second Day within the Octave of St. Joseph
+Pasc2-5      Third Day within the Octave of St. Joseph
+Pasc2-6      Fourth Day within the Octave of St. Joseph
+Pasc3-0      Third Sunday after Easter
+Pasc3-1      Sixth Day within the Octave of St. Joseph
+Pasc3-2      Seventh Day within the Octave of St. Joseph
+Pasc3-3      Octave Day of St. Joseph
+Pasc3-4      Thursday of the Third Week after the Octave of Easter
+Pasc3-5      Friday of the Third Week after the Octave of Easter
+Pasc3-6      Saturday of the Third Week after the Octave of Easter
+Pasc4-0      Fourth Sunday after Easter
+Pasc4-1      Monday of the Fourth Week after the Octave of Easter
+Pasc4-2      Tuesday of the Fourth Week after the Octave of Easter
+Pasc4-3      Wednesday of the Fourth Week after the Octave of Easter
+Pasc4-4      Thursday of the Fourth Week after the Octave of Easter
+Pasc4-5      Friday of the Fourth Week after the Octave of Easter
+Pasc4-6      Saturday of the Fourth Week after the Octave of Easter
+Pasc5-0      Fifth Sunday after Easter
+Pasc5-1      Monday in Rogationtide
+Pasc5-2      Tuesday in Rogationtide
+Pasc5-3      Wednesday in Rogationtide, Vigil of the Ascension
+Pasc5-4      The Ascension of Our Lord
+Pasc5-5      Friday within the Octave of the Ascension
+Pasc5-6      Saturday within the Octave of the Ascension
+Pasc6-0      Sunday within the Octave of the Ascension
+Pasc6-1      Monday within the Octave of the Ascension
+Pasc6-2      Tuesday within the Octave of the Ascension
+Pasc6-3      Wednesday within the Octave of the Ascension
+Pasc6-4      Thursday, Octave Day of the Ascension
+Pasc6-4r     Thursday after the Ascension
+Pasc6-5      Friday after the Octave of the Ascension
+Pasc6-6      Vigil of Pentecost
+Pasc7-0      Pentecost Sunday
+Pasc7-1      Monday within the Octave of Pentecost
+Pasc7-2      Tuesday within the Octave of Pentecost
+Pasc7-3      Ember Wednesday of Pentecost
+Pasc7-4      Thursday within the Octave of Pentecost
+Pasc7-5      Ember Friday of Pentecost
+Pasc7-6      Ember Saturday of Pentecost
+Pent01-0     Dominica Sanctissimae Trinitatis
+Pent01-1     Monday of the First Week after Pentecost
+Pent01-2     Tuesday of the First Week after Pentecost
+Pent01-3     Wednesday of the First Week after Pentecost
+Pent01-4     Corpus Christi
+Pent01-5     Friday within the Octave of Corpus Christi
+Pent01-6     Saturday within the Octave of Corpus Christi
+Pent02-0     Dominica II. Post Pentecosten infra Octavam Corporis Christi
+Pent02-1     Monday within the Octave of Corpus Christi
+Pent02-2     Tuesday within the Octave of Corpus Christi
+Pent02-3     Wednesday within the Octave of Corpus Christi
+Pent02-4     Octava Sanctissimi Corporis Christi
+Pent02-5     The Most Sacred Heart of Our Lord Jesus Christ
+Pent02-6     Second Day within the Octave of the Sacred Heart
+Pent03-0     Dominica III Post Pentecosten, infra Octavam SSmi Cordis D.N.J.C
+Pent03-1     Fourth Day within the Octave of the Sacred Heart
+Pent03-2     Fifth Day within the Octave of the Sacred Heart
+Pent03-3     Sixth Day within the Octave of the Sacred Heart
+Pent03-4     Seventh Day within the Octave of the Sacred Heart
+Pent03-5     Octave Day of the Sacred Heart
+Pent03-6     Saturday of the Third Week after Pentecost
+Pent04-0     Fourth Sunday after Pentecost
+Pent04-1     Monday of the Fourth Week after Pentecost
+Pent04-2     Tuesday of the Fourth Week after Pentecost
+Pent04-3     Wednesday of the Fourth Week after Pentecost
+Pent04-4     Thursday of the Fourth Week after Pentecost
+Pent04-5     Friday of the Fourth Week after Pentecost
+Pent04-6     Saturday of the Fourth Week after Pentecost
+Pent05-0     Fifth Sunday after Pentecost
+Pent05-1     Monday of the Fifth Week after Pentecost
+Pent05-2     Tuesday of the Fifth Week after Pentecost
+Pent05-3     Wednesday of the Fifth Week after Pentecost
+Pent05-4     Thursday of the Fifth Week after Pentecost
+Pent05-5     Friday of the Fifth Week after Pentecost
+Pent05-6     Saturday of the Fifth Week after Pentecost
+Pent06-0     Sixth Sunday after Pentecost
+Pent06-1     Monday of the Sixth Week after Pentecost
+Pent06-2     Tuesday of the Sixth Week after Pentecost
+Pent06-3     Wednesday of the Sixth Week after Pentecost
+Pent06-4     Thursday of the Sixth Week after Pentecost
+Pent06-5     Friday of the Sixth Week after Pentecost
+Pent06-6     Saturday of the Sixth Week after Pentecost
+Pent07-0     Seventh Sunday after Pentecost
+Pent07-1     Monday of the Seventh Week after Pentecost
+Pent07-2     Tuesday of the Seventh Week after Pentecost
+Pent07-3     Wednesday of the Seventh Week after Pentecost
+Pent07-4     Thursday of the Seventh Week after Pentecost
+Pent07-5     Friday of the Seventh Week after Pentecost
+Pent07-6     Saturday of the Seventh Week after Pentecost
+Pent08-0     Eighth Sunday after Pentecost
+Pent08-1     Monday of the Eighth Week after Pentecost
+Pent08-2     Tuesday of the Eighth Week after Pentecost
+Pent08-3     Wednesday of the Eighth Week after Pentecost
+Pent08-4     Thursday of the Eighth Week after Pentecost
+Pent08-5     Friday of the Eighth Week after Pentecost
+Pent08-6     Saturday of the Eighth Week after Pentecost
+Pent09-0     Ninth Sunday after Pentecost
+Pent09-1     Monday of the Ninth Week after Pentecost
+Pent09-2     Tuesday of the Ninth Week after Pentecost
+Pent09-3     Wednesday of the Ninth Week after Pentecost
+Pent09-4     Thursday of the Ninth Week after Pentecost
+Pent09-5     Friday of the Ninth Week after Pentecost
+Pent09-6     Saturday of the Ninth Week after Pentecost
+Pent10-0     Tenth Sunday after Pentecost
+Pent10-1     Monday of the Tenth Week after Pentecost
+Pent10-2     Tuesday of the Tenth Week after Pentecost
+Pent10-3     Wednesday of the Tenth Week after Pentecost
+Pent10-4     Thursday of the Tenth Week after Pentecost
+Pent10-5     Friday of the Tenth Week after Pentecost
+Pent10-6     Saturday of the Tenth Week after Pentecost
+Pent11-0     Eleventh Sunday after Pentecost
+Pent11-1     Monday of the Eleventh Week after Pentecost
+Pent11-2     Tuesday of the Eleventh Week after Pentecost
+Pent11-3     Wednesday of the Eleventh Week after Pentecost
+Pent11-4     Thursday of the Eleventh Week after Pentecost
+Pent11-6     Saturday of the Eleventh Week after Pentecost
+Pent12-0     Twelfth Sunday after Pentecost
+Pent13-0     Thirteenth Sunday after Pentecost
+Pent14-0     Fourteenth Sunday after Pentecost
+Pent15-0     Fifteenth Sunday after Pentecost
+Pent16-0     Sixteenth Sunday after Pentecost
+Pent17-0     Seventeenth Sunday after Pentecost
+Pent18-0     Eighteenth Sunday after Pentecost
+Pent19-0     Nineteenth Sunday after Pentecost
+Pent20-0     Twentieth Sunday after Pentecost
+Pent21-0     Twenty-first Sunday after Pentecost
+Pent22-0     Twenty-second Sunday after Pentecost
+Pent23-0     Twenty-third Sunday after Pentecost
+Pent24-0     Dominica XXIV et ultima Post Pentecosten
+081-0        First Sunday of August
+081-1        Monday of the first week of August
+081-2        Tuesday of the first week of August
+081-3        Wednesday of the first week of August
+081-4        Thursday of the first week of August
+081-5        Friday of the first week of August
+081-6        Saturday of the first week of August
+082-0        Second Sunday of August
+082-1        Monday of the second week of August
+082-2        Tuesday of the second week of August
+082-3        Wednesday of the second week of August
+082-4        Thursday of the second week of August
+082-5        Friday of the second week of August
+082-6        Saturday of the second week of August
+083-0        Third Sunday of August
+083-1        Monday of the third week of August
+083-2        Tuesday of the third week of August
+083-3        Wednesday of the third week of August
+083-4        Thursday of the third week of August
+083-5        Friday of the third week of August
+083-6        Saturday of the third week of August
+084-0        Fourth Sunday of August
+084-1        Monday of the fourth week of August
+084-2        Tuesday of the fourth week of August
+084-3        Wednesday of the fourth week of August
+084-4        Thursday of the fourth week of August
+084-5        Friday of the fourth week of August
+084-6        Saturday of the fourth week of August
+085-0        Fifth Sunday of August
+085-1        Monday of the fifth week of August
+085-2        Tuesday of the fifth week of August
+085-3        Wednesday of the fifth week of August
+085-4        Thursday of the fifth week of August
+085-5        Friday of the fifth week of August
+085-6        Saturday of the fifth week of August
+091-0        First Sunday of September
+091-1        Monday of the first week of September
+091-2        Tuesday of the first week of September
+091-3        Wednesday of the first week of September
+091-4        Thursday of the first week of September
+091-5        Friday of the first week of September
+091-6        Saturday of the first week of September
+092-0        Second Sunday of September
+092-1        Monday of the second week of September
+092-2        Tuesday of the second week of September
+092-3        Wednesday of the second week of September
+092-4        Thursday of the second week of September
+092-5        Friday of the second week of September
+092-6        Saturday of the second week of September
+093-0        Third Sunday of September
+093-1        Monday of the third week of September
+093-2        Tuesday of the third week of September
+093-3        Wednesday of the third week of September
+093-4        Thursday of the third week of September
+093-5        Friday of the third week of September
+093-6        Saturday of the third week of September
+094-0        Fourth Sunday of September
+094-1        Monday of the fourth week of September
+094-2        Tuesday of the fourth week of September
+094-3        Wednesday of the fourth week of September
+094-4        Thursday of the fourth week of September
+094-5        Friday of the fourth week of September
+094-6        Saturday of the fourth week of September
+095-0        Fifth Sunday of September
+095-1        Monday of the fifth week of September
+095-2        Tuesday of the fifth week of September
+095-3        Wednesday of the fifth week of September
+095-4        Thursday of the fifth week of September
+095-5        Friday of the fifth week of September
+095-6        Saturday of the fifth week of September
+101-0        First Sunday of October
+101-1        Monday of the first week of October
+101-2        Tuesday of the first week of October
+101-3        Wednesday of the first week of October
+101-4        Thursday of the first week of October
+101-5        Friday of the first week of October
+101-6        Saturday of the first week of October
+102-0        Second Sunday of October
+102-1        Monday of the second week of October
+102-2        Tuesday of the second week of October
+102-3        Wednesday of the second week of October
+102-4        Thursday of the second week of October
+102-5        Friday of the second week of October
+102-6        Saturday of the second week of October
+103-0        Third Sunday of October
+103-1        Monday of the third week of October
+103-2        Tuesday of the third week of October
+103-3        Wednesday of the third week of October
+103-4        Thursday of the third week of October
+103-5        Friday of the third week of October
+103-6        Saturday of the third week of October
+104-0        Fourth Sunday of October
+104-1        Monday of the fourth week of October
+104-2        Tuesday of the fourth week of October
+104-3        Wednesday of the fourth week of October
+104-4        Thursday of the fourth week of October
+104-5        Friday of the fourth week of October
+104-6        Saturday of the fourth week of October
+105-0        Fifth Sunday of October
+105-2        Tuesday of the fifth week of October
+111-0        First Sunday of November
+111-1        Monday of the first week of November
+111-2        Tuesday of the first week of November
+111-3        Wednesday of the first week of November
+111-4        Thursday of the first week of November
+111-5        Friday of the first week of November
+111-6        Saturday of the first week of November
+112-0        Second Sunday of November
+112-1        Monday of the second week of November
+112-2        Tuesday of the second week of November
+112-3        Wednesday of the second week of November
+112-5        Friday of the second week of November
+113-0        Third Sunday of November
+113-1        Monday of the third week of November
+113-2        Tuesday of the third week of November
+113-3        Wednesday of the third week of November
+113-4        Thursday of the third week of November
+113-5        Friday of the third week of November
+113-6        Saturday of the third week of November
+114-0        Fourth Sunday of November
+114-1        Monday of the fourth week of November
+114-2        Tuesday of the fourth week of November
+114-3        Wednesday of the fourth week of November
+114-4        Thursday of the fourth week of November
+114-5        Friday of the fourth week of November
+114-6        Saturday of the fourth week of November
+115-0        Fifth Sunday of November
+115-1        Monday of the fifth week of November
+115-2        Tuesday of the fifth week of November
+115-3        Wednesday of the fifth week of November
+115-4        Thursday of the fifth week of November
+115-5        Friday of the fifth week of November
+115-6        Saturday of the fifth week of November

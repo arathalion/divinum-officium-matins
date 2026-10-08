@@ -1,0 +1,185 @@
+# Lectio sections never produced by the engine (Divino Afflatu - 1954, harvest years)
+# in files that do appear in the corpus. Joined readings (e.g. 8+9) count as read.
+
+Sancti/01-02.txt: Lectio7, Lectio8, Lectio9
+Sancti/01-03.txt: Lectio7, Lectio8, Lectio9, Lectio93
+Sancti/01-04.txt: Lectio5, Lectio6, Lectio7, Lectio8, Lectio9, Lectio93
+Sancti/01-14.txt: Lectio6beginning, Lectio6recentaddition, Lectio9, Lectio94
+Sancti/01-15.txt: Lectio9, Lectio94
+Sancti/01-16.txt: Lectio94
+Sancti/01-17.txt: Lectio94
+Sancti/01-20.txt: Lectio94
+Sancti/01-21.txt: Lectio94
+Sancti/01-22.txt: Lectio94
+Sancti/01-23.txt: Lectio94
+Sancti/01-24.txt: Lectio94
+Sancti/01-27.txt: Lectio94
+Sancti/01-28.txt: Lectio94
+Sancti/01-29.txt: Lectio94
+Sancti/01-30.txt: Lectio94
+Sancti/01-31.txt: Lectio94
+Sancti/02-01.txt: Lectio94
+Sancti/02-04.txt: Lectio94
+Sancti/02-05.txt: Lectio94
+Sancti/02-06.txt: Lectio94
+Sancti/02-07.txt: Lectio94
+Sancti/02-08.txt: Lectio94
+Sancti/02-09.txt: Lectio94
+Sancti/02-10.txt: Lectio94
+Sancti/02-11.txt: Lectio94
+Sancti/02-12.txt: Lectio94
+Sancti/02-23r.txt: Lectio94
+Sancti/02-27.txt: Lectio94
+Sancti/03-04.txt: Lectio94
+Sancti/03-06.txt: Lectio94
+Sancti/03-07.txt: Lectio4_, Lectio5_, Lectio94
+Sancti/03-08.txt: Lectio94
+Sancti/03-09.txt: Lectio94
+Sancti/03-10.txt: Lectio9
+Sancti/03-12.txt: Lectio9
+Sancti/03-21.txt: Lectio9
+Sancti/03-24.txt: Lectio9
+Sancti/03-27.txt: Lectio9
+Sancti/03-28.txt: Lectio9
+Sancti/04-28.txt: Lectio9
+Sancti/05-03r.txt: Lectio94
+Sancti/05-27o.txt: Lectio2, Lectio3
+Sancti/06-25oct.txt: Lectio7, Lectio8, Lectio9
+Sancti/06-28.txt: Lectio91
+Sancti/06-28r.txt: Lectio2, Lectio3
+Sancti/06-30.txt: Lectio94
+Sancti/07-01t.txt: Lectio7, Lectio8, Lectio9
+Sancti/07-02.txt: Lectio9
+Sancti/07-03oct.txt: Lectio7, Lectio8, Lectio9
+Sancti/07-10.txt: Lectio94
+Sancti/07-12.txt: Lectio94
+Sancti/07-13.txt: Lectio94
+Sancti/07-14.txt: Lectio6_, Lectio94
+Sancti/07-15.txt: Lectio94
+Sancti/07-16.txt: Lectio94
+Sancti/07-17.txt: Lectio94
+Sancti/07-18.txt: Lectio9, Lectio94
+Sancti/07-18o.txt: Lectio2, Lectio3
+Sancti/07-19.txt: Lectio94
+Sancti/07-20.txt: Lectio94
+Sancti/07-22.txt: Lectio94
+Sancti/07-23.txt: Lectio94
+Sancti/07-28.txt: Lectio94
+Sancti/07-29.txt: Lectio94
+Sancti/07-31.txt: Lectio94
+Sancti/08-01.txt: Lectio94
+Sancti/08-02.txt: Lectio9, Lectio94
+Sancti/08-03.txt: Lectio94
+Sancti/08-04.txt: Lectio94
+Sancti/08-05.txt: Lectio94
+Sancti/08-06.txt: Lectio9
+Sancti/08-07.txt: Lectio94
+Sancti/08-08.txt: Lectio94
+Sancti/08-09.txt: Lectio94
+Sancti/08-09t.txt: Lectio2, Lectio3
+Sancti/08-12.txt: Lectio94
+Sancti/08-14.txt: Lectio1_, Lectio1t
+Sancti/08-17.txt: Lectio94
+Sancti/08-17t.txt: Lectio7, Lectio8, Lectio9
+Sancti/08-18bmv.txt: Lectio4o, Lectio4r, Lectio4t, Lectio5o, Lectio5r, Lectio5t, Lectio6o, Lectio6r, Lectio6t
+Sancti/08-19.txt: Lectio94
+Sancti/08-20.txt: Lectio94
+Sancti/08-21.txt: Lectio94
+Sancti/08-22.txt: Lectio9
+Sancti/08-23.txt: Lectio9, Lectio94
+Sancti/08-23o.txt: Lectio2, Lectio3
+Sancti/08-24.txt: Lectio6_, Lectio6_T
+Sancti/08-25.txt: Lectio94
+Sancti/08-27.txt: Lectio94
+Sancti/08-28.txt: Lectio94
+Sancti/08-29.txt: Lectio94
+Sancti/08-30.txt: Lectio94
+Sancti/08-31.txt: Lectio94
+Sancti/09-02.txt: Lectio94
+Sancti/09-03.txt: Lectio94
+Sancti/09-05.txt: Lectio94
+Sancti/09-08.txt: Lectio9
+Sancti/09-10.txt: Lectio94
+Sancti/09-12.txt: Lectio94
+Sancti/09-14.txt: Lectio94
+Sancti/09-15.txt: Lectio9
+Sancti/09-16.txt: Lectio94
+Sancti/09-17.txt: Lectio94
+Sancti/09-18.txt: Lectio94
+Sancti/09-19.txt: Lectio94
+Sancti/09-20o.txt: Lectio1_, Lectio2, Lectio3
+Sancti/09-22.txt: Lectio94
+Sancti/09-23.txt: Lectio94
+Sancti/09-24.txt: Lectio94
+Sancti/09-26.txt: Lectio3
+Sancti/09-27.txt: Lectio94
+Sancti/09-28.txt: Lectio94
+Sancti/09-30.txt: Lectio94
+Sancti/10-03.txt: Lectio94
+Sancti/10-04.txt: Lectio94
+Sancti/10-06.txt: Lectio94
+Sancti/10-07.txt: Lectio8_1, Lectio8_2
+Sancti/10-08.txt: Lectio94
+Sancti/10-09.txt: Lectio94
+Sancti/10-09t.txt: Lectio4, Lectio5, Lectio6
+Sancti/10-10.txt: Lectio94
+Sancti/10-13.txt: Lectio94
+Sancti/10-14.txt: Lectio94
+Sancti/10-15.txt: Lectio94
+Sancti/10-16.txt: Lectio94
+Sancti/10-17.txt: Lectio94
+Sancti/10-19.txt: Lectio94
+Sancti/10-20.txt: Lectio94
+Sancti/10-24.txt: Lectio3DA, Lectio4DA
+Sancti/11-04.txt: Lectio94
+Sancti/11-09.txt: Lectio6a
+Sancti/11-10.txt: Lectio94
+Sancti/11-11.txt: Lectio94
+Sancti/11-12.txt: Lectio94
+Sancti/11-13.txt: Lectio94
+Sancti/11-14.txt: Lectio94
+Sancti/11-15.txt: Lectio94
+Sancti/11-16.txt: Lectio94
+Sancti/11-17.txt: Lectio94
+Sancti/11-18.txt: Lectio94
+Sancti/11-19.txt: Lectio94
+Sancti/11-20.txt: Lectio94
+Sancti/11-21.txt: Lectio94
+Sancti/11-22.txt: Lectio94
+Sancti/11-23.txt: Lectio94
+Sancti/11-24.txt: Lectio6_, Lectio94
+Sancti/11-25.txt: Lectio94
+Sancti/11-26.txt: Lectio9, Lectio94
+Sancti/12-02.txt: Lectio94
+Sancti/12-03.txt: Lectio94
+Sancti/12-04.txt: Lectio94
+Sancti/12-06.txt: Lectio94
+Sancti/12-07.txt: Lectio94
+Sancti/12-11.txt: Lectio94
+Sancti/12-12bmv.txt: Lectio94
+Sancti/12-13.txt: Lectio94
+Sancti/12-16.txt: Lectio94
+Sancti/12-31.txt: Lectio94
+Tempora/093-3.txt: Lectio2, Lectio3
+Tempora/093-4.txt: Lectio1
+Tempora/093-5.txt: Lectio2, Lectio3
+Tempora/093-6.txt: Lectio2, Lectio3
+Tempora/094-6.txt: Lectio3
+Tempora/104-5.txt: Lectio3
+Tempora/104-6.txt: Lectio3
+Tempora/105-0.txt: Lectio4, Lectio5, Lectio6
+Tempora/105-2.txt: Lectio1Tridentina, Lectio2Tridentina, Lectio3Tridentina
+Tempora/111-0.txt: Lectio1, Lectio2, Lectio3
+Tempora/114-5.txt: Lectio3
+Tempora/Epi1-0a.txt: Lectio4, Lectio5, Lectio6, Lectio7, Lectio8, Lectio9
+Tempora/Epi6-6.txt: Lectio3
+Tempora/Nat02.txt: Lectio3
+Tempora/Nat03.txt: Lectio3
+Tempora/Nat04.txt: Lectio3
+Tempora/Nat2-0.txt: Lectio9
+Tempora/Pasc6-0.txt: Lectio6_, Lectio6_2
+Tempora/Pasc6-4r.txt: Lectio2, Lectio3
+Tempora/Pasc6-5.txt: Lectio4_, Lectio5_, Lectio6_, Lectio6_2
+Tempora/Pasc6-6.txt: Lectio5_, Lectio5et6, Lectio6_, Lectio6_2, Lectio9_1, Lectio9_2, LectioJudae1, LectioJudae2, LectioJudae3
+Tempora/Pent01-0.txt: Lectio8a
+Tempora/Pent11-3.txt: Lectio3

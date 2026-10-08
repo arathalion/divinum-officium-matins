@@ -1,0 +1,28 @@
+C1           Commune Apostolorum
+C1a          Commune Evangelistarum
+C1ap         Commune Evangelistarum tempore Paschali
+C2           Commune Unius Martyris Pontificis
+C2ap         Commune unius Martyris Tempore Paschali
+C2b          Commune unius Summi Pontificis et Martyris
+C2p          Commune unius Martyris Tempore Paschali
+C3           Commune Plurimorum Martyrum Pontificum
+C3ap         Commune Plurimorum Martyrum Tempore Paschali
+C3bp         Commune plurium Summorum Pontificum Martyrum Tempore Paschali
+C4           Commune unius Confessoris Pontificis
+C4a          Commune Doctoris Pontificis
+C4b          Commune Summorum Pontificum Confessorum
+C4b-2        Commune Doctoris Pontificis
+C5           Commune Confessoris non pontificis
+C5a          Commune Doctoris non Pontificis
+C5b          Commune Abbatis
+C5c          Commune plurium Confessorum non Pontificum
+C6           Commune Unius Virginis et Martyris
+C6a          Commune Virginum tantum
+C7a          Commune non Virginum non Martyrum
+C7b          Commune plurimarum non Virginum Martyrum
+C8           Commune Dedicationis Ecclesiae
+C10          Sanctæ Mariæ Sabbato
+C10Pasc      Sanctæ Mariæ Sabbato
+C10b         Sanctæ Mariæ Sabbato
+C10c         Sanctæ Mariæ Sabbato
+C11          In Festis Beatae Mariae Virginis

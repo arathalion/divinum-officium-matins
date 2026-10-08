@@ -1,0 +1,429 @@
+Adv1-0       Dominica I Adventus
+Adv1-1       Feria II infra Hebdomadam I Adventus
+Adv1-2       Feria III infra Hebdomadam I Adventus
+Adv1-3       Feria IV infra Hebdomadam I Adventus
+Adv1-4       Feria V infra Hebdomadam I Adventus
+Adv1-5       Feria VI infra Hebdomadam I Adventus
+Adv1-6       Sabbato infra Hebdomadam I Adventus
+Adv2-0       Dominica II Adventus
+Adv2-1       Feria II infra Hebdomadam II Adventus
+Adv2-2       Feria III infra Hebdomadam II Adventus
+Adv2-3       Feria IV infra Hebdomadam II Adventus
+Adv2-4       Feria V infra Hebdomadam II Adventus
+Adv2-5       Feria VI infra Hebdomadam II Adventus
+Adv2-6       Sabbato infra Hebdomadam II Adventus
+Adv3-0       Dominica III Adventus
+Adv3-1       Feria II infra Hebdomadam III Adventus
+Adv3-2       Feria III infra Hebdomadam III Adventus
+Adv3-3       Feria IV Quattuor Temporum in Adventu
+Adv3-4       Feria V infra Hebdomadam III Adventus
+Adv3-5       Feria VI Quattuor Temporum in Adventu
+Adv3-6       Sabbato Quattuor Temporum in Adventu
+Adv4-0       Dominica IV Adventus
+Adv4-1       Feria II infra Hebdomadam IV Adventus
+Adv4-2       Feria III infra Hebdomadam IV Adventus
+Adv4-3       Feria IV infra Hebdomadam IV Adventus
+Adv4-4       Feria V infra Hebdomadam IV Adventus
+Adv4-5       Feria VI infra Hebdomadam IV Adventus
+Nat01        Die 1 Januarii: Ad Romános, cap. 4
+Nat1-0       Dominica Infra Octavam Nativitatis
+Nat1-0a      Dominica Infra Octavam Nativitatis
+Nat02        Die 2 Januarii: Ad Romános, cap. 5
+Nat2-0       Sanctissimi Nominis Jesu
+Nat03        Die 3 Januarii: Ad Romános, cap. 6
+Nat04        Die 4 Januarii: Ad Romános, cap. 7
+Nat05        Die 5 Januarii: Ad Romános, cap. 8
+Nat07        Die 7 Januarii: Ad Romános, cap. 9
+Nat08        Die 8 Januarii: Ad Romános, cap. 12
+Nat09        Die 9 Januarii: Ad Romános, cap. 13
+Nat10        Die 10 Januarii: Ad Romános, cap. 14
+Nat11        Die 11 Januarii: Ad Romános, cap. 15
+Nat29        Die 29 Decembris: Diei V infra Octavam Nativitatis
+Nat30        Die 30 Decembris: Diei VI infra Octavam Nativitatis
+Nat31        Die 31 Decembris: Diei VII infra Octavam Nativitatis
+Epi1-0       Sanctæ Familiæ Jesu Mariæ Joseph
+Epi1-0a      Dominica infra Octavam Epiphaniæ
+Epi1-0g      Sanctæ Familiæ Jesu Mariæ Joseph
+Epi1-1       Feria II infra Hebdomadam I post Epiphaniam
+Epi1-2       Feria III infra Hebdomadam I post Epiphaniam
+Epi1-3       Feria IV infra Hebdomadam I post Epiphaniam
+Epi1-4       Feria V infra Hebdomadam I post Epiphaniam
+Epi1-5       Feria VI infra Hebdomadam I post Epiphaniam
+Epi1-6       Sabbato infra Hebdomadam I post Epiphaniam
+Epi2-0       Dominica II post Epiphaniam
+Epi2-1       Feria II infra Hebdomadam II post Epiphaniam
+Epi2-2       Feria III infra Hebdomadam II post Epiphaniam
+Epi2-3       Feria IV infra Hebdomadam II post Epiphaniam
+Epi2-4       Feria V infra Hebdomadam II post Epiphaniam
+Epi2-5       Feria VI infra Hebdomadam II post Epiphaniam
+Epi2-6       Sabbato infra Hebdomadam II post Epiphaniam
+Epi3-0       Dominica III Post Epiphaniam
+Epi3-1       Feria II infra Hebdomadam III post Epiphaniam
+Epi3-2       Feria III infra Hebdomadam III post Epiphaniam
+Epi3-3       Feria IV infra Hebdomadam III post Epiphaniam
+Epi3-4       Feria V infra Hebdomadam III post Epiphaniam
+Epi3-5       Feria VI infra Hebdomadam III post Epiphaniam
+Epi3-6       Sabbato infra Hebdomadam III post Epiphaniam
+Epi4-0       Dominica IV Post Epiphaniam
+Epi4-1       Feria Secunda infra Hebdomadam IV post Epiphaniam
+Epi4-2       Feria Tertia infra Hebdomadam IV post Epiphaniam
+Epi4-3       Feria IV infra Hebdomadam IV post Epiphaniam
+Epi4-4       Feria V infra Hebdomadam IV post Epiphaniam
+Epi4-5       Feria VI infra Hebdomadam IV post Epiphaniam
+Epi4-6       Sabbato infra Hebdomadam IV post Epiphaniam
+Epi5-0       Dominica V Post Epiphaniam
+Epi5-1       Feria II infra Hebdomadam V post Epiphaniam
+Epi5-2       Feria III infra Hebdomadam V post Epiphaniam
+Epi5-3       Feria IV infra Hebdomadam V post Epiphaniam
+Epi5-4       Feria V infra Hebdomadam V post Epiphaniam
+Epi5-5       Feria VI infra Hebdomadam V post Epiphaniam
+Epi5-6       Sabbato infra Hebdomadam V post Epiphaniam
+Epi6-0       Dominica VI Post Epiphaniam
+Epi6-1       Feria II infra Hebdomadam VI post Epiphaniam
+Epi6-2       Feria III infra Hebdomadam VI post Epiphaniam
+Epi6-3       Feria IV infra Hebdomadam VI post Epiphaniam
+Epi6-4       Feria V infra Hebdomadam VI post Epiphaniam
+Epi6-5       Feria VI infra Hebdomadam VI post Epiphaniam
+Epi6-6       Sabbato infra Hebdomadam VI post Epiphaniam
+Quadp1-0     Dominica in Septuagesima
+Quadp1-1     Feria II infra Hebdomadam Septuagesimæ
+Quadp1-2     Feria III infra Hebdomadam Septuagesimæ
+Quadp1-3     Feria IV infra Hebdomadam Septuagesimæ
+Quadp1-4     Feria V infra Hebdomadam Septuagesimæ
+Quadp1-5     Feria VI infra Hebdomadam Septuagesimæ
+Quadp1-6     Sabbato infra Hebdomadam Septuagesimæ
+Quadp2-0     Dominica in Sexagesima
+Quadp2-1     Feria II infra Hebdomadam Sexagesimæ
+Quadp2-2     Feria III infra Hebdomadam Sexagesimæ
+Quadp2-3     Feria IV infra Hebdomadam Sexagesimæ
+Quadp2-4     Feria V infra Hebdomadam Sexagesimæ
+Quadp2-5     Feria VI infra Hebdomadam Sexagesimæ
+Quadp2-6     Sabbato infra Hebdomadam Sexagesimæ
+Quadp3-0     Dominica in Quinquagesima
+Quadp3-1     Feria II infra Hebdomadam Quinquagesimæ
+Quadp3-2     Feria III infra Hebdomadam Quinquagesimæ
+Quadp3-3     Feria IV Cinerum
+Quadp3-4     Feria V post Cineres
+Quadp3-5     Feria VI post Cineres
+Quadp3-6     Sabbato post Cineres
+Quad1-0      Dominica I in Quadragesima
+Quad1-1      Feria Secunda infra Hebdomadam I in Quadragesima
+Quad1-2      Feria Tertia infra Hebdomadam I in Quadragesima
+Quad1-3      Feria Quarta Quattuor Temporum Quadragesimæ
+Quad1-4      Feria Quinta infra Hebdomadam I in Quadragesima
+Quad1-5      Feria Sexta Quattuor Temporum Quadragesimæ
+Quad1-6      Sabbato Quattuor Temporum Quadragesimæ
+Quad2-0      Dominica II in Quadragesima
+Quad2-1      Feria Secunda infra Hebdomadam II in Quadragesima
+Quad2-2      Feria Tertia infra Hebdomadam II in Quadragesima
+Quad2-3      Feria Quarta infra Hebdomadam II in Quadragesima
+Quad2-4      Feria Quinta infra Hebdomadam II in Quadragesima
+Quad2-5      Feria Sexta infra Hebdomadam II in Quadragesima
+Quad2-6      Sabbato infra Hebdomadam II in Quadragesima
+Quad3-0      Dominica III in Quadragesima
+Quad3-1      Feria Secunda infra Hebdomadam III in Quadragesima
+Quad3-2      Feria Tertia infra Hebdomadam III in Quadragesima
+Quad3-3      Feria Quarta infra Hebdomadam III in Quadragesima
+Quad3-4      Feria Quinta infra Hebdomadam III in Quadragesima
+Quad3-5      Feria Sexta infra Hebdomadam III in Quadragesima
+Quad3-6      Sabbato infra Hebdomadam III in Quadragesima
+Quad4-0      Dominica IV in Quadragesima
+Quad4-1      Feria Secunda infra Hebdomadam IV in Quadragesima
+Quad4-2      Feria Tertia infra Hebdomadam IV in Quadragesima
+Quad4-3      Feria Quarta infra Hebdomadam IV in Quadragesima
+Quad4-4      Feria Quinta infra Hebdomadam IV in Quadragesima
+Quad4-5      Feria Sexta infra Hebdomadam IV in Quadragesima
+Quad4-6      Sabbato infra Hebdomadam IV in Quadragesima
+Quad5-0      Dominica de Passione
+Quad5-1      Feria Secunda infra Hebdomadam Passionis
+Quad5-2      Feria Tertia infra Hebdomadam Passionis
+Quad5-3      Feria Quarta infra Hebdomadam Passionis
+Quad5-4      Feria Quinta infra Hebdomadam Passionis
+Quad5-5      Septem Dolorum Beatæ Mariæ Virginis
+Quad5-6      Sabbato infra Hebdomadam Passionis
+Quad6-0      Dominica in Palmis
+Quad6-1      Feria Secunda Majoris Hebdomadæ
+Quad6-2      Feria Tertia Majoris Hebdomadæ
+Quad6-3      Feria Quarta Majoris Hebdomadæ
+Quad6-4      Feria Quinta in Cena Domini
+Quad6-5      Feria Sexta in Parasceve
+Quad6-6      Sabbato Sancto
+Pasc0-0      Dominica Resurrectionis
+Pasc0-1      Die II infra octavam Paschæ
+Pasc0-2      Die III infra octavam Paschæ
+Pasc0-3      Die IV infra octavam Paschæ
+Pasc0-4      Die V infra octavam Paschæ
+Pasc0-5      Die VI infra octavam Paschæ
+Pasc0-6      Sabbato in Albis
+Pasc1-0      Dominica in Albis in Octava Paschæ
+Pasc1-1      Feria Secunda infra Hebdomadam I post Octavam Paschæ
+Pasc1-2      Feria Tertia infra Hebdomadam I post Octavam Paschæ
+Pasc1-3      Feria Quarta infra Hebdomadam I post Octavam Paschæ
+Pasc1-4      Feria Quinta infra Hebdomadam I post Octavam Paschæ
+Pasc1-5      Feria Sexta infra Hebdomadam I post Octavam Paschæ
+Pasc1-6      Sabbato infra Hebdomadam I post Octavam Paschæ
+Pasc2-0      Dominica II Post Pascha
+Pasc2-1      Feria Secunda infra Hebdomadam II post Octavam Paschæ
+Pasc2-2      Feria Tertia infra Hebdomadam II post Octavam Paschæ
+Pasc2-3      Patrocinii St. Joseph Confessoris Sponsi B.M.V. Confessoris
+Pasc2-4      De II die infra Octavam S. Joseph
+Pasc2-5      De III die infra Octavam S. Joseph
+Pasc2-6      De IV die infra Octavam S. Joseph
+Pasc3-0      Dominica III Post Pascha
+Pasc3-1      De VI die infra Octavam S. Joseph
+Pasc3-2      De VII die infra Octavam S. Joseph
+Pasc3-3      In Octava Patrocinii S. Joseph
+Pasc3-4      Feria Quinta infra Hebdomadam III post Octavam Paschæ
+Pasc3-5      Feria Sexta infra Hebdomadam III post Octavam Paschæ
+Pasc3-6      Sabbato infra Hebdomadam III post Octavam Paschæ
+Pasc4-0      Dominica IV Post Pascha
+Pasc4-1      Feria Secunda infra Hebdomadam IV post Octavam Paschæ
+Pasc4-2      Feria Tertia infra Hebdomadam IV post Octavam Paschæ
+Pasc4-3      Feria Quarta infra Hebdomadam IV post Octavam Paschæ
+Pasc4-4      Feria Quinta infra Hebdomadam IV post Octavam Paschæ
+Pasc4-5      Feria Sexta infra Hebdomadam IV post Octavam Paschæ
+Pasc4-6      Sabbato infra Hebdomadam IV post Octavam Paschæ
+Pasc5-0      Dominica V Post Pascha
+Pasc5-1      Feria Secunda in Rogationibus
+Pasc5-2      Feria Tertia in Rogationibus
+Pasc5-3      Feria Quarta in Rogationibus in Vigilia Ascensionis
+Pasc5-4      In Ascensione Domini
+Pasc5-5      Feria VI infra Octavam Ascensionis
+Pasc5-6      Sabbato infra Octavam Ascensionis
+Pasc6-0      Dominica infra Octavam Ascensionis
+Pasc6-1      Feria II infra Octavam Ascensionis
+Pasc6-2      Feria III infra Octavam Ascensionis
+Pasc6-3      Feria IV infra Octavam Ascensionis
+Pasc6-4      In Octava Ascensionis
+Pasc6-4r     Feria V infra Hebdomadam post Ascensionem
+Pasc6-5      Feria VI post Octavam Ascensionis
+Pasc6-6      Sabbato in Vigilia Pentecostes
+Pasc7-0      Dominica Pentecostes
+Pasc7-1      Die II infra octavam Pentecostes
+Pasc7-2      Die III infra octavam Pentecostes
+Pasc7-3      Feria Quarta Quattuor Temporum Pentecostes
+Pasc7-4      Feria Quinta infra octavam Pentecostes
+Pasc7-5      Feria Sexta Quattuor Temporum Pentecostes
+Pasc7-6      Sabbato Quattuor Temporum Pentecostes
+Pent01-0     Dominica Sanctissimæ Trinitatis
+Pent01-1     Feria Secunda infra Hebdomadam I post Octavam Pentecostes
+Pent01-2     Feria Tertia infra Hebdomadam I post Octavam Pentecostes
+Pent01-3     Feria Quarta infra Hebdomadam I post Octavam Pentecostes
+Pent01-4     Festum Sanctissimi Corporis Christi
+Pent01-5     Feria Sexta infra octavam Corporis Christi
+Pent01-6     Sabbato infra octavam Corporis Christi
+Pent02-0     Dominica II Post Pentecosten infra Octavam Corporis Christi
+Pent02-1     Feria Secunda infra Octavam Corporis Christi
+Pent02-2     Feria Tertia infra Octavam Corporis Christi
+Pent02-3     Feria Quarta infra Octavam Corporis Christi
+Pent02-4     In Octava Sanctissimi Corporis Christi
+Pent02-5     Sacratissimi Cordis Domini Nostri Jesu Christi
+Pent02-6     Die II infra Octavam SSmi Cordis Jesu
+Pent03-0     Dominica III Post Pentecosten infra Octavam SSmi Cordis D.N.J.C
+Pent03-1     Die IV infra Octavam SSmi Cordis Jesu
+Pent03-2     Die V infra Octavam SSmi Cordis Jesu
+Pent03-3     Die VI infra Octavam SSmi Cordis Jesu
+Pent03-4     Die VII infra Octavam SSmi Cordis Jesu
+Pent03-5     In Octava SSmi Cordis Jesu
+Pent03-6     Sabbato infra Hebdomadam III post Octavam Pentecostes
+Pent04-0     Dominica IV Post Pentecosten
+Pent04-1     Feria secunda infra Hebdomadam IV post Octavam Pentecostes
+Pent04-2     Feria tertia infra Hebdomadam IV post Octavam Pentecostes
+Pent04-3     Feria quarta infra Hebdomadam IV post Octavam Pentecostes
+Pent04-4     Feria quinta infra Hebdomadam IV post Octavam Pentecostes
+Pent04-5     Feria sexta infra Hebdomadam IV post Octavam Pentecostes
+Pent04-6     Sabbato infra Hebdomadam IV post Octavam Pentecostes
+Pent05-0     Dominica V Post Pentecosten
+Pent05-1     Feria secunda infra Hebdomadam V post Octavam Pentecostes
+Pent05-2     Feria tertia infra Hebdomadam V post Octavam Pentecostes
+Pent05-3     Feria quarta infra Hebdomadam V post Octavam Pentecostes
+Pent05-4     Feria quinta infra Hebdomadam V post Octavam Pentecostes
+Pent05-5     Feria sexta infra Hebdomadam V post Octavam Pentecostes
+Pent05-6     Sabbato infra Hebdomadam V post Octavam Pentecostes
+Pent06-0     Dominica VI Post Pentecosten
+Pent06-1     Feria secunda infra Hebdomadam VI post Octavam Pentecostes
+Pent06-2     Feria tertia infra Hebdomadam VI post Octavam Pentecostes
+Pent06-3     Feria quarta infra Hebdomadam VI post Octavam Pentecostes
+Pent06-4     Feria quinta infra Hebdomadam VI post Octavam Pentecostes
+Pent06-5     Feria sexta infra Hebdomadam VI post Octavam Pentecostes
+Pent06-6     Sabbato infra Hebdomadam VI post Octavam Pentecostes
+Pent07-0     Dominica VII Post Pentecosten
+Pent07-1     Feria secunda infra Hebdomadam VII post Octavam Pentecostes
+Pent07-2     Feria tertia infra Hebdomadam VII post Octavam Pentecostes
+Pent07-3     Feria quarta infra Hebdomadam VII post Octavam Pentecostes
+Pent07-4     Feria quinta infra Hebdomadam VII post Octavam Pentecostes
+Pent07-5     Feria sexta infra Hebdomadam VII post Octavam Pentecostes
+Pent07-6     Sabbato infra Hebdomadam VII post Octavam Pentecostes
+Pent08-0     Dominica VIII Post Pentecosten
+Pent08-1     Feria secunda infra Hebdomadam VIII post Octavam Pentecostes
+Pent08-2     Feria tertia infra Hebdomadam VIII post Octavam Pentecostes
+Pent08-3     Feria quarta infra Hebdomadam VIII post Octavam Pentecostes
+Pent08-4     Feria quinta infra Hebdomadam VIII post Octavam Pentecostes
+Pent08-5     Feria sexta infra Hebdomadam VIII post Octavam Pentecostes
+Pent08-6     Sabbato infra Hebdomadam VIII post Octavam Pentecostes
+Pent09-0     Dominica IX Post Pentecosten
+Pent09-1     Feria secunda infra Hebdomadam IX post Octavam Pentecostes
+Pent09-2     Feria tertia infra Hebdomadam IX post Octavam Pentecostes
+Pent09-3     Feria quarta infra Hebdomadam IX post Octavam Pentecostes
+Pent09-4     Feria quinta infra Hebdomadam IX post Octavam Pentecostes
+Pent09-5     Feria sexta infra Hebdomadam IX post Octavam Pentecostes
+Pent09-6     Sabbato secunda infra Hebdomadam IX post Octavam Pentecostes
+Pent10-0     Dominica X Post Pentecosten
+Pent10-1     Feria secunda infra Hebdomadam X post Octavam Pentecostes
+Pent10-2     Feria tertia infra Hebdomadam X post Octavam Pentecostes
+Pent10-3     Feria quarta infra Hebdomadam X post Octavam Pentecostes
+Pent10-4     Feria quinta infra Hebdomadam X post Octavam Pentecostes
+Pent10-5     Feria sexta infra Hebdomadam X post Octavam Pentecostes
+Pent10-6     Sabbato infra Hebdomadam X post Octavam Pentecostes
+Pent11-0     Dominica XI Post Pentecosten
+Pent11-1     Feria secunda infra Hebdomadam XI post Octavam Pentecostes
+Pent11-2     Feria tertia infra Hebdomadam XI post Octavam Pentecostes
+Pent11-3     Feria quarta infra Hebdomadam XI post Octavam Pentecostes
+Pent11-4     Feria quinta infra Hebdomadam XI post Octavam Pentecostes
+Pent11-6     Sabbato infra Hebdomadam XI post Octavam Pentecostes
+Pent12-0     Dominica XII Post Pentecosten
+Pent13-0     Dominica XIII Post Pentecosten
+Pent14-0     Dominica XIV Post Pentecosten
+Pent15-0     Dominica XV Post Pentecosten
+Pent16-0     Dominica XVI Post Pentecosten
+Pent17-0     Dominica XVII Post Pentecosten
+Pent18-0     Dominica XVIII Post Pentecosten
+Pent19-0     Dominica XIX Post Pentecosten
+Pent20-0     Dominica XX Post Pentecosten
+Pent21-0     Dominica XXI Post Pentecosten
+Pent22-0     Dominica XXII Post Pentecosten
+Pent23-0     Dominica XXIII Post Pentecosten
+Pent24-0     Dominica XXIV et Ultima Post Pentecosten
+081-0        Dominica I Augusti
+081-1        Feria II infra Hebdomadam I Augusti
+081-2        Feria III infra Hebdomadam I Augusti
+081-3        Feria IV infra Hebdomadam I Augusti
+081-4        Feria V infra Hebdomadam I Augusti
+081-5        Feria VI infra Hebdomadam I Augusti
+081-6        Sabbato infra Hebdomadam I Augusti
+082-0        Dominica II Augusti
+082-1        Feria II infra Hebdomadam II Augusti
+082-2        Feria III infra Hebdomadam II Augusti
+082-3        Feria IV infra Hebdomadam II Augusti
+082-4        Feria V infra Hebdomadam II Augusti
+082-5        Feria VI infra Hebdomadam II Augusti
+082-6        Sabbato infra Hebdomadam II Augusti
+083-0        Dominica III Augusti
+083-1        Feria II infra Hebdomadam III Augusti
+083-2        Feria III infra Hebdomadam III Augusti
+083-3        Feria IV infra Hebdomadam III Augusti
+083-4        Feria V infra Hebdomadam III Augusti
+083-5        Feria VI infra Hebdomadam III Augusti
+083-6        Sabbato infra Hebdomadam III Augusti
+084-0        Dominica IV Augusti
+084-1        Feria II infra Hebdomadam IV Augusti
+084-2        Feria III infra Hebdomadam IV Augusti
+084-3        Feria IV infra Hebdomadam IV Augusti
+084-4        Feria V infra Hebdomadam IV Augusti
+084-5        Feria VI infra Hebdomadam IV Augusti
+084-6        Sabbato infra Hebdomadam IV Augusti
+085-0        Dominica V Augusti
+085-1        Feria II infra Hebdomadam V Augusti
+085-2        Feria III infra Hebdomadam V Augusti
+085-3        Feria IV infra Hebdomadam V Augusti
+085-4        Feria V infra Hebdomadam V Augusti
+085-5        Feria VI infra Hebdomadam V Augusti
+085-6        Sabbato infra Hebdomadam V Augusti
+091-0        Dominica I Septembris
+091-1        Feria II infra Hebdomadam I Septembris
+091-2        Feria III infra Hebdomadam I Septembris
+091-3        Feria IV infra Hebdomadam I Septembris
+091-4        Feria V infra Hebdomadam I Septembris
+091-5        Feria VI infra Hebdomadam I Septembris
+091-6        Sabbato infra Hebdomadam I Septembris
+092-0        Dominica II Septembris
+092-1        Feria II infra Hebdomadam II Septembris
+092-2        Feria III infra Hebdomadam II Septembris
+092-3        Feria IV infra Hebdomadam II Septembris
+092-4        Feria V infra Hebdomadam II Septembris
+092-5        Feria VI infra Hebdomadam II Septembris
+092-6        Sabbato infra Hebdomadam II Septembris
+093-0        Dominica III Septembris
+093-1        Feria II infra Hebdomadam III Septembris
+093-2        Feria III infra Hebdomadam III Septembris
+093-3        Feria IV infra Hebdomadam III Septembris
+093-4        Feria V infra Hebdomadam III Septembris
+093-5        Feria VI infra Hebdomadam III Septembris
+093-6        Sabbato infra Hebdomadam III Septembris
+094-0        Dominica IV Septembris
+094-1        Feria II infra Hebdomadam IV Septembris
+094-2        Feria III infra Hebdomadam IV Septembris
+094-3        Feria IV infra Hebdomadam IV Septembris
+094-4        Feria V infra Hebdomadam IV Septembris
+094-5        Feria VI infra Hebdomadam IV Septembris
+094-6        Sabbato infra Hebdomadam IV Septembris
+095-0        Dominica V Septembris
+095-1        Feria II infra Hebdomadam V Septembris
+095-2        Feria III infra Hebdomadam V Septembris
+095-3        Feria IV infra Hebdomadam V Septembris
+095-4        Feria V infra Hebdomadam V Septembris
+095-5        Feria VI infra Hebdomadam V Septembris
+095-6        Sabbato infra Hebdomadam V Septembris
+101-0        Dominica I Octobris
+101-1        Feria II infra Hebdomadam I Octobris
+101-2        Feria III infra Hebdomadam I Octobris
+101-3        Feria IV infra Hebdomadam I Octobris
+101-4        Feria V infra Hebdomadam I Octobris
+101-5        Feria VI infra Hebdomadam I Octobris
+101-6        Sabbato infra Hebdomadam I Octobris
+102-0        Dominica II Octobris
+102-1        Feria II infra Hebdomadam II Octobris
+102-2        Feria III infra Hebdomadam II Octobris
+102-3        Feria IV infra Hebdomadam II Octobris
+102-4        Feria V infra Hebdomadam II Octobris
+102-5        Feria VI infra Hebdomadam II Octobris
+102-6        Sabbato infra Hebdomadam II Octobris
+103-0        Dominica III Octobris
+103-1        Feria II infra Hebdomadam III Octobris
+103-2        Feria III infra Hebdomadam III Octobris
+103-3        Feria IV infra Hebdomadam III Octobris
+103-4        Feria V infra Hebdomadam III Octobris
+103-5        Feria VI infra Hebdomadam III Octobris
+103-6        Sabbato infra Hebdomadam III Octobris
+104-0        Dominica IV Octobris
+104-1        Feria II infra Hebdomadam IV Octobris
+104-2        Feria III infra Hebdomadam IV Octobris
+104-3        Feria IV infra Hebdomadam IV Octobris
+104-4        Feria V infra Hebdomadam IV Octobris
+104-5        Feria VI infra Hebdomadam IV Octobris
+104-6        Sabbato infra Hebdomadam IV Octobris
+105-0        Dominica V Octobris
+105-2        Feria III infra Hebdomadam V Octobris
+111-0        Dominica I Novembris
+111-1        Feria II infra Hebdomadam I Novembris
+111-2        Feria III infra Hebdomadam I Novembris
+111-3        Feria IV infra Hebdomadam I Novembris
+111-4        Feria V infra Hebdomadam I Novembris
+111-5        Feria VI infra Hebdomadam I Novembris
+111-6        Sabbato infra Hebdomadam I Novembris
+112-0        Dominica II Novembris
+112-1        Feria II infra Hebdomadam II Novembris
+112-2        Feria III infra Hebdomadam II Novembris
+112-3        Feria IV infra Hebdomadam II Novembris
+112-5        Feria VI infra Hebdomadam II Novembris
+113-0        Dominica III Novembris
+113-1        Feria II infra Hebdomadam III Novembris
+113-2        Feria III infra Hebdomadam III Novembris
+113-3        Feria IV infra Hebdomadam III Novembris
+113-4        Feria V infra Hebdomadam III Novembris
+113-5        Feria VI infra Hebdomadam III Novembris
+113-6        Sabbato infra Hebdomadam III Novembris
+114-0        Dominica IV Novembris
+114-1        Feria II infra Hebdomadam IV Novembris
+114-2        Feria III infra Hebdomadam IV Novembris
+114-3        Feria IV infra Hebdomadam IV Novembris
+114-4        Feria V infra Hebdomadam IV Novembris
+114-5        Feria VI infra Hebdomadam IV Novembris
+114-6        Sabbato infra Hebdomadam IV Novembris
+115-0        Dominica V Novembris
+115-1        Feria II infra Hebdomadam V Novembris
+115-2        Feria III infra Hebdomadam V Novembris
+115-3        Feria IV infra Hebdomadam V Novembris
+115-4        Feria V infra Hebdomadam V Novembris
+115-5        Feria VI infra Hebdomadam V Novembris
+115-6        Sabbato infra Hebdomadam V Novembris
