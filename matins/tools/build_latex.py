@@ -13,6 +13,7 @@ The page design is in matins/book/matins.sty.
 """
 
 import argparse
+import datetime
 import json
 import os
 import re
@@ -126,9 +127,59 @@ def credits_tex():
 # of every date that season can reach (so dates where two seasons meet are
 # printed in both, as in the Breviarium Romanum of 1942), and Commons last.
 # (Latin, English, Proper of Time groups, first and last date of the saints)
+# (Latin, English, Proper of Time groups in order, groups whose undated files
+#  belong here, first and last date of the saints)
 VOLUMES = {
-    "winter": ("Pars Hiemalis", "Winter", ["adv", "nat", "epi", "quadp"], ("11-26", "03-13")),
+    "winter": ("Pars Hiemalis", "Winter", ["adv", "nat", "epi", "quadp"],
+               ["adv", "nat", "epi", "quadp"], ("11-26", "03-13")),
+    "spring": ("Pars Verna", "Spring", ["quad", "pass", "pasc", "pent0"],
+               ["quad", "pass", "pasc", "pent0"], ("02-07", "06-19")),
+    "summer": ("Pars Aestiva", "Summer", ["pent", "m8"],
+               ["pent", "m8"], ("05-16", "09-03")),
+    "autumn": ("Pars Autumnalis", "Autumn", ["pent", "m9", "m10", "m11", "epi"],
+               ["m9", "m10", "m11"], ("08-28", "12-02")),
 }
+# Season titles that read differently in a given part.
+GROUP_TITLES = {
+    ("autumn", "epi"): ("Dominicæ quæ superfuerunt post Epiphaniam",
+                        "Sundays after Epiphany resumed after Pentecost"),
+}
+
+
+def easter(y):
+    a, b, c = y % 19, y // 100, y % 100
+    d, e = b // 4, b % 4
+    f = (b + 8) // 25
+    g = (b - f + 1) // 3
+    h = (19 * a + b - d - g + 15) % 30
+    i, k = c // 4, c % 4
+    l = (32 + 2 * e + 2 * i - h - k) % 7
+    m = (a + 11 * h + 22 * l) // 451
+    month = (h + l - 7 * m + 114) // 31
+    day = (h + l - 7 * m + 114) % 31 + 1
+    return datetime.date(y, month, day)
+
+
+def nearest_sunday(d):
+    """The Sunday nearest a date (from 3 days before to 3 days after)."""
+    return d + datetime.timedelta(days=(6 - d.weekday() + 3) % 7 - 3)
+
+
+def volume_of(date):
+    """Which part of the breviary a date (MM-DD-YYYY) falls in."""
+    m, d, y = (int(x) for x in date.split("-"))
+    day = datetime.date(y, m, d)
+    advent = nearest_sunday(datetime.date(y, 11, 30))
+    lent1 = easter(y) - datetime.timedelta(days=42)
+    trinity = easter(y) + datetime.timedelta(days=56)
+    september1 = nearest_sunday(datetime.date(y, 9, 1))
+    if day >= advent or day < lent1:
+        return "winter"
+    if day < trinity:
+        return "spring"
+    if day < september1:
+        return "summer"
+    return "autumn"
 
 
 def in_range(f, first, last):
@@ -156,19 +207,7 @@ def volume_saints(corpus, first, last):
 PART_ORDER = ["tempore", "sanctis", "commune"]
 
 
-def season_of(date, scriptura):
-    """The Proper of Time group a date belongs to, from the week's Scripture."""
-    st = E.stem(scriptura)
-    month = int(date[:2])
-    if st.startswith("Pent") and 8 <= month <= 11:
-        return f"m{month}"
-    for gid, test, _, _ in E.TEMPORAL_GROUPS:
-        if test(st):
-            return gid
-    return None
-
-
-def slim_commons(selected, groups_wanted):
+def slim_commons(selected, volume):
     """Keep only the Common lessons this volume's offices refer to, plus the
     Saturday-of-Our-Lady lessons for the Saturdays that fall in its seasons."""
     needed = {}
@@ -193,7 +232,7 @@ def slim_commons(selected, groups_wanted):
             for e in es:
                 want = set(needed.get(e["file"], set()))
                 for date, scrip, secs in e.get("won_days", []):
-                    if season_of(date, scrip) in groups_wanted:
+                    if volume_of(date) == volume:
                         want.update(secs)
                 lessons = []
                 for les in e["lessons"]:
@@ -258,7 +297,7 @@ def main():
     ap.add_argument("--volume", choices=sorted(VOLUMES), help="one of the breviary's parts")
     args = ap.parse_args()
     if args.volume:
-        args.groups = VOLUMES[args.volume][2] + ["comm"]
+        args.groups = ["comm"]
         args.output = args.output or args.volume
 
     corpus = json.load(open(os.path.join(ROOT, "data", "corpus.json"), encoding="utf-8"))
@@ -272,12 +311,26 @@ def main():
     if not selected:
         sys.exit(f"no such group: {', '.join(args.groups)}")
     if args.volume:
-        first, last = VOLUMES[args.volume][3]
-        selected = [p for p in selected if p[0] != "sanctis"]
+        _, _, order, native, (first, last) = VOLUMES[args.volume]
+        selected = [p for p in selected if p[0] not in ("sanctis", "tempore")]
+        tp = next(p for p in parts if p[0] == "tempore")
+        by_id = {g[0]: g for g in tp[3]}
+        tgroups = []
+        for gid in order:
+            if gid not in by_id:
+                continue
+            _, gla, gen, es = by_id[gid]
+            gla, gen = GROUP_TITLES.get((args.volume, gid), (gla, gen))
+            keep = [e for e in es
+                    if (args.volume in {volume_of(d) for d in e["read_dates"]} if e.get("read_dates")
+                        else gid in native)]
+            if keep:
+                tgroups.append((gid, gla, gen, keep))
+        selected.append(("tempore", tp[1], tp[2], tgroups))
         sp = next(p for p in parts if p[0] == "sanctis")
         selected.append(("sanctis", sp[1], sp[2], volume_saints(corpus, first, last)))
         selected.sort(key=lambda p: PART_ORDER.index(p[0]))
-        selected = slim_commons(selected, set(args.groups))
+        selected = slim_commons(selected, args.volume)
     name = args.output or ("matins" if not want else "-".join(args.groups))
     note = "Sample: " + ", ".join(g[2] for _, _, _, gs in selected for g in gs) if want and not args.volume else ""
     path = os.path.join(ROOT, "book", name + ".tex")

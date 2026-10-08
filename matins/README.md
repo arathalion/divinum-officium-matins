@@ -16,7 +16,7 @@ and its output is traced back to the files the lessons live in.
 | `text/latin/`, `text/english/` | One plain-text file per office, in `temporale/`, `sanctorale/` and `commune/`, each with an `index.txt` in liturgical order. File names are the Divinum Officium file names (`Adv1-0` = First Sunday of Advent, `11-04` = 4 November, `C4` = Common of a Confessor Bishop, `111-3` = Wednesday of the first week of November). |
 | `data/corpus.json` | The same content, structured: per entry, its title, rank, own lessons (title, scripture citation, patristic source, verses or paragraphs, responsory) and references to lessons read from elsewhere. Use this for the book, a web page or an app. |
 | `output/Matins-Readings-1954.epub` | The whole corpus as one EPUB: Proper of Time, Common of the Saints, Proper of Saints (from 29 November), Latin and English side by side paragraph by paragraph, stacking on narrow screens. References link to the Common or feast they name. |
-| `book/matins.sty`, `book/*.tex` | The print book: 6 × 9 in, Latin and English in two columns kept level paragraph by paragraph (LuaLaTeX, EB Garamond). `matins.sty` holds the page design; the `.tex` files are generated. `output/Advent-sample-6x9.pdf` is a sample; `output/Winter-6x9.pdf` is the Winter volume. Volumes follow the breviary's four parts: each has its season's Proper of Time, the saints of every date that season can reach (26 Nov – 12 Mar for Winter, as in the Breviarium Romanum of 1942, so dates where two parts meet are printed in both), only the Common lessons its own offices refer to, and an index. |
+| `book/matins.sty`, `book/*.tex` | The print book: 6 × 9 in, Latin and English in two columns kept level paragraph by paragraph (LuaLaTeX, EB Garamond). `matins.sty` holds the page design; the `.tex` files are generated. `output/Winter-6x9.pdf`, `Spring-6x9.pdf`, `Summer-6x9.pdf`, `Autumn-6x9.pdf` are the four volumes, after the breviary's four parts (see below). |
 | `data/coverage.txt` | Lesson sections that exist in the files but are never read under these rubrics (e.g. a Lenten saint's own 9th lesson, always replaced by the homily of the feria; sections for other rubrical editions). |
 
 How an entry reads:
@@ -47,7 +47,7 @@ perl matins/tools/extract_files.pl < matins/cache/allfiles.txt > matins/cache/fi
 python3 matins/tools/build_corpus.py        # writes text/ and data/
 python3 matins/tools/build_epub.py          # writes output/Matins-Readings-1954.epub
 python3 matins/tools/build_latex.py adv -o advent   # writes book/advent.tex (season ids: see the script)
-python3 matins/tools/build_latex.py --volume winter # a whole breviary part: book/winter.tex
+python3 matins/tools/build_latex.py --volume winter # a whole breviary part: book/winter.tex (winter, spring, summer, autumn)
 latexmk -lualatex -cd -outdir=build matins/book/advent.tex
 ```
 
@@ -74,6 +74,26 @@ PRETTY=1 perl matins/tools/harvest_day.pl 11-04-2026
 | `tools/layout.py` | Pairs Latin and English paragraph by paragraph for parallel layouts (EPUB, print). |
 | `tools/build_epub.py` | Writes the EPUB from `data/corpus.json` (standard library only). |
 | `tools/build_latex.py` | Writes LaTeX for the two-column print book, by season or whole. |
+
+## The four volumes
+
+The print book follows the four parts of the Breviarium Romanum. Each part
+holds its season of the Proper of Time; the saints of every date that season
+can reach, given Easter's five-week range; the Common lessons its own offices
+refer to (and the Saturday-of-Our-Lady lessons for its Saturdays); and an
+index. Where two parts meet, saints are printed in both, as in the 1942
+edition (Pustet) these ranges were checked against.
+
+| Part | Proper of Time | Proper of Saints |
+|------|----------------|------------------|
+| Hiemalis (Winter) | Advent, Christmastide, after Epiphany, Septuagesima | 26 Nov – 12 Mar |
+| Verna (Spring) | Lent, Passiontide, Paschaltide, Octave of Pentecost | 7 Feb – 19 Jun |
+| Aestiva (Summer) | Trinity Sunday – Sundays and ferias of August | 16 May – 3 Sep |
+| Autumnalis (Autumn) | Sundays of September – before Advent; resumed Sundays after Epiphany | 28 Aug – 2 Dec |
+
+Movable offices go in every part they can fall in, from the dates the engine
+said them on (so Sundays XI–XV after Pentecost are in both Summer and Autumn,
+as in the 1942 volumes).
 
 ## Known engine issue
 

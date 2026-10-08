@@ -417,6 +417,20 @@ def main():
             e["won_days"] = [[d["date"], d.get("scriptura") or "",
                               sorted({hs for n, hf, hs in d["slots"] if hf == w})] for d in days]
 
+    # Every date a temporal office was said, or any of its lessons read (e.g. a
+    # feria's Scripture on a saint's day): this places movable days in the
+    # breviary's parts.
+    read = collections.defaultdict(set)
+    for (f, sec), occs in occurrences.items():
+        if kind(f) == "Tempora":
+            read[f].update(o["date"] for o in occs)
+    for w, days in winners.items():
+        if kind(w) == "Tempora":
+            read[w].update(d["date"] for d in days)
+    for f, e in entries.items():
+        if f in read:
+            e["read_dates"] = sorted(read[f], key=lambda d: (d[6:], d[:5]))
+
     fold_second_forms(files, entries, entry_for)
     drop_duplicate_variants(entries)
 
