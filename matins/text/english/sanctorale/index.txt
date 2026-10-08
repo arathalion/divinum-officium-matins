@@ -6,7 +6,6 @@
 01-06        In Epiphania Domini
 01-07        Secunda die infra Octavam Epiphaniæ
 01-08        Tertia die infra Octavam Epiphaniæ
-01-08g       Tertia die infra Octavam Epiphaniæ
 01-09        Quarta die infra Octavam Epiphaniæ
 01-10        Quinta die infra Octavam Epiphaniæ
 01-11        Sexta die infra Octavam Epiphaniæ
@@ -289,7 +288,6 @@
 10-27        Vigil of Sts. Simon and Jude, Apostles
 10-28        Sts. Simon and Jude, Apostles
 10-31        Vigil of All Saints
-10-31v       Vigil of All Saints
 11-01        All Saints
 11-02        In Commemoratione Omnium Fidelium Defunctorum
 11-03oct     Third Day Within the Octave of All Saints

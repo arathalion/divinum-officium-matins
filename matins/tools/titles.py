@@ -39,6 +39,10 @@ FIXED = {
     "festum sanctissimi corporis christi": "Corpus Christi",
     "in ascensione domini": "The Ascension of Our Lord",
     "sacratissimi cordis domini nostri jesu christi": "The Most Sacred Heart of Our Lord Jesus Christ",
+    "dominica sanctissimae trinitatis": "Trinity Sunday",
+    "dominica sanctissimæ trinitatis": "Trinity Sunday",
+    "sanctae familiae jesu mariae joseph": "The Holy Family of Jesus, Mary and Joseph",
+    "sanctæ familiæ jesu mariæ joseph": "The Holy Family of Jesus, Mary and Joseph",
     "feria quarta in rogationibus in vigilia ascensionis": "Wednesday in Rogationtide, Vigil of the Ascension",
 }
 OCTAVE = [

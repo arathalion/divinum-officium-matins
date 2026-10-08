@@ -137,6 +137,8 @@ def parse_lesson(text, lang="latin"):
         if m and (cur["cite"] or cur["verses"] or not cur["paras"]):
             cur["verses"].append([int(m.group(1)), _tidy(m.group(2))])
             continue
+        if l.startswith("r. "):  # red initial: same as "v." for our purposes
+            l = "v. " + l[3:]
         if l.startswith("v. "):
             if _CITE.match(l[3:]) and not cur["cite"] and not cur["paras"] and not cur["verses"]:
                 cur["cite"] = l[3:].rstrip(".").strip()  # citation missing its "!" in the source

@@ -166,6 +166,16 @@ SEASONS = ["Adv", "Nat", "Epi", "Quadp", "Quad", "Pasc", "Pent"]
 
 def temporale_sort(name):
     s = os.path.basename(name)
+    # Christmastide is ordered by date: Sunday in the Octave (26-31 Dec), the
+    # dated Scripture (NatDD), the Holy Name (Sunday 2-5 Jan).
+    m = re.match(r"^Nat(\d\d)$", s)
+    if m:
+        d = int(m.group(1))
+        return (1, 0 if d >= 24 else 1, d, 0, s)
+    if s.startswith("Nat1-0"):
+        return (1, 0, 28.5, 0, s)
+    if s.startswith("Nat2-0"):
+        return (1, 1, 1.5, 0, s)
     m = re.match(r"^(\d\d)(\d)-(\d)", s)
     if m:  # month files: 081-0 = August, week 1, Sunday
         return (len(SEASONS), int(m.group(1)), int(m.group(2)), int(m.group(3)), s)
@@ -388,6 +398,7 @@ def main():
         e["won_on"] = len(days)
 
     fold_second_forms(files, entries, entry_for)
+    drop_duplicate_variants(entries)
 
     corpus = {
         "version": "Divino Afflatu - 1954",
@@ -409,6 +420,25 @@ def main():
 
 
 # ----------------------------------------------------------------- commons in full
+
+def drop_duplicate_variants(entries):
+    """Drop variant files (Nat1-0a, Epi1-0g, ...) whose Matins is identical to
+    their base file's: they differ only in other Hours."""
+    for f in sorted(entries):
+        e = entries.get(f)
+        if not e or e["kind"] not in ("Tempora", "Sancti"):
+            continue
+        m = re.match(r"^(.*\d)([a-z]+)\.txt$", f)
+        if not m or m.group(1) + ".txt" not in entries:
+            continue
+        base = entries[m.group(1) + ".txt"]
+        mine = {l["section"]: body_words(l["latin"]) for l in e["lessons"]}
+        theirs = {l["section"]: body_words(l["latin"]) for l in base["lessons"]}
+        same_refs = [(r["n"], r["type"], r.get("file")) for r in e.get("refs", [])] == \
+                    [(r["n"], r["type"], r.get("file")) for r in base.get("refs", [])]
+        if mine and all(theirs.get(k) == v for k, v in mine.items()) and same_refs:
+            del entries[f]
+
 
 def fold_second_forms(files, entries, entry_for):
     """Fold the second form of a Common (C4-1, C2-1p, ...) into its parent (C4,

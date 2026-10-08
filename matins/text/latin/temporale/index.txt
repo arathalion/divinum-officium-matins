@@ -25,11 +25,13 @@ Adv4-2       Feria III infra Hebdomadam IV Adventus
 Adv4-3       Feria IV infra Hebdomadam IV Adventus
 Adv4-4       Feria V infra Hebdomadam IV Adventus
 Adv4-5       Feria VI infra Hebdomadam IV Adventus
-Nat01        Die 1 Januarii: Ad Romános, cap. 4
 Nat1-0       Dominica Infra Octavam Nativitatis
-Nat1-0a      Dominica Infra Octavam Nativitatis
-Nat02        Die 2 Januarii: Ad Romános, cap. 5
+Nat29        Die 29 Decembris: Diei V infra Octavam Nativitatis
+Nat30        Die 30 Decembris: Diei VI infra Octavam Nativitatis
+Nat31        Die 31 Decembris: Diei VII infra Octavam Nativitatis
+Nat01        Die 1 Januarii: Ad Romános, cap. 4
 Nat2-0       Sanctissimi Nominis Jesu
+Nat02        Die 2 Januarii: Ad Romános, cap. 5
 Nat03        Die 3 Januarii: Ad Romános, cap. 6
 Nat04        Die 4 Januarii: Ad Romános, cap. 7
 Nat05        Die 5 Januarii: Ad Romános, cap. 8
@@ -38,12 +40,8 @@ Nat08        Die 8 Januarii: Ad Romános, cap. 12
 Nat09        Die 9 Januarii: Ad Romános, cap. 13
 Nat10        Die 10 Januarii: Ad Romános, cap. 14
 Nat11        Die 11 Januarii: Ad Romános, cap. 15
-Nat29        Die 29 Decembris: Diei V infra Octavam Nativitatis
-Nat30        Die 30 Decembris: Diei VI infra Octavam Nativitatis
-Nat31        Die 31 Decembris: Diei VII infra Octavam Nativitatis
 Epi1-0       Sanctæ Familiæ Jesu Mariæ Joseph
 Epi1-0a      Dominica infra Octavam Epiphaniæ
-Epi1-0g      Sanctæ Familiæ Jesu Mariæ Joseph
 Epi1-1       Feria II infra Hebdomadam I post Epiphaniam
 Epi1-2       Feria III infra Hebdomadam I post Epiphaniam
 Epi1-3       Feria IV infra Hebdomadam I post Epiphaniam

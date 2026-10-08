@@ -6,7 +6,6 @@
 01-06        In Epiphania Domini
 01-07        Secunda die infra Octavam Epiphaniæ
 01-08        Tertia die infra Octavam Epiphaniæ
-01-08g       Tertia die infra Octavam Epiphaniæ
 01-09        Quarta die infra Octavam Epiphaniæ
 01-10        Quinta die infra Octavam Epiphaniæ
 01-11        Sexta die infra Octavam Epiphaniæ
@@ -289,7 +288,6 @@
 10-27        In Vigilia Ss. Simonis et Judæ Ap.
 10-28        Ss. Simonis et Judæ Apostolorum
 10-31        In Vigilia Omnium Sanctorum
-10-31v       In Vigilia Omnium Sanctorum
 11-01        Omnium Sanctorum
 11-02        In Commemoratione Omnium Fidelium Defunctorum
 11-03oct     Tertia die infra Octavam Omnium Sanctorum

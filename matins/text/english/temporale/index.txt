@@ -25,11 +25,13 @@ Adv4-2       Tuesday of the Fourth Week of Advent
 Adv4-3       Wednesday of the Fourth Week of Advent
 Adv4-4       Thursday of the Fourth Week of Advent
 Adv4-5       Friday of the Fourth Week of Advent
-Nat01        1 January: Epistle to the Romans, chapter 4
 Nat1-0       Sunday Within The Octave of Christmas
-Nat1-0a      Sunday Within The Octave of Christmas
-Nat02        2 January: Epistle to the Romans, chapter 5
+Nat29        29 December
+Nat30        30 December
+Nat31        31 December
+Nat01        1 January: Epistle to the Romans, chapter 4
 Nat2-0       Most Holy Name of Jesus
+Nat02        2 January: Epistle to the Romans, chapter 5
 Nat03        3 January: Epistle to the Romans, chapter 6
 Nat04        4 January: Epistle to the Romans, chapter 7
 Nat05        5 January: Epistle to the Romans, chapter 8
@@ -38,12 +40,8 @@ Nat08        8 January: Epistle to the Romans, chapter 12
 Nat09        9 January: Epistle to the Romans, chapter 13
 Nat10        10 January: Epistle to the Romans, chapter 14
 Nat11        11 January: Epistle to the Romans, chapter 15
-Nat29        29 December
-Nat30        30 December
-Nat31        31 December
-Epi1-0       Sanctae Familiae Jesu Mariae Joseph
+Epi1-0       The Holy Family of Jesus, Mary and Joseph
 Epi1-0a      Sunday within the Octave of the Epiphany
-Epi1-0g      Sanctae Familiae Jesu Mariae Joseph
 Epi1-1       Monday of the First Week after Epiphany
 Epi1-2       Tuesday of the First Week after Epiphany
 Epi1-3       Wednesday of the First Week after Epiphany
@@ -205,7 +203,7 @@ Pasc7-3      Ember Wednesday of Pentecost
 Pasc7-4      Thursday within the Octave of Pentecost
 Pasc7-5      Ember Friday of Pentecost
 Pasc7-6      Ember Saturday of Pentecost
-Pent01-0     Dominica Sanctissimae Trinitatis
+Pent01-0     Trinity Sunday
 Pent01-1     Monday of the First Week after Pentecost
 Pent01-2     Tuesday of the First Week after Pentecost
 Pent01-3     Wednesday of the First Week after Pentecost
