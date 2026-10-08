@@ -1,0 +1,35 @@
+name: Daily Matins readings
+
+# Renders the next 60 days of Matins (email + web page) with the engine and
+# publishes them to the `daily-data` branch, which the sending Worker reads.
+# Scheduled runs only fire from the default branch.
+on:
+  schedule:
+    - cron: "17 2 * * *"   # 02:17 UTC nightly
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-readings
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.repository == 'arathalion/divinum-officium-matins'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Perl modules for the engine
+        run: sudo apt-get update -q && sudo apt-get install -y -q libcgi-pm-perl
+
+      - name: Render readings (yesterday + 60 days)
+        run: |
+          python3 matins/daily/build_daily.py \
+            --start "$(date -u -d yesterday +%F)" --days 61 --out "$RUNNER_TEMP/daily"
+
+      - name: Publish to daily-data
+        run: bash matins/daily/publish.sh "$RUNNER_TEMP/daily"

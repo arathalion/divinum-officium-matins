@@ -3,7 +3,9 @@
 # Matins lessons and responsories (Latin + English) as one line of JSON
 # (PRETTY=1 for indented output).
 #
-# Usage: perl matins/tools/harvest_day.pl MM-DD-YYYY [version]
+# Usage: perl matins/tools/harvest_day.pl MM-DD-YYYY [version] [language]
+#   language: a folder of web/www/horas (English, Italiano, Espanol, ...); the
+#   translation is returned as "english" for English and "vernacular" always.
 #
 # Each &lectio(N) call in the day's Matins script is handed to the engine's own
 # lectio(), so all rubrical decisions (occurrence, commemorations, scripture of
@@ -17,11 +19,12 @@ use lib $FindBin::Bin;
 use JSON::PP;
 use DOBoot;
 
-my ($date, $version) = @ARGV;
-die "usage: $0 MM-DD-YYYY [version]\n" unless $date && $date =~ /^\d\d-\d\d-\d{4}$/;
+my ($date, $version, $lang2) = @ARGV;
+die "usage: $0 MM-DD-YYYY [version] [language]\n" unless $date && $date =~ /^\d\d-\d\d-\d{4}$/;
 $version ||= 'Divino Afflatu - 1954';
+$lang2 ||= 'English';
 
-my %result = (date => $date, version => $version, lessons => []);
+my %result = (date => $date, version => $version, language => $lang2, lessons => []);
 
 my $out = DOBoot::run_matins(
   $date, $version,
@@ -38,7 +41,9 @@ my $out = DOBoot::run_matins(
       my $la = main::lectio($n, $lang1);
       $main::column = 2;
       my $en = main::lectio($n, $lang2);
-      push @{ $result{lessons} }, { n => 0 + $n, latin => $la, english => $en };
+      my %l = (n => 0 + $n, latin => $la, vernacular => $en);
+      $l{english} = $en if $lang2 eq 'English';
+      push @{ $result{lessons} }, \%l;
     }
     $result{winner} = $main::winner;
     $result{commemoratio} = $main::commemoratio;
@@ -51,7 +56,8 @@ my $out = DOBoot::run_matins(
     $result{title_english} = $main::winner2{Officium};
     $result{commemoentries} = [@main::commemoentries];
     $result{build} = $main::buildscript;
-  }
+  },
+  $lang2
 );
 
 my $pretty = $ENV{PRETTY} ? 1 : 0;

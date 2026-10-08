@@ -6,7 +6,7 @@ package DOBoot;
 # set up exactly as it would be for the real page.
 #
 #   use DOBoot;
-#   DOBoot::run_matins('11-04-2026', 'Divino Afflatu - 1954', sub {
+#   DOBoot::run_matins('11-04-2026', 'Divino Afflatu - 1954', sub {   # 4th arg: lang2 (default English)
 #     my ($lang1, $script1, $lang2, $script2) = @_;
 #     ...
 #   });
@@ -22,7 +22,8 @@ use File::Basename qw(dirname);
 our $ENGINE = abs_path(dirname(__FILE__) . '/../../web/cgi-bin/horas');
 
 sub run_matins {
-  my ($date, $version, $callback) = @_;
+  my ($date, $version, $callback, $lang2) = @_;
+  $lang2 ||= 'English';
   my $engine = $ENGINE;
 
   # officium.pl does `use FindBin qw($Bin)` and requires "$Bin/...". Point $Bin
@@ -47,7 +48,7 @@ sub run_matins {
   {
     package main;
     local $0 = "$engine/officium.pl";
-    local @ARGV = ("version=$version", 'command=prayMatutinum', "date=$date", 'lang1=Latin', 'lang2=English');
+    local @ARGV = ("version=$version", 'command=prayMatutinum', "date=$date", 'lang1=Latin', "lang2=$lang2");
     no strict;
     no warnings;
     do "$engine/officium.pl";
