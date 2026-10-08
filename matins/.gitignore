@@ -1,1 +1,3 @@
 cache/
+book/build/
+book/*.log

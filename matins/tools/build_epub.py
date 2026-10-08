@@ -21,6 +21,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 import build_corpus as B  # noqa: E402
+import credits  # noqa: E402
 import lessons as L  # noqa: E402
 import layout  # noqa: E402
 
@@ -76,8 +77,11 @@ p { margin: 0 0 0.5em; text-indent: 0; text-align: justify; -webkit-hyphens: aut
 .refs { margin: 0.4em 0 0.6em; font-size: 0.9em; font-style: italic; }
 .tedeum { text-align: center; font-style: italic; color: #9b1c1c; }
 .toc li { list-style: none; margin: 0.15em 0; }
+.back { text-align: right; font-size: 0.8em; font-style: italic; margin: 0; }
+h2 a { text-decoration: none; }
 .toc ol { padding-left: 1.2em; }
 .front p { text-align: left; }
+.front h2 { font-size: 1.05em; font-variant: small-caps; letter-spacing: 0.04em; margin-top: 1em; }
 a { color: inherit; text-decoration: underline; text-decoration-color: #c8b8b8; }
 @media (max-width: 34em) {
   .pair, .pair > .la, .pair > .en { display: block; width: auto; padding: 0; border: 0; }
@@ -247,7 +251,8 @@ def build_structure(corpus):
             es = [e for e in saints if B.sanctorale_sort(stem(e["file"]))[0] == m]
             gid = f"s{m}"
         if es:
-            sgroups.append((gid, f"Mensis {MONTHS_LA_NOM[m]}", MONTHS_EN[m], es))
+            days = {"s11a": " (29–30)", "s11b": " (1–28)"}.get(gid, "")
+            sgroups.append((gid, f"Mensis {MONTHS_LA_NOM[m]}{days}", f"{MONTHS_EN[m]}{days}", es))
     odd = [e for e in saints if B.sanctorale_sort(stem(e["file"]))[0] == 99]
     if odd:
         sgroups.append(("sx", "Alia", "Other", odd))
@@ -255,19 +260,47 @@ def build_structure(corpus):
     return parts
 
 
-def group_page(title_la, title_en, es):
-    items = "\n".join(
+BACK = '<p class="back"><a href="contents.xhtml">Index · Contents</a></p>'
+
+
+def entry_list(es):
+    return "".join(
         f'<li><a href="{fname(e["file"])}">{esc(e["title_latin"])}</a>'
         f' <span lang="en" xml:lang="en">— {esc(e["title_english"])}</span></li>' for e in es)
-    body = (f'<h1>{esc(title_la)}<span class="sub" lang="en" xml:lang="en">{esc(title_en)}</span></h1>'
-            f'<ol class="toc">{items}</ol>')
+
+
+def section_list(groups):
+    """Links to a part's seasons or months; for a one-section part, its offices."""
+    if len(groups) == 1:
+        return f'<ol class="toc">{entry_list(groups[0][3])}</ol>'
+    return '<ol class="toc">' + "".join(
+        f'<li><a href="group-{gid}.xhtml">{esc(gla)}</a> <span lang="en" xml:lang="en">— {esc(gen)}</span></li>'
+        for gid, gla, gen, es in groups) + "</ol>"
+
+
+def group_page(title_la, title_en, es):
+    body = (BACK + f'<h1>{esc(title_la)}<span class="sub" lang="en" xml:lang="en">{esc(title_en)}</span></h1>'
+            f'<ol class="toc">{entry_list(es)}</ol>')
     return XHTML.format(title=esc(title_la), body=body)
 
 
-def part_page(title_la, title_en):
-    body = (f'<div style="margin-top:30%"><h1>{esc(title_la)}'
-            f'<span class="sub" lang="en" xml:lang="en">{esc(title_en)}</span></h1></div>')
+def part_page(title_la, title_en, groups):
+    body = (BACK + f'<div style="margin-top:12%"><h1>{esc(title_la)}'
+            f'<span class="sub" lang="en" xml:lang="en">{esc(title_en)}</span></h1></div>'
+            + section_list(groups))
     return XHTML.format(title=esc(title_la), body=body)
+
+
+def contents_page(parts):
+    body = ['<h1>Index<span class="sub" lang="en" xml:lang="en">Contents</span></h1>']
+    for pid, pla, pen, groups in parts:
+        body.append(f'<h2><a href="part-{pid}.xhtml">{esc(pla)}</a>'
+                    f'<span class="sub" lang="en" xml:lang="en">{esc(pen)}</span></h2>')
+        body.append(section_list(groups))
+    body.append('<h2><a href="about.xhtml">About this edition</a></h2>')
+    body.append('<h2><a href="credits.xhtml">Credits</a></h2>')
+    body.append('<h2><a href="colophon.xhtml">Colophon</a></h2>')
+    return XHTML.format(title="Contents", body="\n".join(body))
 
 
 def front_pages(corpus):
@@ -308,9 +341,13 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FO
 OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
 </div>"""
+    credits_body = '<div class="front" lang="en" xml:lang="en"><h1>Credits</h1>' + "".join(
+        f"<h2>{esc(h)}</h2>" + "".join(f"<p>{esc(p)}</p>" for p in ps)
+        for h, ps in credits.sections(print_book=False)) + "</div>"
     return [("title.xhtml", TITLE_LA, XHTML.format(title=esc(TITLE_LA), body=title)),
             ("about.xhtml", "About this edition", XHTML.format(title="About this edition", body=about))], \
-        ("colophon.xhtml", "Colophon", XHTML.format(title="Colophon", body=colophon))
+        [("credits.xhtml", "Credits", XHTML.format(title="Credits", body=credits_body)),
+         ("colophon.xhtml", "Colophon", XHTML.format(title="Colophon", body=colophon))]
 
 
 # ------------------------------------------------------------------ package
@@ -325,6 +362,7 @@ def build(out_path):
     nav = []     # nested: (label, href, children)
 
     front, colophon = front_pages(corpus)
+    front.append(("contents.xhtml", "Contents", contents_page(parts)))
     for href, label, doc in front:
         files.append((href, doc))
         spine.append(href)
@@ -332,7 +370,7 @@ def build(out_path):
 
     for pid, pla, pen, groups in parts:
         phref = f"part-{pid}.xhtml"
-        files.append((phref, part_page(pla, pen)))
+        files.append((phref, part_page(pla, pen, groups)))
         spine.append(phref)
         pnav = []
         for gid, gla, gen, es in groups:
@@ -352,16 +390,12 @@ def build(out_path):
                 pnav.extend(enav)
         nav.append((f"{pla} — {pen}", f"text/{phref}", pnav))
 
-    files.append((colophon[0], colophon[2]))
-    spine.append(colophon[0])
-    nav.append((colophon[1], f"text/{colophon[0]}", []))
+    for href, label, doc in colophon:  # back matter: credits, colophon
+        files.append((href, doc))
+        spine.append(href)
+        nav.append((label, f"text/{href}", []))
 
     # Navigation documents.
-    def nav_ol(items):
-        return "<ol>" + "".join(
-            f'<li><a href="{h[5:] if h.startswith("text/") else h}">{esc(l)}</a>{nav_ol(c) if c else ""}</li>'
-            for l, h, c in items) + "</ol>"
-
     def nav_ol_root(items):
         return "<ol>" + "".join(
             f'<li><a href="{h}">{esc(l)}</a>{nav_ol_root(c) if c else ""}</li>' for l, h, c in items) + "</ol>"
@@ -369,7 +403,11 @@ def build(out_path):
     nav_doc = ('<?xml version="1.0" encoding="utf-8"?>\n<!DOCTYPE html>\n'
                '<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en">'
                '<head><meta charset="utf-8"/><title>Contents</title><link rel="stylesheet" type="text/css" href="style.css"/></head>'
-               f'<body><nav epub:type="toc" id="toc" class="toc"><h1>Contents</h1>{nav_ol_root(nav)}</nav></body></html>')
+               f'<body><nav epub:type="toc" id="toc" class="toc"><h1>Contents</h1>{nav_ol_root(nav)}</nav>'
+               '<nav epub:type="landmarks" id="landmarks" hidden="hidden"><ol>'
+               '<li><a epub:type="toc" href="text/contents.xhtml">Contents</a></li>'
+               '<li><a epub:type="bodymatter" href="text/part-tempore.xhtml">Proprium de Tempore</a></li>'
+               '</ol></nav></body></html>')
 
     counter = [0]
 
