@@ -365,6 +365,7 @@ def main():
             entry = {"section": sec, "n": num, "note": note, "dates": c["dates"]}
             for lang in ("latin", "english"):
                 entry[lang] = L.restore_verse_case(L.parse_lesson(c[lang], lang), raw_section(files, f, sec, lang))
+            L.align_cites(entry["latin"], entry["english"])
             e["lessons"].append(entry)
 
         def lsort(x):
@@ -573,6 +574,7 @@ def commune_lessons(files, f):
                 resp = with_gloria(resp)
             text = body + ("\n_\n" + resp if resp else "") + ("\n&teDeum" if tedeum else "")
             lesson[lang] = L.parse_lesson(text, lang)
+        L.align_cites(lesson["latin"], lesson["english"])
         out.append(lesson)
     out.sort(key=lambda x: x["order"])
     for x in out:

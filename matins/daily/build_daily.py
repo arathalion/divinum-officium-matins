@@ -289,6 +289,8 @@ def build_one(date, cal, lang, out_dir, corpus_titles):
     for les in day["lessons"]:
         la = L.parse_lesson(les["latin"], "latin")
         local = L.parse_lesson(les["vernacular"], "english" if lang == "en" else "latin")
+        if lang == "en":
+            L.align_cites(la, local)
         if not body_words(la) and not body_words(local):
             continue  # the engine gave no text (see README: known engine issue)
         brevis = les.get("kind")  # None, "brevis" or "unica"

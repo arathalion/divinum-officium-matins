@@ -76,6 +76,45 @@ def _tidy(s):
     return re.sub(r"\s{2,}", " ", s).strip()
 
 
+# English names for the Latin book abbreviations used in references (where
+# they differ); other books use the same abbreviation in both languages.
+BOOKS_EN = {
+    "1 Joannes": "1 John", "2 Joannes": "2 John", "3 Joannes": "3 John", "Joannes": "John",
+    "1 Reg": "1 Sam", "2 Reg": "2 Sam", "3 Reg": "1 Kgs", "4 Reg": "2 Kgs",
+    "Act": "Acts", "Act.": "Acts", "Apo": "Rev", "Cant": "Song", "Ezech": "Ezek",
+    "Jonas": "Jonah", "Joël": "Joel", "Judas": "Jude", "Lam.": "Lam", "Luc": "Luke",
+    "Marc": "Mark", "Sap": "Wis", "Soph": "Zeph", "Zach": "Zech",
+}
+_CITE_PARTS = re.compile(r"^(.*?)\s*(\d+\s*:.*)$")
+
+
+def _verses(rest):
+    return re.sub(r"\s", "", rest).replace(",", ";")
+
+
+def english_cite(latin, english):
+    """The English reference, taking chapter and verses from the Latin when the
+    two disagree (the English files have a few slips: "Matt 13:44" for
+    "Matt 13:44-52", "Luke 19:41-17", or no reference at all)."""
+    ml = _CITE_PARTS.match(latin or "")
+    if not ml:
+        return english
+    book, rest = ml.groups()
+    me = _CITE_PARTS.match(english or "")
+    en_book = BOOKS_EN.get(book) or (me.group(1) if me else book)
+    if me and me.group(1) == en_book and _verses(me.group(2)) == _verses(rest):
+        return english
+    return f"{en_book} {rest}"
+
+
+def align_cites(latin, english):
+    """Correct the English lesson's references against the Latin, block by block."""
+    if len(latin["blocks"]) == len(english["blocks"]):
+        for a, b in zip(latin["blocks"], english["blocks"]):
+            b["cite"] = english_cite(a["cite"], b["cite"])
+    return english
+
+
 # A heading ("From the Book of ...") is a line or two; anything longer is the
 # lesson itself, set without its usual red initial.
 TITLE_MAX = 150
