@@ -66,13 +66,19 @@ def _normalise(text):
             joined[-1] = joined[-1][:-1].rstrip() + " " + line.lstrip()
         else:
             joined.append(line)
-    return [re.sub(r"\s+", " ", l).strip() if l.strip() else "" for l in joined]
+    # A "~" left at the start of a line joins nothing (a slip in a few sources).
+    return [re.sub(r"\s+", " ", l.lstrip("~")).strip() if l.strip() else "" for l in joined]
 
 
 def _tidy(s):
     s = s.replace("/:«", "").replace("»:/", "")
     s = re.sub(r"\s+([,.;:?!])", r"\1", s) if False else s
     return re.sub(r"\s{2,}", " ", s).strip()
+
+
+# A heading ("From the Book of ...") is a line or two; anything longer is the
+# lesson itself, set without its usual red initial.
+TITLE_MAX = 150
 
 
 def parse_lesson(text, lang="latin"):
@@ -145,7 +151,8 @@ def parse_lesson(text, lang="latin"):
             else:
                 cur["paras"].append(_tidy(l[3:]))
             continue
-        if not cur["paras"] and not cur["verses"] and not cur["cite"] and not cur["source"]:
+        if (not cur["paras"] and not cur["verses"] and not cur["cite"] and not cur["source"]
+                and len(cur["title"]) + len(l) <= TITLE_MAX):
             cur["title"] = (cur["title"] + " " + _tidy(l)).strip()
         elif cur["verses"] and not cur["paras"]:
             # Text after numbered verses (e.g. "Jerúsalem, convértere ..."):
