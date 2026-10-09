@@ -1,16 +1,16 @@
-01-01        In Circumcisione Domini
+01-01        The Circumcision of Our Lord
 01-02        Octave of St. Stephen
 01-03        Octave Day of St. John the Evangelist
 01-04        Octave Day of the Holy Innocents
-01-05        In Vigilia Epiphaniæ
-01-06        In Epiphania Domini
-01-07        Secunda die infra Octavam Epiphaniæ
-01-08        Tertia die infra Octavam Epiphaniæ
-01-09        Quarta die infra Octavam Epiphaniæ
-01-10        Quinta die infra Octavam Epiphaniæ
-01-11        Sexta die infra Octavam Epiphaniæ
-01-12        Septima die infra Octavam Epiphaniæ
-01-13        In Octava Epiphaniæ
+01-05        Vigil of the Epiphany
+01-06        The Epiphany of Our Lord
+01-07        Second Day within the Octave of the Epiphany
+01-08        Third Day within the Octave of the Epiphany
+01-09        Fourth Day within the Octave of the Epiphany
+01-10        Fifth Day within the Octave of the Epiphany
+01-11        Sixth Day within the Octave of the Epiphany
+01-12        Seventh Day within the Octave of the Epiphany
+01-13        Octave Day of the Epiphany
 01-14        St. Hilary, Bishop of Poitiers, Confessor and Doctor of the Church
 01-14cc      St. Felix, Priest and Martyr
 01-15        St. Paul the First Hermit, Confessor
@@ -35,7 +35,7 @@
 01-30        St. Martina, Virgin and Martyr
 01-31        St. John Bosco, Confessor
 02-01        St. Ignatius, Bishop and Martyr
-02-02        In Purificatione Beatæ Mariæ Virginis
+02-02        The Purification of the Blessed Virgin Mary
 02-03        St. Blase, Bishop and Martyr
 02-04        St. Andrew Corsini, Bishop and Confessor
 02-05        St. Agatha, Virgin and Martyr
@@ -46,7 +46,7 @@
 02-09        St. Cyril of Alexandria, Bishop, Confessor, and Doctor of the Church
 02-09o       S. Apollonia, Virgin and Martyr
 02-10        St. Scholastica, Virgin
-02-11        In Apparitione Beatæ Mariæ Virginis Immaculatæ
+02-11        The Apparition of the Immaculate Virgin Mary
 02-12        Seven Holy Founders of the Order of the Servants of the Blessed Virgin Mary
 02-14        St. Valentine, Priest and Martyr
 02-15        Sts. Faustinus and Jovita, Martyrs
@@ -68,7 +68,7 @@
 03-19        St. Joseph, Spouse of the Blessed Virgin Mary, Confessor
 03-21        St. Benedict, Abbot
 03-24        St. Gabriel the Archangel
-03-25        In Annuntiatione Beatæ Mariæ Virginis
+03-25        The Annunciation of the Blessed Virgin Mary
 03-27        St. John Damascene, Confessor
 03-28        St. John of Capistrano, Confessor
 04-02        St. Francis of Paula, Confessor
@@ -92,7 +92,7 @@
 04-30        St. Catherine of Siena, Virgin
 05-01        Sts. Philip and James, Apostles
 05-02        S. Athanasius, Confessor and Doctor of the Church
-05-03        Inventione Sanctæ Crucis
+05-03        The Finding of the Holy Cross
 05-03r       Sts. Alexander and Companions, Martyrs
 05-04        St. Monica, Widow
 05-05        St. Pius V, Pope and Confessor
@@ -121,7 +121,7 @@
 05-28        St. Augustine of Canterbury, Bishop and Confessor
 05-29        St. Mary Magdalene de Pazzi, Virgin
 05-30        St. Felix, Pope and Martyr
-05-31        Beatæ Mariæ Virginis Reginæ
+05-31        The Queenship of the Blessed Virgin Mary
 06-01        St. Angela Merici, Virgin
 06-02        Sts. Marcellinus, Peter, and Erasmus, Martyrs
 06-04        St. Francis Caracciolo, Confessor
@@ -154,7 +154,7 @@
 06-30        Commemoration of St. Paul the Apostle
 07-01        Most Precious Blood of Our Lord Jesus Christ
 07-01t       Octave of the Nativity of St. John the Baptist
-07-02        In Visitatione Beatæ Mariæ Virginis
+07-02        The Visitation of the Blessed Virgin Mary
 07-02cc      Ss. Processus et Martinian, Martyrs
 07-03        St. Leo II, Pope and Confessor
 07-03oct     Fifth Day Within the Octave of Sts. Peter and Paul, Apostles
@@ -170,7 +170,7 @@
 07-13        St. Anacletus, Pope and Martyr
 07-14        St. Bonaventure, Bishop, Confessor and Doctor of the Church
 07-15        St. Henry the Emperor, Confessor
-07-16        In Commemoratione Beatæ Mariæ Virginis de Monte Carmelo
+07-16        Our Lady of Mount Carmel
 07-17        St. Alexis, Confessor
 07-18        St. Camillus de Lellis, Confessor
 07-18o       S. Symphorosa with her Seven Sons, Martyrs
@@ -193,8 +193,8 @@
 08-02o       S. Stephen Pope and Martyr
 08-03        Finding of St. Stephen the First Martyr
 08-04        St. Dominic the Confessor
-08-05        Sanctæ Mariæ Virginis ad Nives
-08-06        In Transfiguratione Domini Nostri Jesu Christi
+08-05        Our Lady of the Snows
+08-06        The Transfiguration of Our Lord Jesus Christ
 08-06cc      S. Xystus II Pope, Felicissimus and Agapitus, Martyrs
 08-07        St. Cajetan, Confessor
 08-07o       St. Donatus, Bishop and Martyr
@@ -205,17 +205,17 @@
 08-11        Sts. Tiburtius and Susanna, Martyrs
 08-12        St. Clare, Virgin
 08-13        Sts. Hippolytus and Cassian, Martyrs
-08-14        In Vigilia Assumptionis B.M.V.
-08-15        In Assumptione Beatæ Mariæ Virginis
+08-14        Vigil of the Assumption
+08-15        The Assumption of the Blessed Virgin Mary
 08-16        St. Joachim, Confessor, Father of the Blessed Virgin Mary
 08-17        St. Hyacinth, Confessor
 08-17t       Octave of St. Lawrence, Martyr
-08-18bmv     Quarta die infra Octavam S. Assumptionis Beatæ Mariæ Virginis
+08-18bmv     Fourth Day within the Octave of the Assumption
 08-18r       St. Agapitus, Martyr
 08-19        St. John Eudes, Confessor
 08-20        St. Bernard of Clairvaux, Abbot and Doctor of the Church
-08-21        St. Jeanne-Françoise Frémiot de Chantal, Widow;Duplex
-08-22        Immaculati Cordis Beatæ Mariæ Virginis
+08-21        St. Jeanne-Françoise Frémiot de Chantal, Widow
+08-22        The Immaculate Heart of the Blessed Virgin Mary
 08-22cc      Sts. Timothy, Hippolytus and Symphorianus, Martyrs
 08-23        St. Philip Benizi, Confessor
 08-23o       Vigil of St. Bartholomew, Apostle
@@ -233,14 +233,14 @@
 09-02        St. Stephen, King of Hungary, Confessor
 09-03        St. Pius X, Pope and Confessor
 09-05        St. Lawrence Justinian, Bishop and Confessor
-09-08        In Nativitate Beatæ Mariæ Virginis
+09-08        The Nativity of the Blessed Virgin Mary
 09-08cc      St. Adrian, Martyr
 09-09        S. Gorgonius, Martyr
 09-10        St. Nicholas of Tolentino Confessor
 09-11        Sts. Protus and Hyacinth Martyrs
-09-12        S. Nominis Beatæ Mariæ Virginis
-09-14        In Exaltatione Sanctæ Crucis
-09-15        Septem Dolorum Beatæ Mariæ Virginis
+09-12        The Holy Name of Mary
+09-14        The Exaltation of the Holy Cross
+09-15        The Seven Sorrows of the Blessed Virgin Mary
 09-15cc      St. Nicomedes, Martyr
 09-16        Sts. Cornelius, Pope and Cyprian, Bishop, Martyrs
 09-16cc      Ss. Euphemia, Lucy and Geminian, Martyrs
@@ -254,7 +254,7 @@
 09-22o       Ss. Maurice and companions, Martyrs
 09-23        St. Linus, Pope and Martyr
 09-23cc      St. Thecla, Virgin & Martyr
-09-24        Beatæ Mariæ Virginis de Mercede
+09-24        Our Lady of Ransom
 09-26        Sts. Cyprian and Justina, Martyrs
 09-27        Sts. Cosmas and Damian, Martyrs
 09-28        St. Wenceslaus, Duke and Martyr
@@ -266,13 +266,13 @@
 10-04        St. Francis of Assisi, Confessor
 10-05        Sts. Placidus and Companions Martyrs
 10-06        St. Bruno, Confessor
-10-07        Sacratissimi Rosarii Beatæ Mariæ Virginis
+10-07        The Most Holy Rosary of the Blessed Virgin Mary
 10-07t       St. Mark, Pope and Confessor
 10-08        St. Birgitta, Widow
 10-09        St. John Leonard, Confessor
 10-09t       Sts. Denis, Bishop, Rusticus et Eleutherius, Martyrs
 10-10        St. Francis Borgia, Confessor
-10-11        Maternitatis Beatæ Mariæ Virginis
+10-11        The Motherhood of the Blessed Virgin Mary
 10-13        St. Edward the Confessor, King
 10-14        St. Callistus, Pope and Martyr
 10-15        St. Teresa of Avila, Virgin
@@ -282,16 +282,16 @@
 10-19        St. Peter of Alcantara, Confessor
 10-20        St. John Cantius, Confessor
 10-21        St. Hilarion, Abbot
-10-24        St. Raphael the Archangel;Duplex majus
+10-24        St. Raphael the Archangel
 10-25        Sts. Chrysanthus and Daria, Martyrs
 10-26        St. Evaristus, Pope and Martyr
 10-27        Vigil of Sts. Simon and Jude, Apostles
 10-28        Sts. Simon and Jude, Apostles
 10-31        Vigil of All Saints
 11-01        All Saints
-11-02        In Commemoratione Omnium Fidelium Defunctorum
+11-02        The Commemoration of All the Faithful Departed
 11-03oct     Third Day Within the Octave of All Saints
-11-03sec     In Commemoratione Omnium Fidelium Defunctorum
+11-03sec     The Commemoration of All the Faithful Departed
 11-04        St. Charles Borromeo, Bishop and Confessor
 11-04cc      Sts. Vitalis and Agricola, Martyrs
 11-05oct     Fifth Day Within the Octave of All Saints
@@ -299,7 +299,7 @@
 11-07oct     Seventh Day Within the Octave of All Saints
 11-08        Octave of All Saints
 11-08r       Four Crowned Martyrs
-11-09        In Dedicatione Archibasilicæ Ss. Salvatoris
+11-09        Dedication of the Archbasilica of the Most Holy Saviour
 11-09cc      St. Theodore, Martyr
 11-10        St. Andrew Avellino Confessor
 11-10o       Sts. Tryphon, Respicius, et Nympha, Martyrs
@@ -311,11 +311,11 @@
 11-15        St. Albert the Great, Bishop, Confessor and Doctor of the Church
 11-16        St. Gertrude, Virgin
 11-17        St. Gregory the Wonderworker, Bishop and Confessor
-11-18        In Dedicatione Basilicarum Ss. Apostolorum Petri et Pauli
+11-18        Dedication of the Basilicas of Sts. Peter and Paul
 11-19        St. Elizabeth, Widow
 11-19o       St. Pontianus, Pope and Martyr
 11-20        St. Felix de Valois, Confessor
-11-21        In Præsentatione Beatæ Mariæ Virginis
+11-21        The Presentation of the Blessed Virgin Mary
 11-22        St. Cecilia, Virgin and Martyr
 11-23        St. Clement, Pope and Martyr
 11-23cc      St. Felicity, Martyr
@@ -331,24 +331,24 @@
 12-04        St. Peter Chrysologus, Bishop, Confessor and Doctor of the Church
 12-06        St. Nicholas, Bishop and Confessor
 12-07        St. Ambrose, Bishop, Confessor and Doctor of the Church
-12-08        In Conceptione Immaculata Beatæ Mariæ Virginis
-12-09-da     De II die infra Octavam Concept. Immac. Beatæ Mariæ Virginis
-12-09bmv     De II die infra Octavam Concept. Immac. Beatæ Mariæ Virginis
-12-10bmv     De III die infra Octavam Conceptionis Immaculatæ Beatæ Mariæ Virginis
+12-08        The Immaculate Conception of the Blessed Virgin Mary
+12-09-da     Second Day within the Octave of the Immaculate Conception
+12-09bmv     Second Day within the Octave of the Immaculate Conception
+12-10bmv     Third Day within the Octave of the Immaculate Conception
 12-11        St. Damasus, Pope and Confessor
-12-12bmv     De V die infra Octavam Concept. Immac. Beatæ Mariæ Virginis
+12-12bmv     Fifth Day within the Octave of the Immaculate Conception
 12-13        St. Lucy, Virgin and Martyr
-12-14bmv     De VII die infra Octavam Concept. Immac. Beatæ Mariæ Virginis
-12-15        In Octava Concept. Immac. Beatæ Mariæ Virginis
+12-14bmv     Seventh Day within the Octave of the Immaculate Conception
+12-15        Octave Day of the Immaculate Conception
 12-16        St. Eusebius, Bishop and Martyr
 12-21        St. Thomas the Apostle
-12-24        In Vigilia Nativitatis Domini
-12-24s       In Vigilia Nativitatis Domini
-12-25        In Nativitate Domini
+12-24        Vigil of the Nativity of Our Lord
+12-24s       Vigil of the Nativity of Our Lord
+12-25        The Nativity of Our Lord
 12-26        St. Stephen the First Martyr
 12-27        St. John the Apostle, Evangelist
 12-28        Holy Innocents
 12-29        St. Thomas of Canterbury, Bishop and Martyr
 12-31        St. Sylvester, Pope and Confessor
-09-sab-oct   Sanctæ Mariæ Sabbato
-10-DU        Domini Nostri Jesu Christi Regis
+09-sab-oct   Our Lady's Saturday
+10-DU        Our Lord Jesus Christ the King

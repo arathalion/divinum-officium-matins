@@ -6,7 +6,7 @@
    "file": "Commune/C1.txt",
    "kind": "Commune",
    "title_latin": "Commune Apostolorum",
-   "title_english": "Commune Apostolorum",
+   "title_english": "Common of Apostles",
    "rank": "",
    "lessons": [
     {
@@ -8978,7 +8978,7 @@
    "file": "Commune/C11.txt",
    "kind": "Commune",
    "title_latin": "In Festis Beatae Mariae Virginis",
-   "title_english": "In Festis Beatae Mariae Virginis",
+   "title_english": "Feasts of the Blessed Virgin Mary",
    "rank": "",
    "lessons": [
     {
@@ -9812,7 +9812,7 @@
    "file": "Commune/C1a.txt",
    "kind": "Commune",
    "title_latin": "Commune Evangelistarum",
-   "title_english": "Commune Evangelistarum",
+   "title_english": "Common of Evangelists",
    "rank": "",
    "lessons": [
     {
@@ -10994,7 +10994,7 @@
    "file": "Commune/C1ap.txt",
    "kind": "Commune",
    "title_latin": "Commune Evangelistarum tempore Paschali",
-   "title_english": "Commune Evangelistarum tempore Paschali",
+   "title_english": "Common of Evangelists in Paschaltide",
    "rank": "",
    "lessons": [
     {
@@ -18118,7 +18118,7 @@
    "file": "Commune/C3.txt",
    "kind": "Commune",
    "title_latin": "Commune Plurimorum Martyrum Pontificum",
-   "title_english": "Commune Plurimorum Martyrum Pontificum",
+   "title_english": "Common of Several Martyrs who were Bishops",
    "rank": "",
    "lessons": [
     {
@@ -19578,7 +19578,7 @@
    "file": "Commune/C3ap.txt",
    "kind": "Commune",
    "title_latin": "Commune Plurimorum Martyrum Tempore Paschali",
-   "title_english": "Commune Plurimorum Martyrum Tempore Paschali",
+   "title_english": "Common of Several Martyrs in Paschaltide",
    "rank": "",
    "lessons": [
     {
@@ -20862,7 +20862,7 @@
    "file": "Commune/C3bp.txt",
    "kind": "Commune",
    "title_latin": "Commune plurium Summorum Pontificum Martyrum Tempore Paschali",
-   "title_english": "Commune plurium Summorum Pontificum Martyrum Tempore Paschali",
+   "title_english": "Common of Several Martyrs who were Popes, in Paschaltide",
    "rank": "",
    "lessons": [
     {
@@ -34720,7 +34720,7 @@
    "file": "Commune/C5c.txt",
    "kind": "Commune",
    "title_latin": "Commune plurium Confessorum non Pontificum",
-   "title_english": "Commune plurium Confessorum non Pontificum",
+   "title_english": "Common of Several Confessors who were not Bishops",
    "rank": "",
    "lessons": [
     {
@@ -36838,16 +36838,25 @@
          ]
         ],
         "paras": []
-       },
-       {
-        "title": "R.br. Come, Bride of Christ, and take the everlasting crown, which the Lord hath prepared for thee, even for thee who for the love of Him hast shed thy blood; * And art entered with Angels into His garden. V. Come, O My chosen one, and I will establish My throne in thee, for the King hath reatly desired thy beauty R. And art entered with Angels into His garden.",
-        "cite": "",
-        "source": "",
-        "verses": [],
-        "paras": []
        }
       ],
-      "responsory": [],
+      "responsory": [
+       [
+        "R",
+        "Come, Bride of Christ, and take the everlasting crown, which the Lord hath prepared for thee, even for thee who for the love of Him hast shed thy blood;",
+        "And art entered with Angels into His garden.",
+        "br"
+       ],
+       [
+        "V",
+        "Come, O My chosen one, and I will establish My throne in thee, for the King hath reatly desired thy beauty"
+       ],
+       [
+        "R",
+        "And art entered with Angels into His garden.",
+        ""
+       ]
+      ],
       "tedeum": false
      }
     },
@@ -37606,16 +37615,25 @@
          ]
         ],
         "paras": []
-       },
-       {
-        "title": "R.br. Come, Bride of Christ, and take the everlasting crown, which the Lord hath prepared for thee, even for thee who for the love of Him hast shed thy blood; * And art entered with Angels into His garden. V. Come, O My chosen one, and I will establish My throne in thee, for the King hath reatly desired thy beauty R. And art entered with Angels into His garden.",
-        "cite": "",
-        "source": "",
-        "verses": [],
-        "paras": []
        }
       ],
-      "responsory": [],
+      "responsory": [
+       [
+        "R",
+        "Come, Bride of Christ, and take the everlasting crown, which the Lord hath prepared for thee, even for thee who for the love of Him hast shed thy blood;",
+        "And art entered with Angels into His garden.",
+        "br"
+       ],
+       [
+        "V",
+        "Come, O My chosen one, and I will establish My throne in thee, for the King hath reatly desired thy beauty"
+       ],
+       [
+        "R",
+        "And art entered with Angels into His garden.",
+        ""
+       ]
+      ],
       "tedeum": false
      }
     },
@@ -42210,16 +42228,25 @@
          ]
         ],
         "paras": []
-       },
-       {
-        "title": "R.br. Come, Bride of Christ, and take the everlasting crown, which the Lord hath prepared for thee, even for thee who for the love of Him hast shed thy blood; * And art entered with Angels into His garden. V. Come, O My chosen one, and I will establish My throne in thee, for the King hath reatly desired thy beauty R. And art entered with Angels into His garden.",
-        "cite": "",
-        "source": "",
-        "verses": [],
-        "paras": []
        }
       ],
-      "responsory": [],
+      "responsory": [
+       [
+        "R",
+        "Come, Bride of Christ, and take the everlasting crown, which the Lord hath prepared for thee, even for thee who for the love of Him hast shed thy blood;",
+        "And art entered with Angels into His garden.",
+        "br"
+       ],
+       [
+        "V",
+        "Come, O My chosen one, and I will establish My throne in thee, for the King hath reatly desired thy beauty"
+       ],
+       [
+        "R",
+        "And art entered with Angels into His garden.",
+        ""
+       ]
+      ],
       "tedeum": false
      }
     },
@@ -42986,16 +43013,25 @@
          ]
         ],
         "paras": []
-       },
-       {
-        "title": "R.br. Come, Bride of Christ, and take the everlasting crown, which the Lord hath prepared for thee, even for thee who for the love of Him hast shed thy blood; * And art entered with Angels into His garden. V. Come, O My chosen one, and I will establish My throne in thee, for the King hath reatly desired thy beauty R. And art entered with Angels into His garden.",
-        "cite": "",
-        "source": "",
-        "verses": [],
-        "paras": []
        }
       ],
-      "responsory": [],
+      "responsory": [
+       [
+        "R",
+        "Come, Bride of Christ, and take the everlasting crown, which the Lord hath prepared for thee, even for thee who for the love of Him hast shed thy blood;",
+        "And art entered with Angels into His garden.",
+        "br"
+       ],
+       [
+        "V",
+        "Come, O My chosen one, and I will establish My throne in thee, for the King hath reatly desired thy beauty"
+       ],
+       [
+        "R",
+        "And art entered with Angels into His garden.",
+        ""
+       ]
+      ],
       "tedeum": false
      }
     },
@@ -47470,7 +47506,7 @@
    "file": "Sancti/01-01.txt",
    "kind": "Sancti",
    "title_latin": "In Circumcisione Domini",
-   "title_english": "In Circumcisione Domini",
+   "title_english": "The Circumcision of Our Lord",
    "rank": "Duplex II classis",
    "lessons": [
     {
@@ -48188,7 +48224,7 @@
    "file": "Sancti/01-05.txt",
    "kind": "Sancti",
    "title_latin": "In Vigilia Epiphaniæ",
-   "title_english": "In Vigilia Epiphaniæ",
+   "title_english": "Vigil of the Epiphany",
    "rank": "Semiduplex",
    "lessons": [
     {
@@ -48644,7 +48680,7 @@
    "file": "Sancti/01-06.txt",
    "kind": "Sancti",
    "title_latin": "In Epiphania Domini",
-   "title_english": "In Epiphania Domini",
+   "title_english": "The Epiphany of Our Lord",
    "rank": "Duplex I classis",
    "lessons": [
     {
@@ -49407,7 +49443,7 @@
    "file": "Sancti/01-07.txt",
    "kind": "Sancti",
    "title_latin": "Secunda die infra Octavam Epiphaniæ",
-   "title_english": "Secunda die infra Octavam Epiphaniæ",
+   "title_english": "Second Day within the Octave of the Epiphany",
    "rank": "Semiduplex II classis",
    "lessons": [
     {
@@ -49863,7 +49899,7 @@
    "file": "Sancti/01-08.txt",
    "kind": "Sancti",
    "title_latin": "Tertia die infra Octavam Epiphaniæ",
-   "title_english": "Tertia die infra Octavam Epiphaniæ",
+   "title_english": "Third Day within the Octave of the Epiphany",
    "rank": "Semiduplex II classis",
    "lessons": [
     {
@@ -50319,7 +50355,7 @@
    "file": "Sancti/01-09.txt",
    "kind": "Sancti",
    "title_latin": "Quarta die infra Octavam Epiphaniæ",
-   "title_english": "Quarta die infra Octavam Epiphaniæ",
+   "title_english": "Fourth Day within the Octave of the Epiphany",
    "rank": "Semiduplex II classis",
    "lessons": [
     {
@@ -50775,7 +50811,7 @@
    "file": "Sancti/01-10.txt",
    "kind": "Sancti",
    "title_latin": "Quinta die infra Octavam Epiphaniæ",
-   "title_english": "Quinta die infra Octavam Epiphaniæ",
+   "title_english": "Fifth Day within the Octave of the Epiphany",
    "rank": "Semiduplex II classis",
    "lessons": [
     {
@@ -51231,7 +51267,7 @@
    "file": "Sancti/01-11.txt",
    "kind": "Sancti",
    "title_latin": "Sexta die infra Octavam Epiphaniæ",
-   "title_english": "Sexta die infra Octavam Epiphaniæ",
+   "title_english": "Sixth Day within the Octave of the Epiphany",
    "rank": "Semiduplex II classis",
    "lessons": [
     {
@@ -51687,7 +51723,7 @@
    "file": "Sancti/01-12.txt",
    "kind": "Sancti",
    "title_latin": "Septima die infra Octavam Epiphaniæ",
-   "title_english": "Septima die infra Octavam Epiphaniæ",
+   "title_english": "Seventh Day within the Octave of the Epiphany",
    "rank": "Semiduplex II classis",
    "lessons": [
     {
@@ -52141,7 +52177,7 @@
    "file": "Sancti/01-13.txt",
    "kind": "Sancti",
    "title_latin": "In Octava Epiphaniæ",
-   "title_english": "In Octava Epiphaniæ",
+   "title_english": "Octave Day of the Epiphany",
    "rank": "Duplex majus",
    "lessons": [
     {
@@ -55900,7 +55936,7 @@
      "file": "Commune/C3.txt",
      "section": "Lectio7",
      "title_latin": "Commune Plurimorum Martyrum Pontificum",
-     "title_english": "Commune Plurimorum Martyrum Pontificum"
+     "title_english": "Common of Several Martyrs who were Bishops"
     },
     {
      "n": 8,
@@ -55908,7 +55944,7 @@
      "file": "Commune/C3.txt",
      "section": "Lectio8",
      "title_latin": "Commune Plurimorum Martyrum Pontificum",
-     "title_english": "Commune Plurimorum Martyrum Pontificum"
+     "title_english": "Common of Several Martyrs who were Bishops"
     },
     {
      "n": 9,
@@ -55916,7 +55952,7 @@
      "file": "Commune/C3.txt",
      "section": "Lectio9",
      "title_latin": "Commune Plurimorum Martyrum Pontificum",
-     "title_english": "Commune Plurimorum Martyrum Pontificum"
+     "title_english": "Common of Several Martyrs who were Bishops"
     }
    ],
    "won_on": 127
@@ -59981,7 +60017,7 @@
    "file": "Sancti/02-02.txt",
    "kind": "Sancti",
    "title_latin": "In Purificatione Beatæ Mariæ Virginis",
-   "title_english": "In Purificatione Beatæ Mariæ Virginis",
+   "title_english": "The Purification of the Blessed Virgin Mary",
    "rank": "Duplex II classis",
    "lessons": [
     {
@@ -63334,7 +63370,7 @@
    "file": "Sancti/02-11.txt",
    "kind": "Sancti",
    "title_latin": "In Apparitione Beatæ Mariæ Virginis Immaculatæ",
-   "title_english": "In Apparitione Beatæ Mariæ Virginis Immaculatæ",
+   "title_english": "The Apparition of the Immaculate Virgin Mary",
    "rank": "Duplex majus",
    "lessons": [
     {
@@ -69077,7 +69113,7 @@
      "file": "Commune/C3.txt",
      "section": "Lectio1",
      "title_latin": "Commune Plurimorum Martyrum Pontificum",
-     "title_english": "Commune Plurimorum Martyrum Pontificum"
+     "title_english": "Common of Several Martyrs who were Bishops"
     },
     {
      "n": 2,
@@ -69085,7 +69121,7 @@
      "file": "Commune/C3.txt",
      "section": "Lectio2",
      "title_latin": "Commune Plurimorum Martyrum Pontificum",
-     "title_english": "Commune Plurimorum Martyrum Pontificum"
+     "title_english": "Common of Several Martyrs who were Bishops"
     },
     {
      "n": 3,
@@ -69093,7 +69129,7 @@
      "file": "Commune/C3.txt",
      "section": "Lectio3",
      "title_latin": "Commune Plurimorum Martyrum Pontificum",
-     "title_english": "Commune Plurimorum Martyrum Pontificum"
+     "title_english": "Common of Several Martyrs who were Bishops"
     },
     {
      "n": 9,
@@ -72457,7 +72493,7 @@
    "file": "Sancti/03-25.txt",
    "kind": "Sancti",
    "title_latin": "In Annuntiatione Beatæ Mariæ Virginis",
-   "title_english": "In Annuntiatione Beatæ Mariæ Virginis",
+   "title_english": "The Annunciation of the Blessed Virgin Mary",
    "rank": "Duplex I classis",
    "lessons": [
     {
@@ -78675,7 +78711,7 @@
      "file": "Commune/C3bp.txt",
      "section": "Lectio7",
      "title_latin": "Commune plurium Summorum Pontificum Martyrum Tempore Paschali",
-     "title_english": "Commune plurium Summorum Pontificum Martyrum Tempore Paschali"
+     "title_english": "Common of Several Martyrs who were Popes, in Paschaltide"
     },
     {
      "n": 8,
@@ -78683,7 +78719,7 @@
      "file": "Commune/C3bp.txt",
      "section": "Lectio8",
      "title_latin": "Commune plurium Summorum Pontificum Martyrum Tempore Paschali",
-     "title_english": "Commune plurium Summorum Pontificum Martyrum Tempore Paschali"
+     "title_english": "Common of Several Martyrs who were Popes, in Paschaltide"
     },
     {
      "n": 9,
@@ -78691,7 +78727,7 @@
      "file": "Commune/C3bp.txt",
      "section": "Lectio9",
      "title_latin": "Commune plurium Summorum Pontificum Martyrum Tempore Paschali",
-     "title_english": "Commune plurium Summorum Pontificum Martyrum Tempore Paschali"
+     "title_english": "Common of Several Martyrs who were Popes, in Paschaltide"
     }
    ],
    "won_on": 82
@@ -79351,7 +79387,7 @@
      "file": "Commune/C1ap.txt",
      "section": "Lectio1",
      "title_latin": "Commune Evangelistarum tempore Paschali",
-     "title_english": "Commune Evangelistarum tempore Paschali"
+     "title_english": "Common of Evangelists in Paschaltide"
     },
     {
      "n": 2,
@@ -79359,7 +79395,7 @@
      "file": "Commune/C1ap.txt",
      "section": "Lectio2",
      "title_latin": "Commune Evangelistarum tempore Paschali",
-     "title_english": "Commune Evangelistarum tempore Paschali"
+     "title_english": "Common of Evangelists in Paschaltide"
     },
     {
      "n": 3,
@@ -79367,7 +79403,7 @@
      "file": "Commune/C1ap.txt",
      "section": "Lectio3",
      "title_latin": "Commune Evangelistarum tempore Paschali",
-     "title_english": "Commune Evangelistarum tempore Paschali"
+     "title_english": "Common of Evangelists in Paschaltide"
     },
     {
      "n": 7,
@@ -79375,7 +79411,7 @@
      "file": "Commune/C1ap.txt",
      "section": "Lectio7",
      "title_latin": "Commune Evangelistarum tempore Paschali",
-     "title_english": "Commune Evangelistarum tempore Paschali"
+     "title_english": "Common of Evangelists in Paschaltide"
     },
     {
      "n": 8,
@@ -79383,7 +79419,7 @@
      "file": "Commune/C1ap.txt",
      "section": "Lectio8",
      "title_latin": "Commune Evangelistarum tempore Paschali",
-     "title_english": "Commune Evangelistarum tempore Paschali"
+     "title_english": "Common of Evangelists in Paschaltide"
     },
     {
      "n": 9,
@@ -79391,7 +79427,7 @@
      "file": "Commune/C1ap.txt",
      "section": "Lectio9",
      "title_latin": "Commune Evangelistarum tempore Paschali",
-     "title_english": "Commune Evangelistarum tempore Paschali"
+     "title_english": "Common of Evangelists in Paschaltide"
     }
    ],
    "won_on": 151
@@ -79683,7 +79719,7 @@
      "file": "Commune/C3bp.txt",
      "section": "Lectio7",
      "title_latin": "Commune plurium Summorum Pontificum Martyrum Tempore Paschali",
-     "title_english": "Commune plurium Summorum Pontificum Martyrum Tempore Paschali"
+     "title_english": "Common of Several Martyrs who were Popes, in Paschaltide"
     },
     {
      "n": 8,
@@ -79691,7 +79727,7 @@
      "file": "Commune/C3bp.txt",
      "section": "Lectio8",
      "title_latin": "Commune plurium Summorum Pontificum Martyrum Tempore Paschali",
-     "title_english": "Commune plurium Summorum Pontificum Martyrum Tempore Paschali"
+     "title_english": "Common of Several Martyrs who were Popes, in Paschaltide"
     },
     {
      "n": 9,
@@ -79699,7 +79735,7 @@
      "file": "Commune/C3bp.txt",
      "section": "Lectio9",
      "title_latin": "Commune plurium Summorum Pontificum Martyrum Tempore Paschali",
-     "title_english": "Commune plurium Summorum Pontificum Martyrum Tempore Paschali"
+     "title_english": "Common of Several Martyrs who were Popes, in Paschaltide"
     }
    ],
    "won_on": 92
@@ -82618,7 +82654,7 @@
    "file": "Sancti/05-03.txt",
    "kind": "Sancti",
    "title_latin": "Inventione Sanctæ Crucis",
-   "title_english": "Inventione Sanctæ Crucis",
+   "title_english": "The Finding of the Holy Cross",
    "rank": "Duplex II classis",
    "lessons": [
     {
@@ -92376,7 +92412,7 @@
    "file": "Sancti/05-31.txt",
    "kind": "Sancti",
    "title_latin": "Beatæ Mariæ Virginis Reginæ",
-   "title_english": "Beatæ Mariæ Virginis Reginæ",
+   "title_english": "The Queenship of the Blessed Virgin Mary",
    "rank": "Duplex II classis",
    "lessons": [
     {
@@ -104409,7 +104445,7 @@
    "file": "Sancti/07-02.txt",
    "kind": "Sancti",
    "title_latin": "In Visitatione Beatæ Mariæ Virginis",
-   "title_english": "In Visitatione Beatæ Mariæ Virginis",
+   "title_english": "The Visitation of the Blessed Virgin Mary",
    "rank": "Duplex II classis",
    "lessons": [
     {
@@ -109820,7 +109856,7 @@
    "file": "Sancti/07-16.txt",
    "kind": "Sancti",
    "title_latin": "In Commemoratione Beatæ Mariæ Virginis de Monte Carmelo",
-   "title_english": "In Commemoratione Beatæ Mariæ Virginis de Monte Carmelo",
+   "title_english": "Our Lady of Mount Carmel",
    "rank": "Duplex majus",
    "lessons": [
     {
@@ -110053,7 +110089,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio1",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 2,
@@ -110061,7 +110097,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio2",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 3,
@@ -110069,7 +110105,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio3",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 7,
@@ -110077,7 +110113,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio7",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 8,
@@ -110085,7 +110121,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio8",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 9,
@@ -110093,7 +110129,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio9",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     }
    ],
    "won_on": 130
@@ -113670,7 +113706,7 @@
      "file": "Commune/C1.txt",
      "section": "Lectio1",
      "title_latin": "Commune Apostolorum",
-     "title_english": "Commune Apostolorum"
+     "title_english": "Common of Apostles"
     },
     {
      "n": 2,
@@ -113678,7 +113714,7 @@
      "file": "Commune/C1.txt",
      "section": "Lectio2",
      "title_latin": "Commune Apostolorum",
-     "title_english": "Commune Apostolorum"
+     "title_english": "Common of Apostles"
     },
     {
      "n": 3,
@@ -113686,7 +113722,7 @@
      "file": "Commune/C1.txt",
      "section": "Lectio3",
      "title_latin": "Commune Apostolorum",
-     "title_english": "Commune Apostolorum"
+     "title_english": "Common of Apostles"
     }
    ],
    "won_on": 151
@@ -114280,7 +114316,7 @@
      "file": "Commune/C3.txt",
      "section": "Lectio7",
      "title_latin": "Commune Plurimorum Martyrum Pontificum",
-     "title_english": "Commune Plurimorum Martyrum Pontificum"
+     "title_english": "Common of Several Martyrs who were Bishops"
     },
     {
      "n": 8,
@@ -114288,7 +114324,7 @@
      "file": "Commune/C3.txt",
      "section": "Lectio8",
      "title_latin": "Commune Plurimorum Martyrum Pontificum",
-     "title_english": "Commune Plurimorum Martyrum Pontificum"
+     "title_english": "Common of Several Martyrs who were Bishops"
     },
     {
      "n": 9,
@@ -114296,7 +114332,7 @@
      "file": "Commune/C3.txt",
      "section": "Lectio9",
      "title_latin": "Commune Plurimorum Martyrum Pontificum",
-     "title_english": "Commune Plurimorum Martyrum Pontificum"
+     "title_english": "Common of Several Martyrs who were Bishops"
     }
    ],
    "won_on": 130
@@ -117532,7 +117568,7 @@
    "file": "Sancti/08-05.txt",
    "kind": "Sancti",
    "title_latin": "Sanctæ Mariæ Virginis ad Nives",
-   "title_english": "Sanctæ Mariæ Virginis ad Nives",
+   "title_english": "Our Lady of the Snows",
    "rank": "Duplex majus",
    "lessons": [
     {
@@ -117765,7 +117801,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio1",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 2,
@@ -117773,7 +117809,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio2",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 3,
@@ -117781,7 +117817,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio3",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 7,
@@ -117789,7 +117825,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio7",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 8,
@@ -117797,7 +117833,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio8",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 9,
@@ -117805,7 +117841,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio9",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     }
    ],
    "won_on": 129
@@ -117814,7 +117850,7 @@
    "file": "Sancti/08-06.txt",
    "kind": "Sancti",
    "title_latin": "In Transfiguratione Domini Nostri Jesu Christi",
-   "title_english": "In Transfiguratione Domini Nostri Jesu Christi",
+   "title_english": "The Transfiguration of Our Lord Jesus Christ",
    "rank": "Duplex II classis",
    "lessons": [
     {
@@ -121033,7 +121069,7 @@
    "file": "Sancti/08-14.txt",
    "kind": "Sancti",
    "title_latin": "In Vigilia Assumptionis B.M.V.",
-   "title_english": "In Vigilia Assumptionis B.M.V.",
+   "title_english": "Vigil of the Assumption",
    "rank": "Simplex",
    "lessons": [
     {
@@ -121284,7 +121320,7 @@
    "file": "Sancti/08-15.txt",
    "kind": "Sancti",
    "title_latin": "In Assumptione Beatæ Mariæ Virginis",
-   "title_english": "In Assumptione Beatæ Mariæ Virginis",
+   "title_english": "The Assumption of the Blessed Virgin Mary",
    "rank": "Duplex I classis cum Octava communi",
    "lessons": [
     {
@@ -122900,7 +122936,7 @@
    "file": "Sancti/08-18bmv.txt",
    "kind": "Sancti",
    "title_latin": "Quarta die infra Octavam S. Assumptionis Beatæ Mariæ Virginis",
-   "title_english": "Quarta die infra Octavam S. Assumptionis Beatæ Mariæ Virginis",
+   "title_english": "Fourth Day within the Octave of the Assumption",
    "rank": "Semiduplex",
    "lessons": [
     {
@@ -124419,7 +124455,7 @@
    "file": "Sancti/08-21.txt",
    "kind": "Sancti",
    "title_latin": "S. Joannæ Franciscæ Frémiot de Chantal Viduæ",
-   "title_english": "St. Jeanne-Françoise Frémiot de Chantal, Widow;Duplex",
+   "title_english": "St. Jeanne-Françoise Frémiot de Chantal, Widow",
    "rank": "Duplex",
    "lessons": [
     {
@@ -124689,7 +124725,7 @@
    "file": "Sancti/08-22.txt",
    "kind": "Sancti",
    "title_latin": "Immaculati Cordis Beatæ Mariæ Virginis",
-   "title_english": "Immaculati Cordis Beatæ Mariæ Virginis",
+   "title_english": "The Immaculate Heart of the Blessed Virgin Mary",
    "rank": "Duplex II classis",
    "lessons": [
     {
@@ -125094,7 +125130,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio1",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 2,
@@ -125102,7 +125138,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio2",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 3,
@@ -125110,7 +125146,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio3",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 9,
@@ -126108,7 +126144,7 @@
      "file": "Commune/C1.txt",
      "section": "Lectio1",
      "title_latin": "Commune Apostolorum",
-     "title_english": "Commune Apostolorum"
+     "title_english": "Common of Apostles"
     },
     {
      "n": 2,
@@ -126116,7 +126152,7 @@
      "file": "Commune/C1.txt",
      "section": "Lectio2",
      "title_latin": "Commune Apostolorum",
-     "title_english": "Commune Apostolorum"
+     "title_english": "Common of Apostles"
     },
     {
      "n": 3,
@@ -126124,7 +126160,7 @@
      "file": "Commune/C1.txt",
      "section": "Lectio3",
      "title_latin": "Commune Apostolorum",
-     "title_english": "Commune Apostolorum"
+     "title_english": "Common of Apostles"
     }
    ],
    "won_on": 151
@@ -129981,7 +130017,7 @@
    "file": "Sancti/09-08.txt",
    "kind": "Sancti",
    "title_latin": "In Nativitate Beatæ Mariæ Virginis",
-   "title_english": "In Nativitate Beatæ Mariæ Virginis",
+   "title_english": "The Nativity of the Blessed Virgin Mary",
    "rank": "Duplex II classis cum Octava simplici",
    "lessons": [
     {
@@ -131358,7 +131394,7 @@
    "file": "Sancti/09-12.txt",
    "kind": "Sancti",
    "title_latin": "S. Nominis Beatæ Mariæ Virginis",
-   "title_english": "S. Nominis Beatæ Mariæ Virginis",
+   "title_english": "The Holy Name of Mary",
    "rank": "Duplex majus",
    "lessons": [
     {
@@ -131801,7 +131837,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio1",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 2,
@@ -131809,7 +131845,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio2",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 3,
@@ -131817,7 +131853,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio3",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     }
    ],
    "won_on": 129
@@ -131826,7 +131862,7 @@
    "file": "Sancti/09-14.txt",
    "kind": "Sancti",
    "title_latin": "In Exaltatione Sanctæ Crucis",
-   "title_english": "In Exaltatione Sanctæ Crucis",
+   "title_english": "The Exaltation of the Holy Cross",
    "rank": "Duplex majus",
    "lessons": [
     {
@@ -132565,7 +132601,7 @@
    "file": "Sancti/09-15.txt",
    "kind": "Sancti",
    "title_latin": "Septem Dolorum Beatæ Mariæ Virginis",
-   "title_english": "Septem Dolorum Beatæ Mariæ Virginis",
+   "title_english": "The Seven Sorrows of the Blessed Virgin Mary",
    "rank": "Duplex II classis",
    "lessons": [
     {
@@ -133551,7 +133587,7 @@
      "file": "Commune/C3.txt",
      "section": "Lectio7",
      "title_latin": "Commune Plurimorum Martyrum Pontificum",
-     "title_english": "Commune Plurimorum Martyrum Pontificum"
+     "title_english": "Common of Several Martyrs who were Bishops"
     },
     {
      "n": 8,
@@ -133559,7 +133595,7 @@
      "file": "Commune/C3.txt",
      "section": "Lectio8",
      "title_latin": "Commune Plurimorum Martyrum Pontificum",
-     "title_english": "Commune Plurimorum Martyrum Pontificum"
+     "title_english": "Common of Several Martyrs who were Bishops"
     },
     {
      "n": 9,
@@ -136675,7 +136711,7 @@
      "file": "Commune/C1a.txt",
      "section": "Lectio1",
      "title_latin": "Commune Evangelistarum",
-     "title_english": "Commune Evangelistarum"
+     "title_english": "Common of Evangelists"
     },
     {
      "n": 2,
@@ -136683,7 +136719,7 @@
      "file": "Commune/C1a.txt",
      "section": "Lectio2",
      "title_latin": "Commune Evangelistarum",
-     "title_english": "Commune Evangelistarum"
+     "title_english": "Common of Evangelists"
     },
     {
      "n": 3,
@@ -136691,7 +136727,7 @@
      "file": "Commune/C1a.txt",
      "section": "Lectio3",
      "title_latin": "Commune Evangelistarum",
-     "title_english": "Commune Evangelistarum"
+     "title_english": "Common of Evangelists"
     },
     {
      "n": 9,
@@ -137338,7 +137374,7 @@
    "file": "Sancti/09-24.txt",
    "kind": "Sancti",
    "title_latin": "Beatæ Mariæ Virginis de Mercede",
-   "title_english": "Beatæ Mariæ Virginis de Mercede",
+   "title_english": "Our Lady of Ransom",
    "rank": "Duplex majus",
    "lessons": [
     {
@@ -137571,7 +137607,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio1",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 2,
@@ -137579,7 +137615,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio2",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 3,
@@ -137587,7 +137623,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio3",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 7,
@@ -137595,7 +137631,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio7",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 8,
@@ -137603,7 +137639,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio8",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 9,
@@ -137611,7 +137647,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio9",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     }
    ],
    "won_on": 130
@@ -139899,7 +139935,7 @@
    "file": "Sancti/09-sab-oct.txt",
    "kind": "Sancti",
    "title_latin": "Sanctæ Mariæ Sabbato",
-   "title_english": "Sanctæ Mariæ Sabbato",
+   "title_english": "Our Lady's Saturday",
    "rank": "Simplex",
    "lessons": [],
    "refs": [
@@ -141995,7 +142031,7 @@
    "file": "Sancti/10-07.txt",
    "kind": "Sancti",
    "title_latin": "Sacratissimi Rosarii Beatæ Mariæ Virginis",
-   "title_english": "Sacratissimi Rosarii Beatæ Mariæ Virginis",
+   "title_english": "The Most Holy Rosary of the Blessed Virgin Mary",
    "rank": "Duplex II classis",
    "lessons": [
     {
@@ -144029,7 +144065,7 @@
    "file": "Sancti/10-11.txt",
    "kind": "Sancti",
    "title_latin": "Maternitatis Beatæ Mariæ Virginis",
-   "title_english": "Maternitatis Beatæ Mariæ Virginis",
+   "title_english": "The Motherhood of the Blessed Virgin Mary",
    "rank": "Duplex II classis",
    "lessons": [
     {
@@ -146623,7 +146659,7 @@
      "file": "Commune/C1a.txt",
      "section": "Lectio1",
      "title_latin": "Commune Evangelistarum",
-     "title_english": "Commune Evangelistarum"
+     "title_english": "Common of Evangelists"
     },
     {
      "n": 2,
@@ -146631,7 +146667,7 @@
      "file": "Commune/C1a.txt",
      "section": "Lectio2",
      "title_latin": "Commune Evangelistarum",
-     "title_english": "Commune Evangelistarum"
+     "title_english": "Common of Evangelists"
     },
     {
      "n": 3,
@@ -146639,7 +146675,7 @@
      "file": "Commune/C1a.txt",
      "section": "Lectio3",
      "title_latin": "Commune Evangelistarum",
-     "title_english": "Commune Evangelistarum"
+     "title_english": "Common of Evangelists"
     },
     {
      "n": 7,
@@ -146647,7 +146683,7 @@
      "file": "Commune/C1a.txt",
      "section": "Lectio7",
      "title_latin": "Commune Evangelistarum",
-     "title_english": "Commune Evangelistarum"
+     "title_english": "Common of Evangelists"
     },
     {
      "n": 8,
@@ -146655,7 +146691,7 @@
      "file": "Commune/C1a.txt",
      "section": "Lectio8",
      "title_latin": "Commune Evangelistarum",
-     "title_english": "Commune Evangelistarum"
+     "title_english": "Common of Evangelists"
     },
     {
      "n": 9,
@@ -146663,7 +146699,7 @@
      "file": "Commune/C1a.txt",
      "section": "Lectio9",
      "title_latin": "Commune Evangelistarum",
-     "title_english": "Commune Evangelistarum"
+     "title_english": "Common of Evangelists"
     }
    ],
    "won_on": 151
@@ -147456,7 +147492,7 @@
    "file": "Sancti/10-24.txt",
    "kind": "Sancti",
    "title_latin": "S. Raphaëlis Archangeli",
-   "title_english": "St. Raphael the Archangel;Duplex majus",
+   "title_english": "St. Raphael the Archangel",
    "rank": "Duplex majus",
    "lessons": [
     {
@@ -149673,7 +149709,7 @@
    "file": "Sancti/10-DU.txt",
    "kind": "Sancti",
    "title_latin": "Domini Nostri Jesu Christi Regis",
-   "title_english": "Domini Nostri Jesu Christi Regis",
+   "title_english": "Our Lord Jesus Christ the King",
    "rank": "Duplex I classis",
    "lessons": [
     {
@@ -151295,7 +151331,7 @@
    "file": "Sancti/11-02.txt",
    "kind": "Sancti",
    "title_latin": "In Commemoratione Omnium Fidelium Defunctorum",
-   "title_english": "In Commemoratione Omnium Fidelium Defunctorum",
+   "title_english": "The Commemoration of All the Faithful Departed",
    "rank": "Duplex",
    "lessons": [
     {
@@ -152789,7 +152825,7 @@
      "file": "Commune/C1a.txt",
      "section": "Lectio1",
      "title_latin": "Commune Evangelistarum",
-     "title_english": "Commune Evangelistarum"
+     "title_english": "Common of Evangelists"
     },
     {
      "n": 2,
@@ -152797,7 +152833,7 @@
      "file": "Commune/C1a.txt",
      "section": "Lectio2",
      "title_latin": "Commune Evangelistarum",
-     "title_english": "Commune Evangelistarum"
+     "title_english": "Common of Evangelists"
     },
     {
      "n": 3,
@@ -152805,7 +152841,7 @@
      "file": "Commune/C1a.txt",
      "section": "Lectio3",
      "title_latin": "Commune Evangelistarum",
-     "title_english": "Commune Evangelistarum"
+     "title_english": "Common of Evangelists"
     }
    ],
    "won_on": 108
@@ -152814,7 +152850,7 @@
    "file": "Sancti/11-03sec.txt",
    "kind": "Sancti",
    "title_latin": "In Commemoratione Omnium Fidelium Defunctorum",
-   "title_english": "In Commemoratione Omnium Fidelium Defunctorum",
+   "title_english": "The Commemoration of All the Faithful Departed",
    "rank": "Duplex",
    "lessons": [
     {
@@ -156023,7 +156059,7 @@
    "file": "Sancti/11-09.txt",
    "kind": "Sancti",
    "title_latin": "In Dedicatione Archibasilicæ Ss. Salvatoris",
-   "title_english": "In Dedicatione Archibasilicæ Ss. Salvatoris",
+   "title_english": "Dedication of the Archbasilica of the Most Holy Saviour",
    "rank": "Duplex II classis",
    "lessons": [
     {
@@ -160145,7 +160181,7 @@
    "file": "Sancti/11-18.txt",
    "kind": "Sancti",
    "title_latin": "In Dedicatione Basilicarum Ss. Apostolorum Petri et Pauli",
-   "title_english": "In Dedicatione Basilicarum Ss. Apostolorum Petri et Pauli",
+   "title_english": "Dedication of the Basilicas of Sts. Peter and Paul",
    "rank": "Duplex majus",
    "lessons": [
     {
@@ -161658,7 +161694,7 @@
    "file": "Sancti/11-21.txt",
    "kind": "Sancti",
    "title_latin": "In Præsentatione Beatæ Mariæ Virginis",
-   "title_english": "In Præsentatione Beatæ Mariæ Virginis",
+   "title_english": "The Presentation of the Blessed Virgin Mary",
    "rank": "Duplex majus",
    "lessons": [
     {
@@ -161891,7 +161927,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio1",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 2,
@@ -161899,7 +161935,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio2",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 3,
@@ -161907,7 +161943,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio3",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 7,
@@ -161915,7 +161951,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio7",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 8,
@@ -161923,7 +161959,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio8",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     },
     {
      "n": 9,
@@ -161931,7 +161967,7 @@
      "file": "Commune/C11.txt",
      "section": "Lectio9",
      "title_latin": "In Festis Beatae Mariae Virginis",
-     "title_english": "In Festis Beatae Mariae Virginis"
+     "title_english": "Feasts of the Blessed Virgin Mary"
     }
    ],
    "won_on": 129
@@ -166377,7 +166413,7 @@
    "file": "Sancti/12-08.txt",
    "kind": "Sancti",
    "title_latin": "In Conceptione Immaculata Beatæ Mariæ Virginis",
-   "title_english": "In Conceptione Immaculata Beatæ Mariæ Virginis",
+   "title_english": "The Immaculate Conception of the Blessed Virgin Mary",
    "rank": "Duplex I classis cum Octava communi",
    "lessons": [
     {
@@ -167170,7 +167206,7 @@
    "file": "Sancti/12-09-da.txt",
    "kind": "Sancti",
    "title_latin": "De II die infra Octavam Concept. Immac. Beatæ Mariæ Virginis",
-   "title_english": "De II die infra Octavam Concept. Immac. Beatæ Mariæ Virginis",
+   "title_english": "Second Day within the Octave of the Immaculate Conception",
    "rank": "Semiduplex",
    "lessons": [
     {
@@ -167633,7 +167669,7 @@
    "file": "Sancti/12-09bmv.txt",
    "kind": "Sancti",
    "title_latin": "De II die infra Octavam Concept. Immac. Beatæ Mariæ Virginis",
-   "title_english": "De II die infra Octavam Concept. Immac. Beatæ Mariæ Virginis",
+   "title_english": "Second Day within the Octave of the Immaculate Conception",
    "rank": "Semiduplex",
    "lessons": [
     {
@@ -168096,7 +168132,7 @@
    "file": "Sancti/12-10bmv.txt",
    "kind": "Sancti",
    "title_latin": "De III die infra Octavam Conceptionis Immaculatæ Beatæ Mariæ Virginis",
-   "title_english": "De III die infra Octavam Conceptionis Immaculatæ Beatæ Mariæ Virginis",
+   "title_english": "Third Day within the Octave of the Immaculate Conception",
    "rank": "Semiduplex",
    "lessons": [
     {
@@ -168829,7 +168865,7 @@
    "file": "Sancti/12-12bmv.txt",
    "kind": "Sancti",
    "title_latin": "De V die infra Octavam Concept. Immac. Beatæ Mariæ Virginis",
-   "title_english": "De V die infra Octavam Concept. Immac. Beatæ Mariæ Virginis",
+   "title_english": "Fifth Day within the Octave of the Immaculate Conception",
    "rank": "Semiduplex",
    "lessons": [
     {
@@ -169555,7 +169591,7 @@
    "file": "Sancti/12-14bmv.txt",
    "kind": "Sancti",
    "title_latin": "De VII die infra Octavam Concept. Immac. Beatæ Mariæ Virginis",
-   "title_english": "De VII die infra Octavam Concept. Immac. Beatæ Mariæ Virginis",
+   "title_english": "Seventh Day within the Octave of the Immaculate Conception",
    "rank": "Semiduplex",
    "lessons": [
     {
@@ -170018,7 +170054,7 @@
    "file": "Sancti/12-15.txt",
    "kind": "Sancti",
    "title_latin": "In Octava Concept. Immac. Beatæ Mariæ Virginis",
-   "title_english": "In Octava Concept. Immac. Beatæ Mariæ Virginis",
+   "title_english": "Octave Day of the Immaculate Conception",
    "rank": "Duplex majus",
    "lessons": [
     {
@@ -171380,7 +171416,7 @@
      "file": "Commune/C1.txt",
      "section": "Lectio1",
      "title_latin": "Commune Apostolorum",
-     "title_english": "Commune Apostolorum"
+     "title_english": "Common of Apostles"
     },
     {
      "n": 2,
@@ -171388,7 +171424,7 @@
      "file": "Commune/C1.txt",
      "section": "Lectio2",
      "title_latin": "Commune Apostolorum",
-     "title_english": "Commune Apostolorum"
+     "title_english": "Common of Apostles"
     },
     {
      "n": 3,
@@ -171396,7 +171432,7 @@
      "file": "Commune/C1.txt",
      "section": "Lectio3",
      "title_latin": "Commune Apostolorum",
-     "title_english": "Commune Apostolorum"
+     "title_english": "Common of Apostles"
     }
    ],
    "won_on": 151
@@ -171405,7 +171441,7 @@
    "file": "Sancti/12-24.txt",
    "kind": "Sancti",
    "title_latin": "In Vigilia Nativitatis Domini",
-   "title_english": "In Vigilia Nativitatis Domini",
+   "title_english": "Vigil of the Nativity of Our Lord",
    "rank": "Duplex I classis",
    "lessons": [
     {
@@ -171656,7 +171692,7 @@
    "file": "Sancti/12-24s.txt",
    "kind": "Sancti",
    "title_latin": "In Vigilia Nativitatis Domini",
-   "title_english": "In Vigilia Nativitatis Domini",
+   "title_english": "Vigil of the Nativity of Our Lord",
    "rank": "Duplex I classis",
    "lessons": [
     {
@@ -172465,7 +172501,7 @@
    "file": "Sancti/12-25.txt",
    "kind": "Sancti",
    "title_latin": "In Nativitate Domini",
-   "title_english": "In Nativitate Domini",
+   "title_english": "The Nativity of Our Lord",
    "rank": "Duplex I classis",
    "lessons": [
     {
@@ -259892,7 +259928,7 @@
      "file": "Commune/C1a.txt",
      "section": "Lectio1",
      "title_latin": "Commune Evangelistarum",
-     "title_english": "Commune Evangelistarum"
+     "title_english": "Common of Evangelists"
     },
     {
      "n": 2,
@@ -259900,7 +259936,7 @@
      "file": "Commune/C1a.txt",
      "section": "Lectio2",
      "title_latin": "Commune Evangelistarum",
-     "title_english": "Commune Evangelistarum"
+     "title_english": "Common of Evangelists"
     },
     {
      "n": 3,
@@ -259908,7 +259944,7 @@
      "file": "Commune/C1a.txt",
      "section": "Lectio3",
      "title_latin": "Commune Evangelistarum",
-     "title_english": "Commune Evangelistarum"
+     "title_english": "Common of Evangelists"
     }
    ],
    "won_on": 6,

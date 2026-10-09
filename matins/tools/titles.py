@@ -140,3 +140,105 @@ def nat_title(stem, latin, lang):
     if lang == "latin":
         return f"Die {d} {mon[0]}" + (f": {latin}" if latin else "")
     return f"{d} {mon[1]}" + (f": Epistle to the Romans, chapter {m2.group(1)}" if m2 else "")
+
+
+# English names for feasts whose English file in Divinum Officium has no title.
+FEASTS = {
+    "In Dedicatione Basilicarum Ss. Apostolorum Petri et Pauli": "Dedication of the Basilicas of Sts. Peter and Paul",
+    "In Præsentatione Beatæ Mariæ Virginis": "The Presentation of the Blessed Virgin Mary",
+    "Domini Nostri Jesu Christi Regis": "Our Lord Jesus Christ the King",
+    "In Dedicatione Archibasilicæ Ss. Salvatoris": "Dedication of the Archbasilica of the Most Holy Saviour",
+    "In Dedicatione Basilicæ Ss. Salvatoris": "Dedication of the Basilica of the Most Holy Saviour",
+    "In Commemoratione Omnium Fidelium Defunctorum": "The Commemoration of All the Faithful Departed",
+    "Omnium Fidelium Defunctorum": "All the Faithful Departed",
+    "In Commemoratione Omnium Defunctorum Ordinis nostri": "Commemoration of All the Departed of our Order",
+    "Beatæ Mariæ Virginis a Rosario": "Our Lady of the Rosary",
+    "Sacratissimi Rosarii Beatæ Mariæ Virginis": "The Most Holy Rosary of the Blessed Virgin Mary",
+    "Sanctissimi Rosarii Beatæ Mariæ Virginis": "The Most Holy Rosary of the Blessed Virgin Mary",
+    "Solemnitas SS. Rosarii Beatæ Mariæ Virginis": "Solemnity of the Most Holy Rosary of the Blessed Virgin Mary",
+    "Maternitatis Beatæ Mariæ Virginis": "The Motherhood of the Blessed Virgin Mary",
+    "S. Edmundi, Episcopi et Confessoris": "St. Edmund, Bishop and Confessor",
+    "SS. Ursulae et Sociarum, Virginum et Martyrum": "Sts. Ursula and Companions, Virgins and Martyrs",
+    "S. Mauritii, Abbatis et Confessoris": "St. Maurice, Abbot and Confessor",
+    "S. Galgani, Eremitæ Ordinis Cisterciensis": "St. Galgano, Hermit of the Cistercian Order",
+    "Omnium Sanctorum Ordinis Nostri": "All Saints of our Order",
+    "S. Malachiæ, Episcopi et Confessoris": "St. Malachy, Bishop and Confessor",
+    "Bb. Hieronimi, Valentini, Francisci, Hyacinthi et Sociorum Martyrum O. P.":
+        "Bl. Jerome, Valentine, Francis, Hyacinth and Companions, Martyrs, O.P.",
+    "S. Ludovici Bertrandi Confessoris O. P.": "St. Louis Bertrand, Confessor, O.P.",
+    "Festivitas Omnium Sanctorum OP": "All Saints of the Order of Preachers",
+    "Dedicatio Ecclesiæ Abb.": "Dedication of the Abbey Church",
+    "Dedicatio Ecclesiæ Cath.": "Dedication of the Cathedral Church",
+    "S. Galli Abbatis": "St. Gall, Abbot",
+    "S. Æmiliani Abbatis": "St. Emilian, Abbot",
+    "S. Odonis Abbatis": "St. Odo, Abbot",
+    # Feasts of Our Lord and Our Lady
+    "In Circumcisione Domini": "The Circumcision of Our Lord",
+    "In Vigilia Epiphaniæ": "Vigil of the Epiphany",
+    "In Epiphania Domini": "The Epiphany of Our Lord",
+    "In Octava Epiphaniæ": "Octave Day of the Epiphany",
+    "In Purificatione Beatæ Mariæ Virginis": "The Purification of the Blessed Virgin Mary",
+    "In Apparitione Beatæ Mariæ Virginis Immaculatæ": "The Apparition of the Immaculate Virgin Mary",
+    "In Annuntiatione Beatæ Mariæ Virginis": "The Annunciation of the Blessed Virgin Mary",
+    "Inventione Sanctæ Crucis": "The Finding of the Holy Cross",
+    "Beatæ Mariæ Virginis Reginæ": "The Queenship of the Blessed Virgin Mary",
+    "In Visitatione Beatæ Mariæ Virginis": "The Visitation of the Blessed Virgin Mary",
+    "In Commemoratione Beatæ Mariæ Virginis de Monte Carmelo": "Our Lady of Mount Carmel",
+    "Sanctæ Mariæ Virginis ad Nives": "Our Lady of the Snows",
+    "In Transfiguratione Domini Nostri Jesu Christi": "The Transfiguration of Our Lord Jesus Christ",
+    "In Vigilia Assumptionis B.M.V.": "Vigil of the Assumption",
+    "In Assumptione Beatæ Mariæ Virginis": "The Assumption of the Blessed Virgin Mary",
+    "Immaculati Cordis Beatæ Mariæ Virginis": "The Immaculate Heart of the Blessed Virgin Mary",
+    "In Nativitate Beatæ Mariæ Virginis": "The Nativity of the Blessed Virgin Mary",
+    "S. Nominis Beatæ Mariæ Virginis": "The Holy Name of Mary",
+    "In Exaltatione Sanctæ Crucis": "The Exaltation of the Holy Cross",
+    "Septem Dolorum Beatæ Mariæ Virginis": "The Seven Sorrows of the Blessed Virgin Mary",
+    "Beatæ Mariæ Virginis de Mercede": "Our Lady of Ransom",
+    "Sanctæ Mariæ Sabbato": "Our Lady's Saturday",
+    "In Conceptione Immaculata Beatæ Mariæ Virginis": "The Immaculate Conception of the Blessed Virgin Mary",
+    "In Octava Concept. Immac. Beatæ Mariæ Virginis": "Octave Day of the Immaculate Conception",
+    "In Vigilia Nativitatis Domini": "Vigil of the Nativity of Our Lord",
+    "In Nativitate Domini": "The Nativity of Our Lord",
+    # Commons
+    "Commune Apostolorum": "Common of Apostles",
+    "In Festis Beatae Mariae Virginis": "Feasts of the Blessed Virgin Mary",
+    "Commune Evangelistarum": "Common of Evangelists",
+    "Commune Evangelistarum tempore Paschali": "Common of Evangelists in Paschaltide",
+    "Commune Plurimorum Martyrum Pontificum": "Common of Several Martyrs who were Bishops",
+    "Commune Plurimorum Martyrum Tempore Paschali": "Common of Several Martyrs in Paschaltide",
+    "Commune plurium Summorum Pontificum Martyrum Tempore Paschali":
+        "Common of Several Martyrs who were Popes, in Paschaltide",
+    "Commune plurium Confessorum non Pontificum": "Common of Several Confessors who were not Bishops",
+}
+
+OCTAVE_DAY = {"secunda": 2, "tertia": 3, "quarta": 4, "quinta": 5, "sexta": 6, "septima": 7}
+OCTAVES = [
+    (r"Epiphaniæ", "the Epiphany"),
+    (r"S\. Assumptionis Beatæ Mariæ Virginis", "the Assumption"),
+    (r"Concept(?:ionis|\.) Immac(?:ulatæ|\.) Beatæ Mariæ Virginis", "the Immaculate Conception"),
+]
+
+
+def octave_title(latin):
+    """"Quarta die infra Octavam Epiphaniæ" / "De II die infra Octavam ..." in English."""
+    m = re.fullmatch(r"(?:De )?(\w+) die infra Octavam (.+)", latin.strip())
+    if not m:
+        return None
+    n = OCTAVE_DAY.get(m.group(1).lower()) or ROMAN.get(m.group(1).upper())
+    for pat, en in OCTAVES:
+        if n and re.fullmatch(pat, m.group(2)):
+            return f"{ORD[n]} Day within the Octave of {en}"
+    return None
+
+
+def english_title(latin, english):
+    """Best English title: a known feast name, else the given English, tidied
+    (some source titles carry the rank after a semicolon)."""
+    english = (english or "").split(";")[0].strip()
+    if not english or english == latin:
+        if latin in FEASTS:
+            return FEASTS[latin]
+        octave = octave_title(latin)
+        if octave:
+            return octave
+    return english or latin

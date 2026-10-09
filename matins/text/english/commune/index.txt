@@ -1,13 +1,13 @@
-C1           Commune Apostolorum
-C1a          Commune Evangelistarum
-C1ap         Commune Evangelistarum tempore Paschali
+C1           Common of Apostles
+C1a          Common of Evangelists
+C1ap         Common of Evangelists in Paschaltide
 C2           Common of a Single Martyr Bishop
 C2ap         Common of a Single Martyr in Paschaltide
 C2b          Common of a Single Martyr Pope
 C2p          Common of a Single Martyr in Paschaltide
-C3           Commune Plurimorum Martyrum Pontificum
-C3ap         Commune Plurimorum Martyrum Tempore Paschali
-C3bp         Commune plurium Summorum Pontificum Martyrum Tempore Paschali
+C3           Common of Several Martyrs who were Bishops
+C3ap         Common of Several Martyrs in Paschaltide
+C3bp         Common of Several Martyrs who were Popes, in Paschaltide
 C4           Common of a Confessor Bishop
 C4a          Common of a Doctor Bishop
 C4b          Common of Popes
@@ -15,7 +15,7 @@ C4b-2        Common of a Doctor Bishop
 C5           Common of a Confessor not a Bishop
 C5a          Common of a Doctor not a Bishop
 C5b          Common of an Abbot
-C5c          Commune plurium Confessorum non Pontificum
+C5c          Common of Several Confessors who were not Bishops
 C6           Common of a Virgin Martyr
 C6a          Common of a Virgin not a Martyr
 C7a          Common of Widows
@@ -25,4 +25,4 @@ C10          Our Lady's Saturday (from Trinity to Advent)
 C10Pasc      Our Lady's Saturday (in Paschaltide)
 C10b         Our Lady's Saturday (from Christmas to the Purification)
 C10c         Our Lady's Saturday (from the Purification to Palm Sunday)
-C11          In Festis Beatae Mariae Virginis
+C11          Feasts of the Blessed Virgin Mary

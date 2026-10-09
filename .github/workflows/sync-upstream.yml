@@ -80,6 +80,7 @@ jobs:
         run: |
           # The EPUB embeds a build time, so only take it when the readings changed.
           git add -A matins/text matins/data
+          committed=false
           if git diff --cached --quiet; then
             echo "Rebuilt; the readings did not change."
             git checkout -- matins/output/Matins-Readings-1954.epub 2>/dev/null || true
@@ -87,7 +88,11 @@ jobs:
             git add matins/output/Matins-Readings-1954.epub
             git commit -q -m "Rebuild Matins readings after syncing with Divinum Officium" \
               -m "${{ steps.merge.outputs.summary || 'Manual rebuild' }}. $(git diff --cached --stat | tail -1)"
+            committed=true
           fi
-          git push origin HEAD:matins-readings
+          # Push only when there is something new (a merge or a rebuild commit).
+          if [ "${{ steps.merge.outputs.merged }}" = "true" ] || [ "$committed" = "true" ]; then
+            git push origin HEAD:matins-readings
+          fi
           # Keep the fork's master equal to Divinum Officium's.
           git push origin refs/remotes/upstream/master:refs/heads/master || echo "Could not update master (it may have diverged); left as is."

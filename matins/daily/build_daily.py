@@ -33,12 +33,27 @@ sys.path.insert(0, os.path.join(MATINS, "tools"))
 import lessons as L  # noqa: E402
 import layout  # noqa: E402
 import titles  # noqa: E402
+from build_corpus import normalise_rank  # noqa: E402
 
 HARVEST = os.path.join(MATINS, "tools", "harvest_day.pl")
 
 # Calendars offered: slug -> (Divinum Officium version, name shown to readers)
 CALENDARS = {
+    "1570": ("Tridentine - 1570", "Roman Breviary, 1570 (St Pius V)"),
+    "1888": ("Tridentine - 1888", "Roman Breviary, 1888"),
+    "1906": ("Tridentine - 1906", "Roman Breviary, 1906"),
+    "1939": ("Divino Afflatu - 1939", "Roman Breviary, 1939 (Divino Afflatu)"),
     "1954": ("Divino Afflatu - 1954", "Roman Breviary, 1954 (Divino Afflatu)"),
+    "1955": ("Reduced - 1955", "Roman Breviary, 1955 (simplified rubrics)"),
+    "1960": ("Rubrics 1960 - 1960", "Roman Breviary, 1960"),
+    "1960-usa": ("Rubrics 1960 - 2020 USA", "Roman Breviary, 1960, with the current US calendar"),
+    "monastic-1617": ("Monastic Tridentinum 1617", "Monastic Breviary, 1617"),
+    "monastic-1930": ("Monastic Divino 1930", "Monastic Breviary, 1930"),
+    "monastic-1963": ("Monastic - 1963", "Monastic Breviary, 1963"),
+    "monastic-1963-barroux": ("Monastic - 1963 - Barroux", "Monastic Breviary, 1963 (Le Barroux)"),
+    "cistercian-1951": ("Monastic Tridentinum Cisterciensis 1951", "Cistercian Breviary, 1951"),
+    "cistercian-altovadensis": ("Monastic Tridentinum Cisterciensis Altovadensis", "Cistercian Breviary (Hohenfurth / Vyšší Brod)"),
+    "dominican-1962": ("Ordo Praedicatorum - 1962", "Dominican Breviary, 1962"),
 }
 # Languages offered: code -> (Divinum Officium folder, name in that language)
 LANGUAGES = {
@@ -67,24 +82,35 @@ def load_corpus_titles():
     return {e["file"]: e for e in corpus["entries"]}
 
 
-def day_titles(day, corpus_titles, lang_code):
-    e = corpus_titles.get(day.get("winner") or "")
+def day_titles(day, corpus_titles, lang_code, calendar):
+    # The corpus (built for 1954) has the cleanest titles; other calendars use
+    # the engine's own, with English names for temporal days.
+    e = corpus_titles.get(day.get("winner") or "") if calendar == "1954" else None
     if e:
         la, local, rank = e["title_latin"], e["title_english"], e.get("rank", "")
     else:
-        la = (day.get("title_latin") or (day.get("dayname") or ["", ""])[1].split("\t")[0]).strip()
+        fields = [f.strip() for f in (day.get("rank_field") or "").split("\n")[0].split(";;")]
+        la = (day.get("title_latin") or (fields[0] if fields and fields[0] else "")
+              or (day.get("dayname") or ["", ""])[1].split("\t")[0]).strip()
         local = (day.get("title_english") or la).strip()
-        rank = ""
-    if lang_code == "en" and local == la:
-        local = titles.english_tempora(la)
+        rank = normalise_rank(fields[1], fields[2] if len(fields) > 2 else "") if len(fields) > 1 else ""
+    if lang_code == "en":
+        local = titles.english_title(la, local)
+        if local == la:
+            local = titles.english_tempora(la)
     return la, local, rank
 
 
 # ---------------------------------------------------------------- email
 
-def email_lesson(n, les):
+# Headings for monastic one-lesson forms, by kind: (Latin, English)
+SINGLE = {"brevis": ("Lectio brevis", "Short lesson"), "unica": ("Lectio unica", "Lesson")}
+
+
+def email_lesson(n, les, kind=None):
+    head = SINGLE[kind][1] if kind in SINGLE else f"Lesson {L.ROMAN[n] if n < len(L.ROMAN) else n}"
     out = [f'<p style="margin:26px 0 4px;text-align:center;color:{RED};font-variant:small-caps;'
-           f'letter-spacing:.06em;font-size:15px">Lesson {L.ROMAN[n] if n < len(L.ROMAN) else n}</p>']
+           f'letter-spacing:.06em;font-size:15px">{head}</p>']
     for r in les["rubric"]:
         out.append(f'<p style="margin:0 0 6px;text-align:center;font-style:italic;font-size:14px;color:{RED}">{esc(r)}</p>')
     for b in les["blocks"]:
@@ -100,7 +126,7 @@ def email_lesson(n, les):
     for item in les["responsory"]:
         if item[0] == "R":
             t = esc(item[1]) + (f' <span style="color:{RED}">*</span> {esc(item[2])}' if item[2] else "")
-            sign = "℟."
+            sign = "℟. br." if len(item) > 3 else "℟."
         else:
             t = esc(item[1]).replace(" * ", f' <span style="color:{RED}">*</span> ')
             sign = "℣."
@@ -111,16 +137,40 @@ def email_lesson(n, les):
     return "\n".join(out)
 
 
-def email_text_lesson(n, les):
-    return L.to_text(n, les, "english")
+def email_text_lesson(n, les, kind=None):
+    t = L.to_text(n, les, "english")
+    return t.replace("Lesson I", SINGLE[kind][1], 1) if kind in SINGLE else t
 
 
-def render_email(day, la_title, title, rank, date, cal_name, vernacular):
+def commemorations(day, lang_code):
+    """[(latin, local)] for the offices commemorated today."""
+    out = []
+    for c in day.get("commemorations") or []:
+        la, local = c["latin"].strip(), (c.get("local") or c["latin"]).strip()
+        if lang_code == "en":
+            local = titles.english_title(la, local)
+            if local == la:
+                local = titles.english_tempora(la)
+        out.append((la, local))
+    return out
+
+
+def comm_line(items, which):
+    """"Commemoration: X" / "Commemorations: X; Y" in Latin (0) or the vernacular (1)."""
+    if not items:
+        return ""
+    names = "; ".join(i[which] for i in items)
+    if which == 0:
+        return ("Commemoratio: " if len(items) == 1 else "Commemorationes: ") + names
+    return ("Commemoration: " if len(items) == 1 else "Commemorations: ") + names
+
+
+def render_email(day, la_title, title, rank, date, cal_name, vernacular, comms=()):
     when = f"{WEEKDAYS[date.weekday()]}, {date.day} {MONTHS[date.month]} {date.year}"
     subject = f"Matins for {WEEKDAYS[date.weekday()]} {date.day} {MONTHS[date.month]}: {title}"
     first = next((p for les in vernacular for b in les[1]["blocks"] for p in b["paras"] + [v[1] for v in b["verses"]]), "")
     preheader = (first[:140] + "…") if len(first) > 140 else first
-    body = "\n".join(email_lesson(n, les) for n, les in vernacular)
+    body = "\n".join(email_lesson(n, les, brevis) for n, les, brevis in vernacular)
     link = f'<a href="{{{{page_url}}}}" style="color:{RED}">Read in Latin and English</a>'
     html_doc = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -131,6 +181,7 @@ def render_email(day, la_title, title, rank, date, cal_name, vernacular):
 <p style="margin:0;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:{RED}">Matins · {esc(when)}</p>
 <h1 style="margin:8px 0 4px;font-weight:normal;font-size:26px;line-height:1.25">{esc(title)}</h1>
 <p style="margin:0 0 6px;font-style:italic;color:#555;font-size:15px">{esc(la_title)}{(" · " + esc(rank)) if rank else ""}</p>
+{f'<p style="margin:0 0 6px;color:#555;font-size:15px">{esc(comm_line(comms, 1))}</p>' if comms else ""}
 <p style="margin:0 0 6px;font-size:15px">{link}</p>
 {body}
 <hr style="border:none;border-top:1px solid #e3d6c4;margin:32px 0 16px">
@@ -140,9 +191,10 @@ def render_email(day, la_title, title, rank, date, cal_name, vernacular):
 </div></body></html>
 """
     text = "\n\n".join([
-        f"MATINS · {when}", title, la_title + (f" · {rank}" if rank else ""),
+        f"MATINS · {when}", title, la_title + (f" · {rank}" if rank else "")
+        + (f"\n{comm_line(comms, 1)}" if comms else ""),
         "Read in Latin and English: {{page_url}}",
-        "\n\n".join(email_text_lesson(n, les) for n, les in vernacular),
+        "\n\n".join(email_text_lesson(n, les, brevis) for n, les, brevis in vernacular),
         "",
         f"{cal_name}. Texts from Divinum Officium (divinumofficium.com).",
         "Change settings: {{preferences_url}}",
@@ -153,30 +205,36 @@ def render_email(day, la_title, title, rank, date, cal_name, vernacular):
 
 # ---------------------------------------------------------------- web page
 
+STAR = ' <span class="star">*</span> '
+
+
 def page_cell(kind, items):
     if kind == "resp":
         out = []
         for i in items:
             if i[0] == "R":
                 t = esc(i[1]) + (f' <span class="star">*</span> {esc(i[2])}' if i[2] else "")
-                out.append(f'<p><span class="rv">℟.</span> {t}</p>')
+                out.append(f'<p><span class="rv">℟.{" br." if len(i) > 3 else ""}</span> {t}</p>')
             else:
-                out.append(f'<p><span class="rv">℣.</span> {esc(i[1]).replace(" * ", " <span class=star>*</span> ")}</p>')
+                out.append(f'<p><span class="rv">℣.</span> {esc(i[1]).replace(" * ", STAR)}</p>')
         return "".join(out)
     if kind == "text":
         return "".join(f"<p>{esc(i)}</p>" for i in items)
     return "".join(f'<p class="{kind}">{esc(i)}</p>' for i in items)
 
 
-def render_page(la_title, title, rank, date, lessons_pairs, lang_attr):
+def render_page(la_title, title, rank, date, lessons_pairs, lang_attr, comms=()):
     when = f"{WEEKDAYS[date.weekday()]}, {date.day} {MONTHS[date.month]} {date.year}"
     parts = [f'<p class="date">{esc(when)}</p>',
              f'<h1>{esc(la_title)}<span class="sub" lang="{lang_attr}">{esc(title)}</span></h1>']
     if rank:
         parts.append(f'<p class="rank">{esc(rank)}</p>')
-    for n, la, local in lessons_pairs:
+    if comms:
+        parts.append(f'<div class="pair comm"><div class="la" lang="la"><p class="rubric">{esc(comm_line(comms, 0))}</p></div>'
+                     f'<div class="en" lang="{lang_attr}"><p class="rubric">{esc(comm_line(comms, 1))}</p></div></div>')
+    for n, la, local, brevis in lessons_pairs:
         same = body_words(la) and body_words(la) == body_words(local)
-        rows = layout.lesson_rows(n, la, local, untranslated=same)
+        rows = layout.lesson_rows(n, la, local, untranslated=same, heads=SINGLE.get(brevis))
         parts.append('<section class="lesson">')
         for kind, a, b in rows:
             parts.append(f'<div class="pair{" resp" if kind == "resp" else ""}">'
@@ -204,7 +262,8 @@ def api_text(les):
     resp = []
     for item in les["responsory"]:
         if item[0] == "R":
-            resp.append({"type": "respond", "text": item[1], "repeat": item[2]})
+            resp.append(dict({"type": "respond", "text": item[1], "repeat": item[2]},
+                             **({"short": True} if len(item) > 3 else {})))
         elif item[0] == "G":
             resp.append({"type": "gloria", "text": item[1]})
         else:
@@ -224,21 +283,30 @@ def build_one(date, cal, lang, out_dir, corpus_titles):
     version, cal_name = CALENDARS[cal]
     folder, _ = LANGUAGES[lang]
     day = harvest(date, version, folder)
-    la_title, title, rank = day_titles(day, corpus_titles, lang)
+    la_title, title, rank = day_titles(day, corpus_titles, lang, cal)
+    comms = commemorations(day, lang)
     pairs, vernacular = [], []
     for les in day["lessons"]:
         la = L.parse_lesson(les["latin"], "latin")
         local = L.parse_lesson(les["vernacular"], "english" if lang == "en" else "latin")
         if not body_words(la) and not body_words(local):
             continue  # the engine gave no text (see README: known engine issue)
-        pairs.append((les["n"], la, local))
-        vernacular.append((les["n"], local))
+        brevis = les.get("kind")  # None, "brevis" or "unica"
+        pairs.append((les["n"], la, local, brevis))
+        vernacular.append((les["n"], local, brevis))
+    if not pairs:
+        # The engine produced no lessons (a gap in Divinum Officium's data for
+        # this calendar and day): publish nothing rather than an empty email.
+        return None
     doc = {
         "date": date.isoformat(), "calendar": cal, "lang": lang, "version": version,
         "title": {"latin": la_title, "local": title}, "rank": rank,
-        "lessons": [{"number": n, "latin": api_text(la), "translation": api_text(local)} for n, la, local in pairs],
-        "email": render_email(day, la_title, title, rank, date, cal_name, vernacular),
-        "page": render_page(la_title, title, rank, date, pairs, lang),
+        "commemorations": [{"latin": a, "local": b} for a, b in comms],
+        "lessons": [dict({"number": n, "latin": api_text(la), "translation": api_text(local)},
+                         **({"kind": {"brevis": "short", "unica": "single"}[brevis]} if brevis else {}))
+                    for n, la, local, brevis in pairs],
+        "email": render_email(day, la_title, title, rank, date, cal_name, vernacular, comms),
+        "page": render_page(la_title, title, rank, date, pairs, lang, comms),
     }
     path = os.path.join(out_dir, cal, lang, f"{date.isoformat()}.json")
     os.makedirs(os.path.dirname(path), exist_ok=True)
@@ -264,12 +332,14 @@ def main():
     corpus_titles = load_corpus_titles()
 
     jobs = [(d, c, l) for c in cals for l in langs for d in dates]
-    failures = []
+    failures, missing = [], []
     with cf.ThreadPoolExecutor(max_workers=args.jobs) as pool:
         futs = {pool.submit(build_one, d, c, l, args.out, corpus_titles): (d, c, l) for d, c, l in jobs}
         for f in cf.as_completed(futs):
             try:
-                f.result()
+                if f.result() is None:
+                    d, c, l = futs[f]
+                    missing.append(f"{c}/{l}/{d.isoformat()}")
             except Exception as exc:  # report and carry on; the manifest lists what exists
                 failures.append((futs[f], repr(exc)))
 
@@ -286,10 +356,12 @@ def main():
                     langs_avail[lang] = {"first": ds[0], "last": ds[-1]}
         if langs_avail:
             manifest["calendars"][cal] = {"name": CALENDARS[cal][1], "languages": langs_avail}
+    manifest["missing"] = sorted(missing)  # days the engine gave no lessons for
     with open(os.path.join(args.out, "manifest.json"), "w", encoding="utf-8") as fh:
         json.dump(manifest, fh, ensure_ascii=False, indent=1)
 
-    print(f"{len(jobs) - len(failures)} pages written to {args.out}; {len(failures)} failed")
+    print(f"{len(jobs) - len(failures) - len(missing)} pages written to {args.out}; "
+          f"{len(missing)} days without lessons skipped; {len(failures)} failed")
     for job, err in failures[:10]:
         print("  failed:", job, err)
     sys.exit(1 if failures else 0)

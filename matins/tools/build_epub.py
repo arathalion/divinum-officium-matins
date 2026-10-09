@@ -21,6 +21,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 import build_corpus as B  # noqa: E402
+import epubkit  # noqa: E402
 import credits  # noqa: E402
 import lessons as L  # noqa: E402
 import layout  # noqa: E402
@@ -393,79 +394,11 @@ def build(out_path):
         spine.append(href)
         nav.append((label, f"text/{href}", []))
 
-    # Navigation documents.
-    def nav_ol_root(items):
-        return "<ol>" + "".join(
-            f'<li><a href="{h}">{esc(l)}</a>{nav_ol_root(c) if c else ""}</li>' for l, h, c in items) + "</ol>"
-
-    nav_doc = ('<?xml version="1.0" encoding="utf-8"?>\n<!DOCTYPE html>\n'
-               '<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en">'
-               '<head><meta charset="utf-8"/><title>Contents</title><link rel="stylesheet" type="text/css" href="style.css"/></head>'
-               f'<body><nav epub:type="toc" id="toc" class="toc"><h1>Contents</h1>{nav_ol_root(nav)}</nav>'
-               '<nav epub:type="landmarks" id="landmarks" hidden="hidden"><ol>'
-               '<li><a epub:type="toc" href="text/contents.xhtml">Contents</a></li>'
-               '<li><a epub:type="bodymatter" href="text/part-tempore.xhtml">Proprium de Tempore</a></li>'
-               '</ol></nav></body></html>')
-
-    counter = [0]
-
-    def ncx_points(items):
-        out = []
-        for l, h, c in items:
-            counter[0] += 1
-            out.append(f'<navPoint id="np{counter[0]}" playOrder="{counter[0]}"><navLabel><text>{esc(l)}</text></navLabel>'
-                       f'<content src="{h}"/>{ncx_points(c)}</navPoint>')
-        return "".join(out)
-
-    ncx_doc = ('<?xml version="1.0" encoding="utf-8"?>\n'
-               '<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1"><head>'
-               f'<meta name="dtb:uid" content="{BOOK_ID}"/><meta name="dtb:depth" content="3"/></head>'
-               f'<docTitle><text>{esc(TITLE_LA)}</text></docTitle><navMap>{ncx_points(nav)}</navMap></ncx>')
-
-    modified = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    manifest = ['<item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>',
-                '<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>',
-                '<item id="css" href="style.css" media-type="text/css"/>']
-    ids = {}
-    for i, (href, _) in enumerate(files):
-        ids[href] = f"x{i}"
-        manifest.append(f'<item id="x{i}" href="text/{href}" media-type="application/xhtml+xml"/>')
-    spine_xml = "".join(f'<itemref idref="{ids[h]}"/>' for h in spine)
-    opf = f"""<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="bookid" xml:lang="en">
-<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-<dc:identifier id="bookid">{BOOK_ID}</dc:identifier>
-<dc:title>{esc(TITLE_LA)} · {esc(TITLE_EN)}</dc:title>
-<dc:language>la</dc:language>
-<dc:language>en</dc:language>
-<dc:creator>Divinum Officium (texts)</dc:creator>
-<dc:description>{esc(SUBTITLE_EN)}</dc:description>
-<meta property="dcterms:modified">{modified}</meta>
-</metadata>
-<manifest>
-{chr(10).join(manifest)}
-</manifest>
-<spine toc="ncx">{spine_xml}</spine>
-</package>
-"""
-    container = ('<?xml version="1.0" encoding="utf-8"?>\n'
-                 '<container version="1.0" xmlns="urn:oasis:names:tc:opendocument:xmlns:container">'
-                 '<rootfiles><rootfile full-path="OEBPS/content.opf" media-type="application/oebps-package+xml"/>'
-                 '</rootfiles></container>')
-
-    os.makedirs(os.path.dirname(out_path), exist_ok=True)
-    tmp = out_path + ".part"
-    with zipfile.ZipFile(tmp, "w") as z:
-        z.writestr(zipfile.ZipInfo("mimetype"), "application/epub+zip", compress_type=zipfile.ZIP_STORED)
-        z.writestr("META-INF/container.xml", container, compress_type=zipfile.ZIP_DEFLATED)
-        z.writestr("OEBPS/content.opf", opf, compress_type=zipfile.ZIP_DEFLATED)
-        z.writestr("OEBPS/nav.xhtml", nav_doc, compress_type=zipfile.ZIP_DEFLATED)
-        z.writestr("OEBPS/toc.ncx", ncx_doc, compress_type=zipfile.ZIP_DEFLATED)
-        z.writestr("OEBPS/style.css", CSS, compress_type=zipfile.ZIP_DEFLATED)
-        for href, doc in files:
-            z.writestr(f"OEBPS/text/{href}", doc, compress_type=zipfile.ZIP_DEFLATED)
-    os.replace(tmp, out_path)
-    return len(files)
+    return epubkit.write_epub(
+        out_path, book_id=BOOK_ID, title=f"{TITLE_LA} · {TITLE_EN}", description=SUBTITLE_EN,
+        files=files, spine=spine, nav=nav, css=CSS,
+        landmarks=[("toc", "text/contents.xhtml", "Contents"),
+                   ("bodymatter", "text/part-tempore.xhtml", "Proprium de Tempore")])
 
 
 if __name__ == "__main__":

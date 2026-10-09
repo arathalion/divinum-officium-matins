@@ -39,11 +39,14 @@ def _pair(kind, la, en, rows):
         rows.append((kind, list(la), list(en)))
 
 
-def lesson_rows(n, latin, english, note_la="", note_en="", untranslated=False):
+def lesson_rows(n, latin, english, note_la="", note_en="", untranslated=False, heads=None):
     rows = []
     roman = L.ROMAN[n] if n < len(L.ROMAN) else str(n)
-    rows.append(("head", [f"{HEAD['latin']} {roman}" + (f" ({note_la})" if note_la else "")],
-                 [f"{HEAD['english']} {roman}" + (f" ({note_en})" if note_en else "")]))
+    if heads:  # e.g. ("Lectio brevis", "Short lesson")
+        rows.append(("head", [heads[0]], [heads[1]]))
+    else:
+        rows.append(("head", [f"{HEAD['latin']} {roman}" + (f" ({note_la})" if note_la else "")],
+                     [f"{HEAD['english']} {roman}" + (f" ({note_en})" if note_en else "")]))
     if untranslated:
         rows.append(("note", [], ["No English translation in the source files; the Latin is given."]))
     for a, b in zip_longest(latin["rubric"], english["rubric"]):

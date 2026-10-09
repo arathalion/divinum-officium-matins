@@ -83,7 +83,7 @@ def parse_lesson(text, lang="latin"):
     # The responsory starts at the first "R." line that follows a "_" separator.
     resp_at = None
     for i, l in enumerate(lines):
-        if l.startswith("R. ") or l == "R.":
+        if l.startswith("R. ") or l == "R." or l.startswith("R.br. "):
             j = i - 1
             while j >= 0 and not lines[j]:
                 j -= 1
@@ -161,6 +161,12 @@ def parse_lesson(text, lang="latin"):
             responsory.append(["G", GLORIA1[lang]])
         elif l.startswith("* ") and responsory and responsory[-1][0] == "R":
             responsory[-1][2] = _tidy(l[2:])
+        elif l.startswith("R.br. "):  # short responsory (responsorium breve)
+            t = _tidy(l[6:])
+            rep = ""
+            if " * " in t:
+                t, rep = [x.strip() for x in t.split(" * ", 1)]
+            responsory.append(["R", t, rep, "br"])
         elif l.startswith("R. "):
             t = _tidy(l[3:])
             rep = ""
@@ -241,7 +247,7 @@ def to_text(n, lesson, lang="latin", note="", numbers=False):
         for item in lesson["responsory"]:
             if item[0] == "R":
                 text = item[1] + (f" * {item[2]}" if item[2] else "")
-                out.append(f"℟. {text}")
+                out.append(f"℟.{' br.' if len(item) > 3 else ''} {text}")
             elif item[0] == "V":
                 out.append(f"℣. {item[1]}")
             elif item[0] == "G":

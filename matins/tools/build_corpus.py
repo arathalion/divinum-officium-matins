@@ -133,12 +133,12 @@ def title_of(files, f, lang):
         return nat
     if lang == "latin":
         return latin
-    english = ((d.get("english") or {}).get("Officium") or "").strip()
+    english = titles.english_title(latin, ((d.get("english") or {}).get("Officium") or "").strip())
     if kind(f) == "Tempora":
         for cand in (english, latin):
             if cand and titles.english_tempora(cand) != cand:
                 return titles.english_tempora(cand)
-    return english or latin
+    return english if english != latin else titles.english_title(latin, "")
 
 
 def raw_section(files, f, sec, lang):
