@@ -29,9 +29,6 @@ tree=$(GIT_INDEX_FILE="$index" git write-tree)
 commit=$(git -c user.name="matins-bot" -c user.email="matins-bot@users.noreply.github.com" \
   commit-tree "$tree" -m "Daily readings, generated $(date -u +%Y-%m-%dT%H:%MZ)")
 
-# In GitHub Actions, checkout leaves its token as an extraheader; reuse it.
-auth=()
-hdr=$(git config --get-regexp '^http\..*\.extraheader$' 2>/dev/null | head -1 | cut -d' ' -f2- || true)
-if [ -n "$hdr" ]; then auth=(-c "http.https://github.com/.extraheader=$hdr"); fi
-git ${auth[@]+"${auth[@]}"} push -q -f origin "$commit:refs/heads/daily-data"
+# In GitHub Actions the checkout's token is already in this repository's config.
+git push -q -f origin "$commit:refs/heads/daily-data"
 echo "published $(find "$work" -name '*.json' | wc -l | tr -d ' ') files to daily-data"
