@@ -92,10 +92,12 @@ def _verses(rest):
     return re.sub(r"\s", "", rest).replace(",", ";")
 
 
-def english_cite(latin, english):
+def english_cite(latin, english, verses=()):
     """The English reference, taking chapter and verses from the Latin when the
     two disagree (the English files have a few slips: "Matt 13:44" for
-    "Matt 13:44-52", "Luke 19:41-17", or no reference at all)."""
+    "Matt 13:44-52", "Luke 19:41-17", or no reference at all). A reference that
+    matches the English text's own verse numbers is kept: there the English
+    lesson holds different verses from the Latin, not a wrong reference."""
     ml = _CITE_PARTS.match(latin or "")
     if not ml:
         return english
@@ -104,6 +106,12 @@ def english_cite(latin, english):
     en_book = BOOKS_EN.get(book) or (me.group(1) if me else book)
     if me and me.group(1) == en_book and _verses(me.group(2)) == _verses(rest):
         return english
+    if me and verses and me.group(1) == en_book:
+        nums = [int(n) for n in re.findall(r"\d+", me.group(2))]
+        chapter = re.match(r"\d+", rest).group()
+        if (len(nums) >= 2 and nums[0] == int(chapter)
+                and (nums[1], nums[-1]) == (verses[0][0], verses[-1][0])):
+            return english
     return f"{en_book} {rest}"
 
 
@@ -111,7 +119,7 @@ def align_cites(latin, english):
     """Correct the English lesson's references against the Latin, block by block."""
     if len(latin["blocks"]) == len(english["blocks"]):
         for a, b in zip(latin["blocks"], english["blocks"]):
-            b["cite"] = english_cite(a["cite"], b["cite"])
+            b["cite"] = english_cite(a["cite"], b["cite"], b["verses"])
     return english
 
 
