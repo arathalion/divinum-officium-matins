@@ -98778,7 +98778,7 @@
        {
         "title": "The Lesson is taken from the Holy Gospel according to Luke",
         "cite": "Luke 12:32-34",
-        "source": "Chap. 12, 32-34",
+        "source": "",
         "verses": [],
         "paras": [
          "At that time: Jesus said unto his disciples: Fear not, little flock; for it is your Father's good pleasure to give you the kingdom. And so on, and that which followeth."
@@ -323086,7 +323086,7 @@
       "blocks": [
        {
         "title": "Léctio sancti Evangélii secúndum Joánnem",
-        "cite": "Joannes 6:5-59",
+        "cite": "Joannes 6:56-59",
         "source": "",
         "verses": [],
         "paras": [
@@ -323126,8 +323126,8 @@
       "blocks": [
        {
         "title": "From the Holy Gospel according to John",
-        "cite": "John 6:5-59",
-        "source": "John 6: 55-59)",
+        "cite": "John 6:56-59",
+        "source": "",
         "verses": [],
         "paras": [
          "At that time, Jesus said unto the multitudes of the Jews: My Flesh is meat indeed, and My Blood is drink indeed. And so on."
@@ -397864,52 +397864,22 @@
    ]
   }
  ],
- "unmatched": [],
- "empty": [
+ "unmatched": [
   {
-   "date": "11-19-2011",
+   "winner": "Tempora/Pent23-0.txt",
    "n": 4,
-   "winner": "Tempora/Pent23-0.txt"
+   "days": 3
   },
   {
-   "date": "11-19-2011",
+   "winner": "Tempora/Pent23-0.txt",
    "n": 5,
-   "winner": "Tempora/Pent23-0.txt"
+   "days": 3
   },
   {
-   "date": "11-19-2011",
+   "winner": "Tempora/Pent23-0.txt",
    "n": 6,
-   "winner": "Tempora/Pent23-0.txt"
-  },
-  {
-   "date": "11-20-2038",
-   "n": 4,
-   "winner": "Tempora/Pent23-0.txt"
-  },
-  {
-   "date": "11-20-2038",
-   "n": 5,
-   "winner": "Tempora/Pent23-0.txt"
-  },
-  {
-   "date": "11-20-2038",
-   "n": 6,
-   "winner": "Tempora/Pent23-0.txt"
-  },
-  {
-   "date": "11-19-2095",
-   "n": 4,
-   "winner": "Tempora/Pent23-0.txt"
-  },
-  {
-   "date": "11-19-2095",
-   "n": 5,
-   "winner": "Tempora/Pent23-0.txt"
-  },
-  {
-   "date": "11-19-2095",
-   "n": 6,
-   "winner": "Tempora/Pent23-0.txt"
+   "days": 3
   }
- ]
+ ],
+ "empty": []
 }
