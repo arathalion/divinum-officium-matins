@@ -1,0 +1,149 @@
+{
+ "generated": "2026-10-10T08:31:43+00:00",
+ "calendars": {
+  "1570": {
+   "name": "Roman Breviary, 1570 (St Pius V)",
+   "languages": {
+    "en": {
+     "first": "2026-10-09",
+     "last": "2026-12-08"
+    }
+   }
+  },
+  "1888": {
+   "name": "Roman Breviary, 1888",
+   "languages": {
+    "en": {
+     "first": "2026-10-09",
+     "last": "2026-12-08"
+    }
+   }
+  },
+  "1906": {
+   "name": "Roman Breviary, 1906",
+   "languages": {
+    "en": {
+     "first": "2026-10-09",
+     "last": "2026-12-08"
+    }
+   }
+  },
+  "1939": {
+   "name": "Roman Breviary, 1939 (Divino Afflatu)",
+   "languages": {
+    "en": {
+     "first": "2026-10-09",
+     "last": "2026-12-08"
+    }
+   }
+  },
+  "1954": {
+   "name": "Roman Breviary, 1954 (Divino Afflatu)",
+   "languages": {
+    "en": {
+     "first": "2026-10-09",
+     "last": "2026-12-08"
+    }
+   }
+  },
+  "1955": {
+   "name": "Roman Breviary, 1955 (simplified rubrics)",
+   "languages": {
+    "en": {
+     "first": "2026-10-09",
+     "last": "2026-12-08"
+    }
+   }
+  },
+  "1960": {
+   "name": "Roman Breviary, 1960",
+   "languages": {
+    "en": {
+     "first": "2026-10-09",
+     "last": "2026-12-08"
+    }
+   }
+  },
+  "1960-usa": {
+   "name": "Roman Breviary, 1960, with the current US calendar",
+   "languages": {
+    "en": {
+     "first": "2026-10-09",
+     "last": "2026-12-08"
+    }
+   }
+  },
+  "monastic-1617": {
+   "name": "Monastic Breviary, 1617",
+   "languages": {
+    "en": {
+     "first": "2026-10-09",
+     "last": "2026-12-08"
+    }
+   }
+  },
+  "monastic-1930": {
+   "name": "Monastic Breviary, 1930",
+   "languages": {
+    "en": {
+     "first": "2026-10-09",
+     "last": "2026-12-08"
+    }
+   }
+  },
+  "monastic-1963": {
+   "name": "Monastic Breviary, 1963",
+   "languages": {
+    "en": {
+     "first": "2026-10-09",
+     "last": "2026-12-08"
+    }
+   }
+  },
+  "monastic-1963-barroux": {
+   "name": "Monastic Breviary, 1963 (Le Barroux)",
+   "languages": {
+    "en": {
+     "first": "2026-10-09",
+     "last": "2026-12-08"
+    }
+   }
+  },
+  "cistercian-1951": {
+   "name": "Cistercian Breviary, 1951",
+   "languages": {
+    "en": {
+     "first": "2026-10-09",
+     "last": "2026-12-08"
+    }
+   }
+  },
+  "cistercian-altovadensis": {
+   "name": "Cistercian Breviary (Hohenfurth / Vyšší Brod)",
+   "languages": {
+    "en": {
+     "first": "2026-10-09",
+     "last": "2026-12-08"
+    }
+   }
+  },
+  "dominican-1962": {
+   "name": "Dominican Breviary, 1962",
+   "languages": {
+    "en": {
+     "first": "2026-10-09",
+     "last": "2026-12-08"
+    }
+   }
+  }
+ },
+ "languages": {
+  "en": "English"
+ },
+ "missing": [
+  "cistercian-1951/en/2026-11-02",
+  "cistercian-1951/en/2026-11-05",
+  "cistercian-1951/en/2026-11-06",
+  "cistercian-1951/en/2026-11-07"
+ ]
+}
