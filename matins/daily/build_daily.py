@@ -10,7 +10,8 @@ calendar and language, and writes OUT/<calendar>/<lang>/<YYYY-MM-DD>.json:
    page:  {title, html}}                       # Latin and vernacular side by side
 
 The email HTML carries placeholders the sending Worker fills per subscriber:
-{{page_url}}, {{unsubscribe_url}}, {{preferences_url}}. Also writes
+{{page_url}}, {{unsubscribe_url}}, {{preferences_url}}, and {{listen}} (a link to
+the day's podcast episode when there is one, otherwise empty). Also writes
 OUT/manifest.json listing calendars, languages and the dates available.
 
 Usage:
@@ -182,7 +183,7 @@ def render_email(day, la_title, title, rank, date, cal_name, vernacular, comms=(
 <h1 style="margin:8px 0 4px;font-weight:normal;font-size:26px;line-height:1.25">{esc(title)}</h1>
 <p style="margin:0 0 6px;font-style:italic;color:#555;font-size:15px">{esc(la_title)}{(" · " + esc(rank)) if rank else ""}</p>
 {f'<p style="margin:0 0 6px;color:#555;font-size:15px">{esc(comm_line(comms, 1))}</p>' if comms else ""}
-<p style="margin:0 0 6px;font-size:15px">{link}</p>
+<p style="margin:0 0 6px;font-size:15px">{link}{{{{listen}}}}</p>
 {body}
 <hr style="border:none;border-top:1px solid #e3d6c4;margin:32px 0 16px">
 <p style="margin:0 0 8px;font-size:15px">{link}</p>
@@ -193,7 +194,7 @@ def render_email(day, la_title, title, rank, date, cal_name, vernacular, comms=(
     text = "\n\n".join([
         f"MATINS · {when}", title, la_title + (f" · {rank}" if rank else "")
         + (f"\n{comm_line(comms, 1)}" if comms else ""),
-        "Read in Latin and English: {{page_url}}",
+        "Read in Latin and English: {{page_url}}{{listen}}",
         "\n\n".join(email_text_lesson(n, les, brevis) for n, les, brevis in vernacular),
         "",
         f"{cal_name}. Texts from Divinum Officium (divinumofficium.com).",
