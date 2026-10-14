@@ -2,11 +2,17 @@ name: Daily Matins readings
 
 # Renders the next 60 days of Matins (email + web page) with the engine and
 # publishes them to the `daily-data` branch, which the sending Worker reads.
-# Scheduled runs only fire from the default branch.
+# Then reads the newest days aloud for the podcast (Kokoro) and stores the
+# episodes in Cloudflare R2. Scheduled runs only fire from the default branch.
 on:
   schedule:
     - cron: "17 2 * * *"   # 02:17 UTC nightly
   workflow_dispatch:
+    inputs:
+      podcast_only:
+        description: "Only render podcast episodes (skip the readings)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -17,7 +23,7 @@ concurrency:
 
 jobs:
   build:
-    if: github.repository == 'arathalion/divinum-officium-matins'
+    if: github.repository == 'arathalion/divinum-officium-matins' && !inputs.podcast_only
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -33,3 +39,44 @@ jobs:
 
       - name: Publish to daily-data
         run: bash matins/daily/publish.sh "$RUNNER_TEMP/daily"
+
+  podcast:
+    # Separate from the readings, so a problem here never holds up the email.
+    needs: build
+    if: always() && github.repository == 'arathalion/divinum-officium-matins' && (needs.build.result == 'success' || needs.build.result == 'skipped')
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      R2_ACCOUNT_ID: 4fdd6f78581627b29dddc8606767ce1e
+      R2_BUCKET: matutinum
+      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Kokoro voice model (cached)
+        id: model
+        uses: actions/cache@v4
+        with:
+          path: ~/kokoro-model
+          key: kokoro-onnx-model-files-v1.0
+
+      - name: Download the voice model
+        if: steps.model.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p ~/kokoro-model
+          for f in kokoro-v1.0.onnx voices-v1.0.bin; do
+            curl -sSfL -o ~/kokoro-model/$f "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/$f"
+          done
+
+      - name: Tools
+        run: |
+          pip install -q kokoro-onnx soundfile boto3
+          command -v ffmpeg || (sudo apt-get update -q && sudo apt-get install -y -q ffmpeg)
+
+      - name: Render and upload episodes
+        run: python3 matins/podcast/render.py --models ~/kokoro-model --voice bm_lewis
