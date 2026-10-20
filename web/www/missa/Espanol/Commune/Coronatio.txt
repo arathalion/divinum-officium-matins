@@ -1,5 +1,5 @@
 [Officium]
-Missa Votiva in Creatione et Coronatione Papae et in die anniversarii
+Misa Votiva en la Elección y Coronación del Papa, y en el día de su aniversario
 
 [Missa]
 Statuit (altera)
@@ -17,6 +17,13 @@ v. Pedro, apóstol de Jesucristo, a los elegidos que viven como extranjeros en l
 !Ps 106:32; 106:31
 v. Ensálcenlo en la asamblea el pueblo y glorifíquenle en el consistorio de los ancianos. Alaben a Dios por sus misericordias y por sus maravillas en favor de los hombres. 
 Aleluya, aleluya.
+!Mt 16:18
+v. Tú eres Pedro y sobre esta piedra edificaré mi Iglesia. Aleluya.
+
+[GradualeP]
+Aleluya, aleluya.
+!Salm. 106:8
+Alaben a Dios por sus misericordias y por sus maravillas en favor de los hombres.
 !Mt 16:18
 v. Tú eres Pedro y sobre esta piedra edificaré mi Iglesia. Aleluya.
 

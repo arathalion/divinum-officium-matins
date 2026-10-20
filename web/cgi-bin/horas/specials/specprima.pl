@@ -127,7 +127,11 @@ sub get_prima_responsory {
     $key = 'Adv';
   }
 
-  if ($version =~ /196/ && $key =~ /Corp|Heart/) { $key = ''; }
+  if ($version =~ /196/
+    && ($key =~ /Corp|Heart/ || $key =~ /Nat/ && $winner{'Rank'} =~ /Dominica.*Post Pente/i))
+  {
+    $key = '';
+  }
   return '' unless $key;
 
   my %t = %{setupstring($lang, 'Psalterium/Special/Prima Special.txt')};
@@ -166,7 +170,6 @@ sub martyrologium {
       {
         foreach (@a) {
           last FINDDATE if s/^Upon the \d+ ?.. day of \S+/$luna /i;                                          # English
-          last FINDDATE if s/^Dnia \d+-go \S+ (.)/${luna}r. \u$1/;                                           # Polski
           last FINDDATE if s/^\d+\. (?:\(\d+.\) )?\S+/${luna}/;                                              # Bohemice
           last FINDDATE if s/^\d+ de \S+/${luna}/i;                                                          # Espanol
           last FINDDATE if s/^(Le(?: même)? \d+ .*?\,)/$1 \l$luna, /i;                                       # French 1
@@ -217,7 +220,7 @@ sub martyrologium_elogia {
   # the 1570 martyrology is printed without accents throughout
   my $plain = $lang =~ /^Latin/i && $version =~ /1570/;
 
-  my @index = grep { /\S/ } split(/\n/, $s->{Martyrologium});
+  my @index = grep {/\S/} split(/\n/, $s->{Martyrologium});
   my @lines = _heading($s, $lang, $mmdd, $plain, \@index);
 
   # blank lines only keep the conditionals in the index apart; a line that
@@ -322,12 +325,12 @@ sub _heading {
 # 'On the same day' in an announcement means the morrow it is announcing.
 my %_UNSAME = (
   English => [
-    [qr/^(?:Upon|On) the same (?:the )?(\d.*?\b(?:was|were)) also\b/ => sub { "Upon the $1" }],
-    [qr/^(?:Upon|On) the same (?:the )?(?=\d)/ => sub { 'Upon the ' }],
-    [qr/^(Upon|On) the same day\b/ => sub { "$1 the morrow" }],
-    [qr/^(Upon|On) the morrow also\b/ => sub { "$1 the morrow" }],
+    [qr/^(?:Upon|On) the same (?:the )?(\d.*?\b(?:was|were)) also\b/ => sub {"Upon the $1"}],
+    [qr/^(?:Upon|On) the same (?:the )?(?=\d)/ => sub {'Upon the '}],
+    [qr/^(Upon|On) the same day\b/ => sub {"$1 the morrow"}],
+    [qr/^(Upon|On) the morrow also\b/ => sub {"$1 the morrow"}],
   ],
-  Francais => [[qr/^Le même (?=\d)/ => sub { 'Le ' }]],
+  Francais => [[qr/^Le même (?=\d)/ => sub {'Le '}]],
 );
 
 #*** _unsame($line, $lang)
@@ -364,6 +367,11 @@ sub _elogia_entry {
 # so a gap anywhere is filled from below and in the end always from the
 # Latin.  A column falls back as far as the reader's fallback language
 # and stops.
+#
+# And the fallback fills only what the Latin itself says.  The Latin
+# decides which elogia the day has; an entry it has no words for is there
+# because some book has it, and it is that book's to print, not every
+# column's that falls back on it.
 sub _elogia_own_first {
   my ($s, $lang, $mmdd, $key) = @_;
   my $value = $s->{$key};
@@ -371,7 +379,12 @@ sub _elogia_own_first {
   # the Latin column prints the Latin
   return $value if $lang =~ /^Latin/i;
 
-  foreach my $layer (_elogia_chain($lang)) {
+  our $langfb;
+  my @chain = _elogia_chain($lang);
+  push @chain, $langfb
+    if $langfb && !(grep { $_ eq $langfb } @chain) && _elogia_latin_says($mmdd, $key);
+
+  foreach my $layer (@chain) {
     my @mine = @{_elogia_own($layer, $mmdd)->{$key} || []};
     next unless @mine;
 
@@ -391,19 +404,22 @@ sub _elogia_own_first {
 }
 
 #*** _elogia_chain($lang)
-# The languages a column may draw on: itself, the parent of a hyphenated
-# name, and the reader's fallback language.
+# The languages that are a column's own: itself, and the parent of a
+# hyphenated name.
 sub _elogia_chain {
   my $lang = shift;
-  our $langfb;
-  my (@out, %seen);
-
-  for (my $l = $lang; ; ) {
-    push @out, $l unless $seen{$l}++;
-    last unless $l =~ s/-[^-]+$//;
-  }
-  push @out, $langfb if $langfb && !$seen{$langfb}++;
+  my @out = ($lang);
+  push @out, $lang while $lang =~ s/-[^-]+$//;
   return @out;
+}
+
+#*** _elogia_latin_says($mmdd, $key)
+# Whether the Latin column, in this version, prints words for the entry.
+sub _elogia_latin_says {
+  my ($mmdd, $key) = @_;
+  my $latin = setupstring('Latin', "Martyrologium/$mmdd.txt", 'resolve@' => RESOLVE_NONE) or return 0;
+  my $text = $latin->{$key};
+  return defined $text && $text =~ /\S/ && $text !~ /^\s*\@\S+\s*$/;
 }
 
 my %_own_cache;
@@ -607,11 +623,22 @@ sub _luna {
     "Lua $ordinals[$lday-1]. Ano do Senhor de $year";
   } elsif ($lang =~ /Polski/) {
     my @months_pl = (
-      'stycznia', 'lutego', 'marca', 'kwietnia', 'maja', 'czerwca',
-      'lipca', 'sierpnia', 'września', 'października', 'listopada', 'grudnia',
+      '', 'stycznia', 'lutego', 'marca', 'kwietnia', 'maja',
+      'czerwca', 'lipca', 'sierpnia', 'września', 'października', 'listopada',
+      'grudnia',
+    );
+    my @ordinals = (
+      '', 'pierwszego', 'drugiego', 'trzeciego',
+      'czwartego', 'piątego', 'szóstego', 'siódmego',
+      'ósmego', 'dziewiątego', 'dziesiątego', 'jedenastego',
+      'dwunastego', 'trzynastego', 'czternastego', 'piętnastego',
+      'szesnastego', 'siedemnastego', 'osiemnastego', 'dziewiętnastego',
+      'dwudziestego', 'dwudziestego pierwszego', 'dwudziestego drugiego', 'dwudziestego trzeciego',
+      'dwudziestego czwartego', 'dwudziestego piątego', 'dwudziestego szóstego', 'dwudziestego siódmego',
+      'dwudziestego ósmego', 'dwudziestego dziewiątego', 'trzydziestego', 'trzydziestego pierwszego',
     );
 
-    "Roku Pańskiego $year, ${day}-go $months_pl[$month - 1], ${lday}-go dnia księżyca.\n_\n";
+    "Roku Pańskiego $year, dnia $ordinals[$day] $months_pl[$month], $ordinals[$lday] dnia księżyca.\n_\n";
   } elsif ($lang =~ /Francais/) {
     "Le $lday" . "e jour de la Lune, l’année du Seigneur $year";
   } elsif ($lang =~ /Italiano/) {

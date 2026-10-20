@@ -1,0 +1,8 @@
+[Officium]
+Conmemoración de Todos los Fieles Difuntos
+
+[Rank]
+Commemoratio Omnium Fidelium Defunctorum;;Duplex;;3;;ex C9
+
+[Rule]
+11-02m

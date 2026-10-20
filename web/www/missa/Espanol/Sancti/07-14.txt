@@ -1,7 +1,14 @@
 [Officium]
-S. Bonaventuræ Episcopi Confessoris et Ecclesiæ Doctoris
+S. Buenaventura, Obispo, Confesor y Doctor de la Iglesia
 (sed rubrica 1570)
-S. Bonaventuræ Episcopi Confessoris
+S. Buenaventura, Obispo y Confesor
 
 [Name]
 Buenaventura
+
+[Graduale]
+!Sal. 36:30-31
+La boca del justo derramará sabiduría, y su lengua hablará juiciosamente.
+V. La ley de su Dios la tiene en medio de su corazón, y andará con firmes pasos. Aleluya, aleluya.
+!Sal. 109:4
+Tú eres sacerdote para siempre según el orden de Melquisedec. Aleluya.

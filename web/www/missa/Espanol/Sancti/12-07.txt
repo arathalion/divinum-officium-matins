@@ -1,5 +1,5 @@
 [Officium]
-S. Ambrosii Episcopi Confessoris et Ecclesiæ Doctoris
+S. Ambrosio, Obispo, Confesor y Doctor de la Iglesia
 
 [Name]
 Ambrosio
@@ -51,4 +51,4 @@ $Per Dominum
 [Commemoratio Postcommunio]
 !For the Vigil of Immaculata Conception
 Grant protection to our weakness, O merciful God: that we, who are preparing for the festival of the Immaculate Conception of the Mother of thy only-begotten Son, may by the help of her prayers rise up from our iniquities.
-$Per eúndem
+$Per eundem

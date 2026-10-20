@@ -1,0 +1,8 @@
+[Officium]
+Día 6 de enero
+
+[Rank]
+Die Sexta Januarii;;Feria;;1.2;;vide Sancti/01-01
+
+[Rule]
+vide Sancti/01-01

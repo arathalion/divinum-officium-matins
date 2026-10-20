@@ -342,7 +342,7 @@ sub specials {
     #flag for Litaniae majores for St Marks day: for Easter Sunday (in 1960 also from Easter Monday) to Tuesday,
     my $flag = 0;
 
-    if ($votive eq 'Hodie') {
+    if (!$votive || $votive eq 'Hodie') {
       if ($month == 4 && $day == 25 && ($dayname[0] !~ /Pasc0/ || $dayofweek > 1)) { $flag = 1; }
       if ($month == 4 && $day == 27 && $dayname[0] =~ /Pasc0/ && $dayofweek == 2) { $flag = 1; }    #25 Sunday
       if ($version !~ /1960/ && $month == 4 && $day == 25 && $dayname[0] =~ /Pasc0/ && $dayofweek == 1) { $flag = 1; }
@@ -420,7 +420,7 @@ sub setcomment {
   my $prefix = shift;
 
   if ($ind > -1) {
-    if ($comment =~ /Source/i && $votive && $votive !~ /hodie/i) { $ind = 7; }
+    if ($comment =~ /Source/i && $votive && $votive ne 'Hodie') { $ind = 7; }
     $label = translate($label, $lang);
     my %comm = %{setupstring($lang, 'Psalterium/Comment.txt')};
     my @comm = split("\n", $comm{$comment});
@@ -721,7 +721,7 @@ sub checksuffragium {
     || ($octavcount || $commemoratio{Rank} =~ /octav/i)
 
     # Cistercian: minor Feasts of Apostles
-    || $version =~ /cist/i && $commune =~ /C1a?/i
+    || $version =~ /cist/i && $commune =~ /C1a?$/i
 
     # Cistercian: S. Augustine and Decollatio S. J.
     || $version =~ /cist/i && $winner =~ /08-2[89]/i

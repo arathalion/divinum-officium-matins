@@ -29,26 +29,26 @@
  02-21 Maximiani-Ravennatis       elogium   +1 At Ravenna, [in the year 556,] the holy Confessor Maximian. 
  02-25 Felicis-Tertii-Papae       elogium   +1 At Rome, [in the year 492,] the holy Pope Felix III, who was the
  03-02 Simplicii-Papae            elogium      At Rome, [about the year 483,] the holy Confessor Pope Simpliciu
- 03-09 Cyrilli-Methodii           elogium   +1 In Moravia, [in the ninth century,] the holy Cyril, Bishop [of M
- 03-15 Zachariae-Papae            elogium   +1 At Rome, holy Pope Zachary, who governed the Church of God with 
- 03-22 Catharinae-Genuensis       elogium   +1 At Genoa, the holy widow Katherine, eminent for her contempt of 
- 03-22 Catharinae-Suecae          elogium   +1 In Sweden, the holy Virgin Katherine, daughter of holy Bridget, 
- 03-28 Sixti-Tertii-Papae         elogium   +1 At Rome, [in the year 440,] the holy Confessor Pope Sixtus III. 
- 04-03 Benedicti-Mauri            elogium   +1 At Palermo, the holy Confessor Benedict of San Fradello, of the 
- 04-06 Caelestini-Primi-Papae     elogium   +1 At Rome, the holy Confessor, Pope Celestine [I, in the years 422
- 04-06 Celsi-Ardmachani           elogium   +1 In Ireland, the holy Confessor Kelly, Archbishop of Armagh, [in 
- 04-06 Xysti-Primi-Papae          elogium   +2 At Rome, the blessed martyr, Pope Sixtus I, who ruled the Church
- 04-18 Anthiae                    elogium   +5 @:Eleutherii-Illyrici
- 04-27 Anastasii-Primi-Papae      elogium   +2 At Rome, blessed Pope Anastasius [I, in the year 401,] a man ver
- 04-27 Egberti-Presbyteri         elogium   +1 We keep the feast of the holy Priest and monk Egbert, a man of m
- 05-05 Conversio-Augustini        elogium   +1 On this day is also commemorated, at Milan, the conversion of ho
- 05-07 Benedicti-Secundi-Papae    elogium   +1 At Rome, [in the year 686,] the holy Pope and Confessor Benedict
- 05-10 Nicolai-Albergati          elogium   +1 At Bologna, [in the year 1443,] the blessed Nicholas Albergati, 
- 05-13 Petri-Regalati             elogium   +1 At Valladolid, [in the year 1456,] the holy Confessor Peter Rega
- 05-14 Pachomii-Abbatis           elogium   +2 In Egypt, [in the year 348,] the holy Abbot Pachom, who built ma
- 05-14 Paschalis-Primi-Papae      elogium   +1 At Rome, [in the year 824,] the holy Pope Paschal I, who brought
- 05-14 Pomponii-Neapolitani       elogium   +1 At Naples, in Campania, [in the sixth century,] holy Pomponius, 
- 05-16 Simonis-Stock              elogium   +1 At Bordeaux, in Aquitaine, the holy Confessor Simon, surnamed St
+ 03-09 Cyrilli-Methodii           elogium      In Moravia, [in the ninth century,] the holy Cyril, Bishop [of M
+ 03-15 Zachariae-Papae            elogium      At Rome, holy Pope Zachary, who governed the Church of God with 
+ 03-22 Catharinae-Genuensis       elogium      At Genoa, the holy widow Katherine, eminent for her contempt of 
+ 03-22 Catharinae-Suecae          elogium      In Sweden, the holy Virgin Katherine, daughter of holy Bridget, 
+ 03-28 Sixti-Tertii-Papae         elogium      At Rome, [in the year 440,] the holy Confessor Pope Sixtus III. 
+ 04-03 Benedicti-Mauri            elogium      At Palermo, the holy Confessor Benedict of San Fradello, of the 
+ 04-06 Caelestini-Primi-Papae     elogium      At Rome, the holy Confessor, Pope Celestine [I, in the years 422
+ 04-06 Celsi-Ardmachani           elogium      In Ireland, the holy Confessor Kelly, Archbishop of Armagh, [in 
+ 04-06 Xysti-Primi-Papae          elogium   +1 At Rome, the blessed martyr, Pope Sixtus I, who ruled the Church
+ 04-18 Anthiae                    elogium   +4 @:Eleutherii-Illyrici
+ 04-27 Anastasii-Primi-Papae      elogium   +1 At Rome, blessed Pope Anastasius [I, in the year 401,] a man ver
+ 04-27 Egberti-Presbyteri         elogium      We keep the feast of the holy Priest and monk Egbert, a man of m
+ 05-05 Conversio-Augustini        elogium      On this day is also commemorated, at Milan, the conversion of ho
+ 05-07 Benedicti-Secundi-Papae    elogium      At Rome, [in the year 686,] the holy Pope and Confessor Benedict
+ 05-10 Nicolai-Albergati          elogium      At Bologna, [in the year 1443,] the blessed Nicholas Albergati, 
+ 05-13 Petri-Regalati             elogium      At Valladolid, [in the year 1456,] the holy Confessor Peter Rega
+ 05-14 Pachomii-Abbatis           elogium   +1 In Egypt, [in the year 348,] the holy Abbot Pachom, who built ma
+ 05-14 Paschalis-Primi-Papae      elogium      At Rome, [in the year 824,] the holy Pope Paschal I, who brought
+ 05-14 Pomponii-Neapolitani       elogium      At Naples, in Campania, [in the sixth century,] holy Pomponius, 
+ 05-16 Simonis-Stock              elogium      At Bordeaux, in Aquitaine, the holy Confessor Simon, surnamed St
  05-17 Brunonis-Herbipolensis     elogium      At Wurzburg, [in the year 1045,] the holy Confessor Bruno, Bisho
  05-17 Torpetis                   elogium   +1 At Pisa, in Tuscany, is commemorated the holy martyr Torpes. He 
  05-25 Bonifatii-Quarti-Papae     elogium      At Rome, the holy Pope Boniface IV, who consecrated the Pantheon
@@ -94,13 +94,13 @@
  11-27 Gregorii-Thaumaturgi       elogium      On the morrow we keep the Feast of the holy Confessor Gregory, A
  11-28 Gregorii-Tertii-Papae      elogium      At Rome, the blessed Pope Gregory III., who passed to heaven fam
  12-08 Eutychiani                 elogium      At Rome, the blessed Pope Eutychian, who with his own hands buri
- 12-26 Et-Alibi-Plurimorum        no names  +1 And in diverse places an exceeding great multitude of holy Marty
- 12-28 Theodori-Sanctificati      elogium   +1 In Egypt, the holy monk Theodore (the Sanctified, Abbot from 348
+ 12-26 Et-Alibi-Plurimorum        no names     And in diverse places an exceeding great multitude of holy Marty
+ 12-28 Theodori-Sanctificati      elogium      In Egypt, the holy monk Theodore (the Sanctified, Abbot from 348
 
 # ---------------- Espanol (141) ----------------
  01-02 Adalardi-Corbeiensis       elogium      En el monasterio de Corbie, en la Galia Ambianense (hoy Francia)
  01-09 Hadriani-Cantuariensis     elogium      En la ciudad de Canterbury, en Inglaterra, san Adriano, abad, el
- 01-13 Commemoratio-Baptismatis   elogium   +1 Estaba San Juan Bautista en las orillas del Jordán bautizando y 
+ 01-13 Commemoratio-Baptismatis   elogium   +2 Estaba San Juan Bautista en las orillas del Jordán bautizando y 
  01-13 Godefridi-Cappenbergensis  elogium      En el monasterio de Ilbenstad, en Alemania, san Godofredo, que, 
 -01-18 La-Catedra                 calendar     La Cátedra de S. Pedro en Roma. Dm. - Blanco
  02-01 Caecilii-Granatensis       elogium      San Cecilio fue el primer obispo de Granada cuando, bajo la domi
@@ -240,21 +240,8 @@
  12-28 Statio-Pauli               elogium      Estación de San Pablo Extramuros
  12-30 Infra-Octavam-Nativitatis  calendar     Dia 6º Infraoctava de Navidad Traslación de Santiago Apóstol, Dm
 
-# ---------------- Francais (14) ----------------
- 01-26 Domitillae-Sorensis        elogium      À Sora, en Campanie, sainte Domitilla, vierge et martyre, qui fu
- 01-26 Felicis-Januarii           elogium      À Rome, sous l'empereur Claude, les saints martyrs Felix et Janv
- 01-26 Gaudentii-Mediolanensis    elogium      À Milan, saint Gaudence, évêque et confesseur, qui brilla par sa
- 01-26 Joannis-Ravennatis         elogium      À Ravenne, saint Jean, évêque et confesseur, homme de Dieu et té
- 01-26 Juventini-Maximini         elogium      À Antioche, sous l'empereur Aurélien, les saints martyrs Juventi
- 01-26 Pelagii-Brixiensis         elogium      À Brescia, en Lombardie, saint Pélage, évêque et confesseur, qui
- 01-26 Theodori-Altinatis         elogium      À Altino, près de Venise, saint Théodore, évêque, qui fut renomm
- 01-27 Gildae-Abbatis             elogium      À Pontoise, en France, saint Gildas, abbé et ermite, réputé pour
- 01-27 Petri-Caesariensis         elogium      À Césarée de Cappadoce, en Turquie, saint Pierre, évêque et mart
- 02-03 Septem-Mulierum            no names     Avant lui, sept femmes, qui recueillaient les gouttes de son san
- 03-02 Cleonici-Eutropii          elogium      De même, les saints soldats Cléonicus, Eutrope et Basileiscus, q
- 03-02 Hemiterii-Cheledonii       elogium      En Espagne, les saints martyrs Hemiterius [ou Madir] et Chélidoi
- 03-02 Marini-Asterii             elogium      À Césarée, en Palestine, pendant la persécution sous l'empereur 
- 03-02 Titiani-Brixiensis         elogium      À Brescia, [en 526,] le saint confesseur Titian, évêque de cette
+# ---------------- Francais (1) ----------------
+<12-25 On                         elogium      :/On se relève et on continue sur le ton habituel de lecture du 
 
 # ---------------- Italiano (1) ----------------
  08-12 Quiriaci-Largionis         elogium   +1 @:Hilariae

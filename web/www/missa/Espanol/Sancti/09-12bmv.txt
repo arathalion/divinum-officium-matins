@@ -1,0 +1,12 @@
+[Officium]
+Día V de la Octava de la Natividad de la Bienaventurada Virgen María
+
+[Rank]
+Quinta die infra Octavam Nativitatis Beatæ Mariæ Virginis;;Semiduplex;;2;;ex Sancti/09-08
+
+[Rule]
+ex Sancti/09-08;
+Gloria
+CredoDA
+Prefatio=Maria=Nativitate;
+Suffragium=Spiritu;Ecclesiæ,Papa;;

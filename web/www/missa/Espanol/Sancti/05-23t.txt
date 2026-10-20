@@ -1,2 +1,7 @@
 [Officium]
-S. John Baptist Rossi Confessor
+S. Juan Bautista de Rossi, Confesor
+
+[Rule]
+vide C5;
+9 lectiones
+

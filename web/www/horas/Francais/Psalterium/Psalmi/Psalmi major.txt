@@ -97,7 +97,7 @@ Ma force * et le sujet de mes louanges c’est le Seigneur, c’est Lui qui m’
 Louez * le Seigneur, Il guérit ceux dont le cœur est brisé, et Il bande leurs plaies.;;146
 
 [Day4 Vespera]
-Ah ! qu’il est bon et agréable * pour des frères d’habiter ensemble !;;132
+Qu’il est bon et agréable * pour des frères d’habiter ensemble.;;132
 Célébrez le Seigneur * car Sa miséricorde est éternelle.;;135(1-9)
 Célébrez le Seigneur * car Il s’est souvenu de nous dans notre humiliation.;;135(10-26)
 Que ma langue s’attache * à mon palais, si je ne me souviens point de toi, Jérusalem.;;136
@@ -143,8 +143,8 @@ Louez * le Seigneur selon l’immensité de Sa grandeur.;;150
 Béni soit le Seigneur * mon défenseur et mon libérateur.;;143(1-8)
 Heureux le peuple * qui a le Seigneur pour son Dieu.;;143(9-15)
 Le Seigneur est grand * et très digne de louange, et Sa grandeur n’a pas de bornes.;;144(1-7)
-Le Seigneur est bon * envers tous, et Ses miséricordes s’étendent sur toutes Ses œuvres.;;144(8-’13a’)
-Le Seigneur est fidèle * dans toutes Ses paroles, et saint dans toutes Ses œuvres.;;144(‘13b’-21)
+Le Seigneur est bon * envers tous, et Ses miséricordes s’étendent sur toutes Ses œuvres.;;144(8-'13a')
+Le Seigneur est fidèle * dans toutes Ses paroles, et saint dans toutes Ses œuvres.;;144('13b'-21)
 
 [Daya0 Laudes]
 Alléluia * alléluia;;92 ;99;62;66

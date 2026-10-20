@@ -1,5 +1,5 @@
 [Officium]
-Festum Sanctissimi Corporis Christi
+Fiesta del Corpus Christi
 
 [Rule]
 Gloria
@@ -8,8 +8,6 @@ Prefatio=Nat
 (sed rubrica 1960)
 Prefatio=Communis
 Sequentia
-Benedicamus Domino
-no Ultima Evangelium
 
 [Introitus]
 !Ps. 80:17.

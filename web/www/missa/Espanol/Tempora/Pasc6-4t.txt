@@ -1,2 +1,7 @@
 [Officium]
-Feria V in Octava Ascensionis
+Día octavo de la Ascensión
+
+[Rule]
+ex Tempora/Pasc5-4;
+Gloria
+Suffr=Maria3;Ecclesiæ,Papa;;

@@ -1,3 +1,6 @@
+[Officium]
+Por la Propagación de la Fe
+
 [Introitus]
 !Salm. 66:2-3
 v. Apiádese Dios de nosotros y bendíganos; haga brillar sobre nosotros la lumbre de su rostro; conozcan en la tierra tus caminos, y tu salvación en todas las naciones. (T. P. Aleluya, aleluya). 
@@ -21,6 +24,12 @@ V. Bendíganos el Señor, nuestro Dios; bendíganos Dios; reveréncienle todos l
 !Salm. 99:1
 Aleluya, Aleluya.
 V. Aclamad a Dios toda la tierra; servid al Señor con alegría; venid gozosos a su presencia. Aleluya.
+
+[GradualeP]
+Aleluya, aleluya.
+!Salm. 99:1-2
+Aclamad a Dios toda la tierra; servid al Señor con alegría; venid gozosos a su presencia. Aleluya.
+Sabed que el Señor mismo es Dios: Él nos hizo, y no nosotros. Aleluya.
 
 [Tractus]
 !Salm. 95:3-5

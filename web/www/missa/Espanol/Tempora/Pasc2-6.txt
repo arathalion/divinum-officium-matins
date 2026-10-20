@@ -1,2 +1,9 @@
 [Officium]
-Die IV infra Octavam Patrocinii St Joseph
+Día IV de la Octava del Patrocinio de San José
+
+[Rule]
+vide Tempora/Pasc2-3
+Gloria
+Credo
+Prefatio=Joseph
+Suffragium=Maria3;Ecclesiæ,Papa;;

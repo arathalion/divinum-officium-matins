@@ -1,3 +1,14 @@
+12-04=Bavaria/12-04o;;1888 1906
+12-04=Bavaria/12-04o~12-04;;DA 1960
+12-05=12-04~12-05;;1888 1906
+12-16=Bavaria/Passaviensis/12-23-Hartmannus~12-16;;1954
+12-23=Bavaria/Passaviensis/12-23-Hartmannus;;1888 1906 DA
+12-23=XX-XX;;1954
+12-26=Bavaria/Passaviensis/12-26;;1570 1888 1906 DA 1960
+Tempora/Nat29=Tempora/Bavaria/Passaviensis/Nat29;;DA
+Tempora/Nat30=Tempora/Bavaria/Passaviensis/Nat30;;DA
+Tempora/Nat31=Tempora/Bavaria/Passaviensis/Nat31;;DA
+01-02=Bavaria/Passaviensis/01-02;;DA
 02-25=Bavaria/02-25-Walburga;;1888 1906 DA
 03-15=Bavaria/03-15-ClemensMariaHofbauer;;DA
 03-27=Bavaria/03-27-Rupertus;;1888 1906 1960
@@ -65,4 +76,9 @@
 10-27=Bavaria/10-T6oct~10-27;;1888 1906 DA
 10-29=Bavaria/10-T8oct;;1888 1906 DA
 10-31=Bavaria/10-31-Wolfgangus~10-31;;1888 1906 DA
-
+11-04=11-04~Bavaria/Passaviensis/11-04oct;;1888 1906 DA
+11-05=Bavaria/Passaviensis/11-05-Reliquiae~Bavaria/11-05oct;;1888 1906 DA
+11-06=Bavaria/11-06-Leonardus~11-06oct;;1888 1906 DA
+11-13=Urbis/12-05-StanislausK~Bavaria/Passaviensis/11-13;;1888 1906 DA
+11-17=Bavaria/Passaviensis/11-17-Leopoldus~Bavaria/Passaviensis/11-17;;1954
+11-26=Bavaria/Passaviensis/11-26-JoannesB~Bavaria/Passaviensis/11-26~11-26t;;1906 DA

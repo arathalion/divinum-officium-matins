@@ -1,5 +1,5 @@
 [Officium]
-Feria VI Quattuor Temporum in Adventu
+Viernes de Témporas de Adviento
 
 [Introitus]
 !Ps 118:151-152
@@ -31,6 +31,10 @@ En aquellos mismos días, María se levantó y se puso en camino de prisa hacia 
 [Offertorium]
 !Ps 84:7-8
 Oh Dios, volviendo tú nos darás la vida; y tu pueblo se regocijara en ti: muéstranos, Señor, tu misericordia, danos tu salud.
+
+[Secreta]
+Suplicámoste, Señor, que, pues acogiste favorablemente nuestros dones y súplicas, purifiques nuestras almas con los misterios celestiales y nos escuches con agrado.
+$Per Dominum
 
 [Communio]
 !Zac 14:5-6
