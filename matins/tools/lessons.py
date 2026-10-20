@@ -123,6 +123,17 @@ def align_cites(latin, english):
     return english
 
 
+# The English translation writes regnal numbers with a full stop ("Clement IX.
+# inscribed his name"), which now reads as the end of a sentence. Drop it where
+# a lower-case word follows; references such as "Book I. ch. 18" are left alone.
+_REGNAL_STOP = re.compile(r"\b(?!(?:Book|Chap|Part|Vol|Ps|Psalm)\b)([A-Z][a-z]+) "
+                          r"(X{0,3}(?:IX|IV|V?I{1,3}|V|X))\.(?= [a-z])")
+
+
+def modern_numerals(s):
+    return _REGNAL_STOP.sub(r"\1 \2", s)
+
+
 # A heading ("From the Book of ...") is a line or two; anything longer is the
 # lesson itself, set without its usual red initial.
 TITLE_MAX = 150
@@ -130,6 +141,8 @@ TITLE_MAX = 150
 
 def parse_lesson(text, lang="latin"):
     lines = _normalise(text)
+    if lang == "english":
+        lines = [modern_numerals(l) for l in lines]
     tedeum = any(l.startswith("&teDeum") for l in lines)
     lines = [l for l in lines if not l.startswith("&teDeum")]
 
