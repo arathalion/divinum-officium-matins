@@ -31,6 +31,7 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 MATINS = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(MATINS, "tools"))
+import gospels  # noqa: E402
 import lessons as L  # noqa: E402
 import layout  # noqa: E402
 import titles  # noqa: E402
@@ -292,6 +293,8 @@ def build_one(date, cal, lang, out_dir, corpus_titles):
         local = L.parse_lesson(les["vernacular"], "english" if lang == "en" else "latin")
         if lang == "en":
             L.align_cites(la, local)
+        # The breviary gives only the Gospel's opening words; use the full text.
+        gospels.complete(la, local if lang == "en" else None)
         if not body_words(la) and not body_words(local):
             continue  # the engine gave no text (see README: known engine issue)
         brevis = les.get("kind")  # None, "brevis" or "unica"

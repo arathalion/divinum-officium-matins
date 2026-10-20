@@ -13,6 +13,10 @@ on:
         description: "Only render podcast episodes (skip the readings)"
         type: boolean
         default: false
+      rerender:
+        description: "Render the recent podcast episodes again (after a voice or text change)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -78,5 +82,14 @@ jobs:
           pip install -q kokoro-onnx soundfile boto3
           command -v ffmpeg || (sudo apt-get update -q && sudo apt-get install -y -q ffmpeg)
 
+      - name: Today's readings from the daily-data branch
+        # Read straight from the branch: raw.githubusercontent.com can lag a few minutes.
+        run: |
+          git fetch -q --depth 1 origin daily-data
+          mkdir -p "$RUNNER_TEMP/data"
+          git archive FETCH_HEAD 1954/en | tar -x -C "$RUNNER_TEMP/data"
+
       - name: Render and upload episodes
-        run: python3 matins/podcast/render.py --models ~/kokoro-model --voice bm_lewis
+        run: |
+          python3 matins/podcast/render.py --models ~/kokoro-model --data "$RUNNER_TEMP/data" \
+            ${{ inputs.rerender && '--replace' || '' }}

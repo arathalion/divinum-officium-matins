@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Render podcast episodes of the daily readings and keep them in R2.
 
-  python3 matins/podcast/render.py --models DIR [--calendar 1954] [--lang en]
-      [--voice bm_lewis] [--back 2] [--ahead 1] [--keep-days 30]
+  python3 matins/podcast/render.py --models DIR [--data DIR] [--calendar 1954]
+      [--lang en] [--voice VOICE] [--speed 0.92] [--back 2] [--ahead 1]
+      [--keep-days 30] [--replace]
 
 For each date from --back days ago to --ahead days ahead (UTC) that has no
 episode yet, reads the day's published readings, renders them with Kokoro,
@@ -35,9 +36,19 @@ import script as S  # noqa: E402
 from voice import Voice  # noqa: E402
 
 DATA_URL = "https://raw.githubusercontent.com/arathalion/divinum-officium-matins/daily-data"
+# Softer than the raw voice: the bright top end turned down, sibilants tamed,
+# then levelled to the usual podcast loudness.
+AUDIO_FILTER = ("highshelf=f=4500:g=-4,deesser=i=0.4:m=0.5:f=0.5,lowpass=f=10000,"
+                "loudnorm=I=-16:TP=-1.5:LRA=11")
 
 
-def fetch_day(calendar, lang, date):
+def fetch_day(calendar, lang, date, data_dir=None):
+    if data_dir:
+        path = os.path.join(data_dir, calendar, lang, f"{date}.json")
+        if not os.path.exists(path):
+            return None
+        with open(path, encoding="utf-8") as fh:
+            return json.load(fh)
     try:
         with urllib.request.urlopen(f"{DATA_URL}/{calendar}/{lang}/{date}.json", timeout=30) as r:
             return json.load(r)
@@ -52,11 +63,13 @@ def main():
     ap.add_argument("--models", required=True)
     ap.add_argument("--calendar", default="1954")
     ap.add_argument("--lang", default="en")
-    ap.add_argument("--voice", default="bm_lewis")
-    ap.add_argument("--speed", type=float, default=0.95)
+    ap.add_argument("--data", help="a local copy of the daily-data branch (else read from GitHub)")
+    ap.add_argument("--voice", default="bm_lewis:0.7+bm_fable:0.3")
+    ap.add_argument("--speed", type=float, default=0.92)
     ap.add_argument("--back", type=int, default=2)
     ap.add_argument("--ahead", type=int, default=1)
     ap.add_argument("--keep-days", type=int, default=30)
+    ap.add_argument("--replace", action="store_true", help="render the dates again even if they exist")
     args = ap.parse_args()
 
     bucket = os.environ.get("R2_BUCKET", "matutinum")
@@ -74,13 +87,13 @@ def main():
 
     today = datetime.datetime.now(datetime.timezone.utc).date()
     wanted = [(today + datetime.timedelta(days=d)).isoformat() for d in range(-args.back, args.ahead + 1)]
-    todo = [d for d in wanted if d not in existing]
+    todo = wanted if args.replace else [d for d in wanted if d not in existing]
     print(f"{len(existing)} episodes stored; to render: {', '.join(todo) or 'none'}")
 
     voice = Voice(args.models, args.voice) if todo else None
     tmp = tempfile.mkdtemp()
     for date in todo:
-        doc = fetch_day(args.calendar, args.lang, date)
+        doc = fetch_day(args.calendar, args.lang, date, args.data)
         if not doc:
             print(f"{date}: no readings published, skipped")
             continue
@@ -89,8 +102,8 @@ def main():
         wav, mp3 = os.path.join(tmp, f"{date}.wav"), os.path.join(tmp, f"{date}.mp3")
         sf.write(wav, wave, rate)
         subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", wav,
-                        "-af", "loudnorm=I=-16:TP=-1.5:LRA=11", "-ac", "1", "-ar", "24000",
-                        "-codec:a", "libmp3lame", "-b:a", "64k",
+                        "-af", AUDIO_FILTER, "-ac", "1", "-ar", "24000",
+                        "-codec:a", "libmp3lame", "-b:a", "96k",
                         "-metadata", f"title=Matins, {date}: {doc['title']['local']}", mp3], check=True)
         seconds = round(len(wave) / rate)
         s3.upload_file(mp3, bucket, f"{prefix}{date}.mp3", ExtraArgs={

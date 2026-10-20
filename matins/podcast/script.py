@@ -41,67 +41,87 @@ def clean(s):
     return re.sub(r"\s+", " ", s).strip()
 
 
-def chunks(text, limit=350):
-    """Split long text at sentence ends so each piece stays well inside the model's input limit."""
-    out, cur = [], ""
-    for sent in re.split(r"(?<=[.;:?!])\s+", text):
-        if cur and len(cur) + len(sent) > limit:
-            out.append(cur)
-            cur = sent
-        else:
-            cur = f"{cur} {sent}".strip()
-    if cur:
-        out.append(cur)
+# Pauses (seconds). Each sentence is read on its own so it can be followed by a
+# breath; long sentences are split at a colon or semicolon with a shorter one.
+SENTENCE = 0.6
+CLAUSE = 0.3
+HEADING = 1.0      # after "Lesson one.", a title or "Responsory."
+PART = 1.2         # after a block of text inside a lesson
+LESSON = 2.0       # after a lesson and its responsory
+NOCTURN_GAP = 2.5  # before a new Nocturn
+
+
+def sentences(text, limit=300):
+    """[(piece, pause)] for a passage: one piece per sentence, long ones split at ; or :."""
+    out = []
+    for sent in re.split(r"(?<=[.?!])\s+(?=[A-Z\u201c\"'(])", text):
+        if len(sent) <= limit:
+            out.append([sent, SENTENCE])
+            continue
+        cur = ""
+        for clause in re.split(r"(?<=[;:])\s+", sent):
+            if cur and len(cur) + len(clause) > limit:
+                out.append([cur, CLAUSE])
+                cur = clause
+            else:
+                cur = f"{cur} {clause}".strip()
+        if cur:
+            out.append([cur, SENTENCE])
     return out
 
 
 def script(doc):
     seg = []
 
-    def say(text, pause=0.35):
-        for piece in chunks(clean(text)):
-            seg.append([piece, 0.35])
+    def say(text, pause=SENTENCE):
+        seg.extend(sentences(clean(text)))
         if seg:
             seg[-1][1] = pause
 
+    def gap(pause):
+        if seg:
+            seg[-1][1] = max(seg[-1][1], pause)
+
     d = datetime.date.fromisoformat(doc["date"])
-    say(f"Matins for {d.strftime('%A')}, the {DAY_ORD[d.day]} of {d.strftime('%B')}.", 0.6)
-    say(doc["title"]["local"] + ".", 1.2)
+    say(f"Matins for {d.strftime('%A')}, the {DAY_ORD[d.day]} of {d.strftime('%B')}.", 0.8)
+    say(doc["title"]["local"] + ".", PART)
     comms = doc.get("commemorations") or []
     if comms:
-        say("With a commemoration of " + " and ".join(c["local"] for c in comms) + ".", 1.2)
+        say("With a commemoration of " + " and ".join(c["local"] for c in comms) + ".", PART)
+    gap(LESSON)
 
     nine = len(doc["lessons"]) >= 8
     for les in doc["lessons"]:
         n = les["number"]
         if nine and n in NOCTURN:
-            say(NOCTURN[n] + ".", 1.0)
+            gap(NOCTURN_GAP)
+            say(NOCTURN[n] + ".", HEADING)
         kind = les.get("kind")
-        say("Lesson." if kind else f"Lesson {ORD[n]}.", 0.7)
+        say("Lesson." if kind else f"Lesson {ORD[n]}.", HEADING)
         t = les["translation"]
         for part in t["parts"]:
             if part.get("title"):
-                say(clean(part["title"]).rstrip(".") + ".", 0.6)
+                say(clean(part["title"]).rstrip(".") + ".", HEADING)
             if part.get("verses"):
-                say(" ".join(v["text"] for v in part["verses"]), 0.8)
+                say(" ".join(v["text"] for v in part["verses"]), PART)
             for p in part.get("paragraphs", []):
-                say(p, 0.6)
-        seg[-1][1] = 1.0
+                say(p, PART)
+        gap(PART)
         resp = t.get("responsory") or []
         if resp:
-            say("Responsory.", 0.5)
+            say("Responsory.", HEADING)
             for r in resp:
                 if r["type"] == "respond":
-                    say(" ".join(x for x in (r["text"], r.get("repeat", "")) if x), 0.6)
+                    say(" ".join(x for x in (r["text"], r.get("repeat", "")) if x), PART)
                 elif r["type"] == "verse":
-                    say("Verse. " + r["text"], 0.6)
+                    say("Verse. " + r["text"], PART)
                 else:
-                    say(r["text"], 0.6)
-            seg[-1][1] = 1.4
+                    say(r["text"], PART)
+        gap(LESSON)
         if t.get("te_deum"):
-            say("Here follows the Te Deum.", 1.4)
+            say("Here follows the Te Deum.", LESSON)
 
-    say("Thanks be to God.", 0.8)
+    say("Thanks be to God.", 1.0)
     return seg
 
 
