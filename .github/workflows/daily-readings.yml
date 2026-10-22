@@ -4,6 +4,10 @@ name: Daily Matins readings
 # publishes them to the `daily-data` branch, which the sending Worker reads.
 # Then reads the newest days aloud for the podcast (Kokoro) and stores the
 # episodes in Cloudflare R2. Scheduled runs only fire from the default branch.
+#
+# The engine is Divinum Officium's code, merged in from upstream, so the job
+# that runs it has a read-only token and keeps no credentials. A separate job,
+# which runs none of that code, checks its output and publishes it.
 on:
   schedule:
     - cron: "17 2 * * *"   # 02:17 UTC nightly
@@ -19,7 +23,7 @@ on:
         default: false
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: daily-readings
@@ -30,8 +34,12 @@ jobs:
     if: github.repository == 'arathalion/divinum-officium-matins' && !inputs.podcast_only
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - name: Perl modules for the engine
         run: sudo apt-get update -q && sudo apt-get install -y -q libcgi-pm-perl
@@ -41,15 +49,51 @@ jobs:
           python3 matins/daily/build_daily.py \
             --start "$(date -u -d yesterday +%F)" --days 61 --out "$RUNNER_TEMP/daily"
 
+      - uses: actions/upload-artifact@v4
+        with:
+          name: daily
+          path: ${{ runner.temp }}/daily
+          retention-days: 3
+          if-no-files-found: error
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: daily
+          path: ${{ runner.temp }}/daily
+
+      - name: Check the rendered files
+        # Only <calendar>/<lang>/<date>.json and manifest.json, and no links.
+        run: |
+          cd "$RUNNER_TEMP/daily"
+          unexpected=$(find . -mindepth 1 \( -type f -o -type d \) -printf '%P\n' | grep -Ev \
+            '^(manifest\.json|[a-z0-9-]{1,32}|[a-z0-9-]{1,32}/[a-z]{2}|[a-z0-9-]{1,32}/[a-z]{2}/[0-9]{4}-[0-9]{2}-[0-9]{2}\.json)$' || true)
+          other=$(find . -mindepth 1 ! -type f ! -type d -printf '%P\n')
+          if [ -n "$unexpected$other" ]; then
+            echo "Unexpected files in the rendered output:"; printf '%s\n' $unexpected $other
+            exit 1
+          fi
+          echo "$(find . -type f | wc -l) files checked"
+
       - name: Publish to daily-data
         run: bash matins/daily/publish.sh "$RUNNER_TEMP/daily"
 
   podcast:
     # Separate from the readings, so a problem here never holds up the email.
-    needs: build
-    if: always() && github.repository == 'arathalion/divinum-officium-matins' && (needs.build.result == 'success' || needs.build.result == 'skipped')
+    needs: publish
+    if: always() && github.repository == 'arathalion/divinum-officium-matins' && (needs.publish.result == 'success' || needs.publish.result == 'skipped')
     runs-on: ubuntu-latest
     timeout-minutes: 120
+    permissions:
+      contents: read
     env:
       R2_ACCOUNT_ID: 4fdd6f78581627b29dddc8606767ce1e
       R2_BUCKET: matutinum
@@ -57,6 +101,8 @@ jobs:
       R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - uses: actions/setup-python@v5
         with:

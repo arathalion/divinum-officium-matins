@@ -2,8 +2,14 @@ name: Monthly sync with Divinum Officium
 
 # Once a month: merge DivinumOfficium/divinum-officium into this fork, then
 # rebuild the Matins corpus, text files and EPUB from the updated engine and
-# texts. If the merge conflicts, or would change workflow files (which this
-# job's token may not push), it opens an issue instead of pushing anything.
+# texts.
+#
+# The rebuild runs Divinum Officium's code, so it happens in a job with a
+# read-only token and no stored credentials, and hands over only the rebuilt
+# files. A second job, which runs none of that code, repeats the merge itself
+# (git runs nothing from the repository), refuses it if it would change
+# workflow files or anything of ours under matins/, checks the rebuilt files,
+# and commits and pushes. Problems are reported as issues.
 on:
   schedule:
     - cron: "41 4 3 * *"   # 3rd of each month, 04:41 UTC
@@ -15,68 +21,154 @@ on:
         default: false
 
 permissions:
-  contents: write
-  issues: write
+  contents: read
 
 concurrency:
   group: sync-upstream
   cancel-in-progress: false
 
+env:
+  UPSTREAM: https://github.com/DivinumOfficium/divinum-officium.git
+
 jobs:
-  sync:
+  build:
     if: github.repository == 'arathalion/divinum-officium-matins'
     runs-on: ubuntu-latest
     timeout-minutes: 180
-    env:
-      GH_TOKEN: ${{ github.token }}
+    permissions:
+      contents: read
+    outputs:
+      status: ${{ steps.merge.outputs.status }}
+      upstream: ${{ steps.merge.outputs.upstream }}
+      summary: ${{ steps.merge.outputs.summary }}
     steps:
       - uses: actions/checkout@v4
         with:
           ref: matins-readings
           fetch-depth: 0
+          persist-credentials: false
 
-      - name: Merge Divinum Officium
+      - name: Merge Divinum Officium (locally)
         id: merge
         run: |
           git config user.name "matins-bot"
           git config user.email "matins-bot@users.noreply.github.com"
-          git remote add upstream https://github.com/DivinumOfficium/divinum-officium.git
-          git fetch -q upstream master
-          if git merge-base --is-ancestor upstream/master HEAD; then
+          git fetch -q "$UPSTREAM" master
+          upstream=$(git rev-parse FETCH_HEAD)
+          echo "upstream=$upstream" >> "$GITHUB_OUTPUT"
+          if git merge-base --is-ancestor "$upstream" HEAD; then
             echo "Already up to date with Divinum Officium."
-            echo "merged=false" >> "$GITHUB_OUTPUT"
+            echo "status=uptodate" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           before=$(git rev-parse HEAD)
-          if ! git merge --no-edit upstream/master; then
+          if ! git merge -q --no-edit "$upstream"; then
             git merge --abort || true
-            gh issue create --title "Monthly sync: merge conflict with Divinum Officium" \
-              --body "Merging DivinumOfficium/divinum-officium master ($(git rev-parse --short upstream/master)) into matins-readings conflicted, so nothing was pushed. Merge it by hand and run this workflow again."
-            exit 1
+            echo "status=conflict" >> "$GITHUB_OUTPUT"
+            exit 0
           fi
-          if git diff --name-only "$before" HEAD | grep -q '^\.github/workflows/'; then
-            gh issue create --title "Monthly sync: Divinum Officium changed workflow files" \
-              --body "The merge of DivinumOfficium/divinum-officium master ($(git rev-parse --short upstream/master)) changes files in .github/workflows, which this job is not allowed to push. Merge it by hand (git fetch upstream && git merge upstream/master), push, and run this workflow again."
-            exit 1
+          if git diff --name-only "$before" HEAD | grep -Eq '^(\.github/|matins/)'; then
+            echo "status=protected" >> "$GITHUB_OUTPUT"
+            exit 0
           fi
-          echo "merged=true" >> "$GITHUB_OUTPUT"
-          echo "summary=$(git log --oneline "$before"..upstream/master | wc -l | tr -d ' ') new Divinum Officium commits" >> "$GITHUB_OUTPUT"
+          echo "status=merged" >> "$GITHUB_OUTPUT"
+          echo "summary=$(git log --oneline "$before".."$upstream" | wc -l | tr -d ' ') new Divinum Officium commits" >> "$GITHUB_OUTPUT"
 
       - name: Perl modules for the engine
-        if: steps.merge.outputs.merged == 'true' || inputs.rebuild
+        if: steps.merge.outputs.status == 'merged' || (inputs.rebuild && steps.merge.outputs.status == 'uptodate')
         run: sudo apt-get update -q && sudo apt-get install -y -q libcgi-pm-perl
 
       - name: Rebuild the corpus, text files and EPUB
-        if: steps.merge.outputs.merged == 'true' || inputs.rebuild
+        if: steps.merge.outputs.status == 'merged' || (inputs.rebuild && steps.merge.outputs.status == 'uptodate')
         run: |
           matins/tools/harvest_years.sh 1950 2100 > /dev/null
           (cd web/www/horas/Latin && ls Tempora/*.txt Sancti/*.txt Commune/*.txt) > matins/cache/allfiles.txt
           perl matins/tools/extract_files.pl < matins/cache/allfiles.txt > matins/cache/files.jsonl
           python3 matins/tools/build_corpus.py
           python3 matins/tools/build_epub.py
+          tar -czf "$RUNNER_TEMP/rebuilt.tgz" matins/text matins/data matins/output/Matins-Readings-1954.epub
+
+      - uses: actions/upload-artifact@v4
+        if: steps.merge.outputs.status == 'merged' || (inputs.rebuild && steps.merge.outputs.status == 'uptodate')
+        with:
+          name: rebuilt
+          path: ${{ runner.temp }}/rebuilt.tgz
+          retention-days: 3
+          if-no-files-found: error
+
+  publish:
+    needs: build
+    if: needs.build.outputs.status != 'uptodate' || inputs.rebuild
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      issues: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      STATUS: ${{ needs.build.outputs.status }}
+      UPSTREAM_SHA: ${{ needs.build.outputs.upstream }}
+      SUMMARY: ${{ needs.build.outputs.summary || 'Manual rebuild' }}
+    steps:
+      - name: Report a merge that needs a person
+        if: needs.build.outputs.status == 'conflict' || needs.build.outputs.status == 'protected'
+        run: |
+          short=${UPSTREAM_SHA:0:10}
+          if [ "$STATUS" = conflict ]; then
+            gh issue create -R "$GITHUB_REPOSITORY" --title "Monthly sync: merge conflict with Divinum Officium" \
+              --body "Merging DivinumOfficium/divinum-officium master ($short) into matins-readings conflicted, so nothing was pushed. Merge it by hand and run this workflow again."
+          else
+            gh issue create -R "$GITHUB_REPOSITORY" --title "Monthly sync: Divinum Officium changes our files" \
+              --body "The merge of DivinumOfficium/divinum-officium master ($short) changes files under .github/ or matins/, which the monthly sync does not push automatically. Check the changes, merge by hand (git fetch upstream && git merge upstream/master), push, and run this workflow again."
+          fi
+          exit 1
+
+      - uses: actions/checkout@v4
+        with:
+          ref: matins-readings
+          fetch-depth: 0
+
+      - name: Merge the same Divinum Officium commit
+        run: |
+          git config user.name "matins-bot"
+          git config user.email "matins-bot@users.noreply.github.com"
+          git fetch -q "$UPSTREAM" master
+          # The build job reports which commit it merged; it must be upstream's.
+          if ! printf '%s' "$UPSTREAM_SHA" | grep -Eq '^[0-9a-f]{40}$' || ! git merge-base --is-ancestor "$UPSTREAM_SHA" FETCH_HEAD; then
+            echo "The reported upstream commit is not on Divinum Officium's master."; exit 1
+          fi
+          before=$(git rev-parse HEAD)
+          if ! git merge-base --is-ancestor "$UPSTREAM_SHA" HEAD; then
+            git merge -q --no-edit "$UPSTREAM_SHA"
+          fi
+          if git diff --name-only "$before" HEAD | grep -Eq '^(\.github/|matins/)'; then
+            echo "The merge changes .github/ or matins/; not pushing."; exit 1
+          fi
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: rebuilt
+          path: ${{ runner.temp }}
+
+      - name: Check and apply the rebuilt files
+        run: |
+          archive="$RUNNER_TEMP/rebuilt.tgz"
+          # Only regular files and folders under matins/text and matins/data, plus the EPUB.
+          python3 - "$archive" <<'PY'
+          import re, sys, tarfile
+          ok = re.compile(r"^(matins/(text|data)(/[A-Za-z0-9._-]+)*|matins/output/Matins-Readings-1954\.epub)$")
+          with tarfile.open(sys.argv[1]) as t:
+              bad = [m.name for m in t.getmembers()
+                     if not (m.isfile() or m.isdir()) or not ok.match(m.name.rstrip("/"))
+                     or ".." in m.name.split("/")]
+          if bad:
+              print("Unexpected entries in the rebuilt files:", *bad[:20], sep="\n")
+              sys.exit(1)
+          PY
+          rm -rf matins/text matins/data
+          tar -xzf "$archive" --no-same-owner --no-same-permissions
 
       - name: Commit and push
-        if: steps.merge.outputs.merged == 'true' || inputs.rebuild
         run: |
           # The EPUB embeds a build time, so only take it when the readings changed.
           git add -A matins/text matins/data
@@ -87,12 +179,12 @@ jobs:
           else
             git add matins/output/Matins-Readings-1954.epub
             git commit -q -m "Rebuild Matins readings after syncing with Divinum Officium" \
-              -m "${{ steps.merge.outputs.summary || 'Manual rebuild' }}. $(git diff --cached --stat | tail -1)"
+              -m "$SUMMARY. $(git diff --cached --stat | tail -1)"
             committed=true
           fi
           # Push only when there is something new (a merge or a rebuild commit).
-          if [ "${{ steps.merge.outputs.merged }}" = "true" ] || [ "$committed" = "true" ]; then
+          if [ "$STATUS" = merged ] || [ "$committed" = true ]; then
             git push origin HEAD:matins-readings
           fi
           # Keep the fork's master equal to Divinum Officium's.
-          git push origin refs/remotes/upstream/master:refs/heads/master || echo "Could not update master (it may have diverged); left as is."
+          git push origin "$UPSTREAM_SHA:refs/heads/master" || echo "Could not update master (it may have diverged); left as is."
