@@ -99,6 +99,14 @@ my $out = DOBoot::run_matins(
       push @comm, { file => $file, latin => $la, local => $title->(main::setupstring($lang2, $file)) };
     }
     $result{commemorations} = \@comm;
+
+    # The Martyrology read at Prime today, which announces tomorrow (the
+    # engine adds the moon's age and any movable feast, per version).
+    for my $l ('Latin', $lang2) {
+      local $main::column = $l eq 'Latin' ? 1 : 2;
+      my $text = eval { main::martyrologium($l) };
+      $result{martyrology}{ $l eq 'Latin' ? 'latin' : 'vernacular' } = $text if defined $text;
+    }
     $result{commemoentries} = [@main::commemoentries];
     $result{build} = $main::buildscript;
   },

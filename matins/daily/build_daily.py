@@ -109,6 +109,87 @@ def day_titles(day, corpus_titles, lang_code, calendar):
 SINGLE = {"brevis": ("Lectio brevis", "Short lesson"), "unica": ("Lectio unica", "Lesson")}
 
 
+# ---------------------------------------------------------------- Martyrology
+
+RESPONSE = {"latin": "Deo grátias.", "english": "Thanks be to God."}
+
+
+def parse_martyrology(text, lang):
+    """The Martyrology read at Prime (it announces tomorrow), from the engine's
+    lines: "v. <date and moon>", "r. <entry>" per notice, "V. Et alibi...",
+    then "$Deo gratias". Returns {heading, entries, closing, response} or None."""
+    out = {"heading": "", "entries": [], "closing": "", "response": ""}
+    for line in (text or "").replace("\r", "").split("\n"):
+        s = re.sub(r"\s+", " ", line).strip()
+        if not s or s.startswith("/:") or s == "_":
+            continue
+        if s.startswith("$"):
+            out["response"] = RESPONSE.get(lang, RESPONSE["latin"])
+        elif s.startswith("V. "):
+            out["closing"] = s[3:].strip()
+        elif s.startswith("v. ") and not out["heading"] and not out["entries"]:
+            out["heading"] = s[3:].strip().rstrip(",").strip()
+        else:
+            out["entries"].append(re.sub(r"^[rv]\. ", "", s))
+    return out if out["entries"] else None
+
+
+def martyrology_html_email(m):
+    if not m:
+        return ""
+    out = [f'<p style="margin:30px 0 2px;text-align:center;color:{RED};font-variant:small-caps;'
+           f'letter-spacing:.06em;font-size:15px">Martyrology</p>',
+           f'<p style="margin:0 0 10px;text-align:center;font-style:italic;font-size:14px;color:{RED}">'
+           f'Read at Prime today, announcing tomorrow</p>']
+    if m["heading"]:
+        out.append(f'<p style="margin:0 0 10px;text-align:center;font-style:italic">{esc(m["heading"])}</p>')
+    out += [f'<p style="margin:0 0 10px">{esc(e)}</p>' for e in m["entries"]]
+    for sign, t in (("℣.", m["closing"]), ("℟.", m["response"])):
+        if t:
+            out.append(f'<p style="margin:0 0 4px;padding-left:1.4em;text-indent:-1.4em">'
+                       f'<span style="color:{RED};font-weight:bold">{sign}</span> {esc(t)}</p>')
+    return "\n".join(out)
+
+
+def martyrology_text(m):
+    if not m:
+        return ""
+    lines = ["MARTYROLOGY (read at Prime today, announcing tomorrow)"]
+    if m["heading"]:
+        lines.append(m["heading"])
+    lines += m["entries"]
+    if m["closing"]:
+        lines.append("V. " + m["closing"])
+    if m["response"]:
+        lines.append("R. " + m["response"])
+    return "\n\n".join(lines)
+
+
+def martyrology_page(la, local, lang_attr):
+    if not la and not local:
+        return ""
+
+    def cell(m, head, note):
+        if not m:
+            return ""
+        out = [f'<p class="head">{head}</p>']
+        out.append(f'<p class="rubric" style="text-align:center">{note}</p>' if note else "")
+        if m["heading"]:
+            out.append(f'<p class="title">{esc(m["heading"])}</p>')
+        out += [f"<p>{esc(e)}</p>" for e in m["entries"]]
+        if m["closing"]:
+            out.append(f'<p><span class="rv">℣.</span> {esc(m["closing"])}</p>')
+        if m["response"]:
+            out.append(f'<p><span class="rv">℟.</span> {esc(m["response"])}</p>')
+        return "".join(out)
+
+    note = "Read at Prime today, announcing tomorrow"
+    return ('<section class="martyrology"><div class="pair">'
+            f'<div class="la" lang="la">{cell(la, "Martyrologium", "")}</div>'
+            f'<div class="en" lang="{lang_attr}">{cell(local, "Martyrology", note)}</div>'
+            '</div></section>')
+
+
 def email_lesson(n, les, kind=None):
     head = SINGLE[kind][1] if kind in SINGLE else f"Lesson {L.ROMAN[n] if n < len(L.ROMAN) else n}"
     out = [f'<p style="margin:26px 0 4px;text-align:center;color:{RED};font-variant:small-caps;'
@@ -167,12 +248,13 @@ def comm_line(items, which):
     return ("Commemoration: " if len(items) == 1 else "Commemorations: ") + names
 
 
-def render_email(day, la_title, title, rank, date, cal_name, vernacular, comms=()):
+def render_email(day, la_title, title, rank, date, cal_name, vernacular, comms=(), mart=None):
     when = f"{WEEKDAYS[date.weekday()]}, {date.day} {MONTHS[date.month]} {date.year}"
     subject = f"Matins for {WEEKDAYS[date.weekday()]} {date.day} {MONTHS[date.month]}: {title}"
     first = next((p for les in vernacular for b in les[1]["blocks"] for p in b["paras"] + [v[1] for v in b["verses"]]), "")
     preheader = (first[:140] + "…") if len(first) > 140 else first
     body = "\n".join(email_lesson(n, les, brevis) for n, les, brevis in vernacular)
+    body += "\n" + martyrology_html_email(mart)
     link = f'<a href="{{{{page_url}}}}" style="color:{RED}">Read in Latin and English</a>'
     html_doc = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -197,6 +279,7 @@ def render_email(day, la_title, title, rank, date, cal_name, vernacular, comms=(
         + (f"\n{comm_line(comms, 1)}" if comms else ""),
         "Read in Latin and English: {{page_url}}{{listen}}",
         "\n\n".join(email_text_lesson(n, les, brevis) for n, les, brevis in vernacular),
+        martyrology_text(mart),
         "",
         f"{cal_name}. Texts from Divinum Officium (divinumofficium.com).",
         "Change settings: {{preferences_url}}",
@@ -225,7 +308,7 @@ def page_cell(kind, items):
     return "".join(f'<p class="{kind}">{esc(i)}</p>' for i in items)
 
 
-def render_page(la_title, title, rank, date, lessons_pairs, lang_attr, comms=()):
+def render_page(la_title, title, rank, date, lessons_pairs, lang_attr, comms=(), mart=(None, None)):
     when = f"{WEEKDAYS[date.weekday()]}, {date.day} {MONTHS[date.month]} {date.year}"
     parts = [f'<p class="date">{esc(when)}</p>',
              f'<h1>{esc(la_title)}<span class="sub" lang="{lang_attr}">{esc(title)}</span></h1>']
@@ -243,6 +326,7 @@ def render_page(la_title, title, rank, date, lessons_pairs, lang_attr, comms=())
                          f'<div class="la" lang="la">{page_cell(kind, a)}</div>'
                          f'<div class="en" lang="{lang_attr}">{page_cell(kind, b)}</div></div>')
         parts.append("</section>")
+    parts.append(martyrology_page(mart[0], mart[1], lang_attr))
     return {"title": f"Matins for {when}: {title}", "html": "\n".join(parts)}
 
 
@@ -304,6 +388,9 @@ def build_one(date, cal, lang, out_dir, corpus_titles):
         # The engine produced no lessons (a gap in Divinum Officium's data for
         # this calendar and day): publish nothing rather than an empty email.
         return None
+    m = day.get("martyrology") or {}
+    mart_la = parse_martyrology(m.get("latin"), "latin")
+    mart_local = parse_martyrology(m.get("vernacular"), "english" if lang == "en" else "latin")
     doc = {
         "date": date.isoformat(), "calendar": cal, "lang": lang, "version": version,
         "title": {"latin": la_title, "local": title}, "rank": rank,
@@ -311,8 +398,9 @@ def build_one(date, cal, lang, out_dir, corpus_titles):
         "lessons": [dict({"number": n, "latin": api_text(la), "translation": api_text(local)},
                          **({"kind": {"brevis": "short", "unica": "single"}[brevis]} if brevis else {}))
                     for n, la, local, brevis in pairs],
-        "email": render_email(day, la_title, title, rank, date, cal_name, vernacular, comms),
-        "page": render_page(la_title, title, rank, date, pairs, lang, comms),
+        "martyrology": {"latin": mart_la, "translation": mart_local} if (mart_la or mart_local) else None,
+        "email": render_email(day, la_title, title, rank, date, cal_name, vernacular, comms, mart_local),
+        "page": render_page(la_title, title, rank, date, pairs, lang, comms, (mart_la, mart_local)),
     }
     path = os.path.join(out_dir, cal, lang, f"{date.isoformat()}.json")
     os.makedirs(os.path.dirname(path), exist_ok=True)

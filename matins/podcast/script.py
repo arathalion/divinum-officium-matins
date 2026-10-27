@@ -121,6 +121,18 @@ def script(doc):
         if t.get("te_deum"):
             say("Here follows the Te Deum.", LESSON)
 
+    # The Martyrology read at Prime today, which announces tomorrow.
+    m = (doc.get("martyrology") or {}).get("translation")
+    if m and m.get("entries"):
+        gap(LESSON)
+        say("The Martyrology, for tomorrow.", HEADING)
+        if m.get("heading"):
+            say(m["heading"], PART)
+        for entry in m["entries"]:
+            say(entry, PART)
+        if m.get("closing"):
+            say(m["closing"], PART)
+
     say("Thanks be to God.", 1.0)
     return seg
 
