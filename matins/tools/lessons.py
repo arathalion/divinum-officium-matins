@@ -29,6 +29,11 @@ GLORIA1 = {
     "latin": "Glória Patri, et Fílio, * et Spirítui Sancto.",
     "english": "Glory be to the Father, and to the Son, * and to the Holy Ghost.",
 }
+# In the Office of the Dead "$Requiem" takes the place of the Gloria.
+REQUIEM = {
+    "latin": "Réquiem ætérnam * dona eis, Dómine. Et lux perpétua * lúceat eis.",
+    "english": "Eternal rest * grant unto them, O Lord. And let perpetual light * shine upon them.",
+}
 
 _HEADING = re.compile(r"^<FONT SIZE='\+1'[^>]*>.*?</FONT>\s*$")
 _RUBRIC_LINE = re.compile(r'^<FONT COLOR="red"><I>(.*?)</I></FONT>\s*$')
@@ -221,8 +226,20 @@ def parse_lesson(text, lang="latin"):
             cur["paras"].append(_tidy(l))
 
     responsory = []
-    for l in resp:
+    expanded = []
+    for l in resp:  # "$Requiem" may stand alone or end a line
+        if "$Requiem" in l:
+            before = l.replace("$Requiem", "").rstrip()
+            if before:
+                expanded.append(before)
+            expanded.append("$Requiem")
+        else:
+            expanded.append(l)
+    for l in expanded:
         if not l or l in ("_", "$Tu autem"):
+            continue
+        if l == "$Requiem":
+            responsory.append(["G", REQUIEM.get(lang, REQUIEM["latin"])])
             continue
         if l.startswith("&Gloria"):
             responsory.append(["G", GLORIA1[lang]])
