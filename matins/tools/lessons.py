@@ -45,6 +45,9 @@ _CITE = re.compile(
 )
 
 
+_STRAY_SUBST = re.compile(r"\s+s/([^/\s]*)/([^/\s]*)/[a-z]*\s*$")
+
+
 def _normalise(text):
     """Turn lectio() output back into line-based DO markup without HTML."""
     out = []
@@ -63,6 +66,9 @@ def _normalise(text):
         line = _SMALL.sub(lambda mm: "(" + mm.group(1).strip() + ")", line)
         line = _TAG.sub("", line)
         line = html.unescape(line)
+        # A few English sources keep a leftover Perl directive such as
+        # " s/$/~/" at the end of a line (it means "join with the next line").
+        line = _STRAY_SUBST.sub(lambda mm: "~" if mm.group(1) == "$" and mm.group(2) == "~" else "", line)
         out.append(line.rstrip())
     # "~" at end of line joins with the next line.
     joined = []
@@ -71,6 +77,8 @@ def _normalise(text):
             joined[-1] = joined[-1][:-1].rstrip() + " " + line.lstrip()
         else:
             joined.append(line)
+    if joined and joined[-1].endswith("~"):
+        joined[-1] = joined[-1][:-1].rstrip()  # nothing follows to join
     # A "~" left at the start of a line joins nothing (a slip in a few sources).
     return [re.sub(r"\s+", " ", l.lstrip("~")).strip() if l.strip() else "" for l in joined]
 
