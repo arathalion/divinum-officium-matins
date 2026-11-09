@@ -1,0 +1,20 @@
+@Sancti/07-21r
+
+[Rank]
+;;Duplex;;3;;vide C5a
+
+[Rule]
+vide C5a;
+9 lectiones
+
+[Lectio4]
+Lauréntius, Brundúsii in Apúlia honéstis piísque paréntibus natus, aduléscens Ordinem Fratrum Minórum Capuccinórum ingréssus, philosóphiam ac theológiam pénitus dídicit, complúres autem linguas et antíquas et recentióres cálluit. Sacérdos ordinátus, prædicándi munus suscépit, quod deínceps per totam fere Itáliam, aliásque Európæ regiónes indeféssus obívit cum ubérrimo animárum fructu. Judǽos evangelizáre a Summo Pontífice jussus, multos ex eis ad Christum convértit; quam plúrimos aut ab hǽresi servávit immúnes, aut in eam jam prolápsos Ecclésiæ cathólicæ restítuit.
+
+[Lectio5]
+Singulári prudéntia consiliíque dono prǽditus, primum nonnúllis Provínciis religiósis, deínde univérso Ordini regéndo præféctus est. Quin étiam, cum esset propter easdem virtútes Summis Pontifícibus et populórum rectóribus ipsíque imperatóri acceptíssimus, ab eis sæpe adhíbitus est ad gravíssimas obeúndas legatiónes. Atque ejus potíssimum ópera efféctum est, ut príncipes christiáni, depósitis inter se inimicítiis, cópias suas consociáverint contra ingruéntes Turcárum turmas; quibúscum exércitus christiánus in Hungária coadunátus, Lauréntio præeúnte cum cruce, mílites ducésque cohortánte, celebérrimam rétulit victóriam, cujus præcípuus auctor ipse non immérito judicátus est.
+
+[Lectio6]
+Inter tot vero tantáque negótia, religiósi hóminis virtútes heróico modo cóluit. Quidquid supérerat témporis oratióni impéndens, vitam interiórem cum extérna actuositáte mirífice conjúnxit. Christi passiónem recólens et sacrum fáciens ita afficiebátur, ut a lácrimis temperáre non posset; Vírginem quoque Deíparam, cui ómnia sua referébat accépta, únice diléxit. Tandem Olisipóne, quo a pópulo Neapolitáno orátor ad regem Hispániæ missus fúerat, libertátis christiánæ et justítiæ strénuus assértor, quasi in ácie occúbuit anno millésimo sexcentésimo undevicésimo. Quem, in vita et post mortem a Deo supérnis signis et miráculis insignítum, Leo Papa décimus tértius in Sanctórum númerum rétulit. Multa relíquit scripta ad fidem cathólicam advérsus hǽreticos defendéndam, et ad sacras Lítteras explanándas, aut ad sanctos cǽlites, in primis beatíssimam Vírginem Maríam, celebrándos. Eum Summus Póntifex Joánnes vigésimus tértius, e sacrórum Rítuum Congregatiónis consúlto, universális Ecclésiæ Doctórem declarávit.
+
+[Lectio94]
+@Sancti/07-21r

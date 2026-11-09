@@ -1,0 +1,18 @@
+#Divino Afflatu - 1954 cum additamentis: the calendar of the Breviarium Romanum reset.
+#Only the differences to Divino Afflatu - 1954 are noted here: the universal
+#additions of 1955-1960, in their Divino Afflatu form (decided/layers.json; PLAN.md D2, D10, D16).
+#Everything else falls through to 1954 -> 1939 -> 1906 -> ...
+*May*
+#St Joseph the Worker, a commemoration in the office of SS Philip and James, who keep 1 May (D16).
+#The Solemnity of St Joseph keeps its day and octave; within that octave, or on the Solemnity itself,
+#the commemoration is omitted as being of the same Person (Additiones, Tit. V n. 7).
+05-01=05-01~05-01w=Ss. Philippi et Jacobi Apostolorum=5=S. Joseph Opificis=3=
+#The 1960 additions in the form a pre-1955 addition took (LAYERS.md nos. 22-24): a double with
+#9 lessons, lessons iv-vi of the life (pipeline/da_form_offices.py writes the *da files).
+*June*
+#St Gregory Barbarigo on the free day the Holy See gave him in 1960 (the middle rule, D16).
+06-17=06-17da=S. Gregorii Barbadici Episcopi Confessoris=3=
+*July*
+07-21=07-21da~07-21=S. Laurentii a Brundusio Confessoris et Ecclesiae Doctoris=3=S. Praxedis Virginis=1=
+*October*
+10-23=10-23da=S. Antonii Mariae Claret Episcopi Confessoris=3=

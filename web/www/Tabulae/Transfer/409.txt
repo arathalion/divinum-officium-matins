@@ -22,3 +22,9 @@ dirge2=02-27 03-06 03-27 06-05;;1570
 dirge2=02-27 03-06 03-27 06-05;;M1617
 dirge2=02-27 03-06 03-27 06-07 07-07;;1888
 dirge2=02-27 03-06 03-20 06-17 07-11;;1906
+#--- Breviarium Romanum reset (1954c): begin ---;;none
+# Easter 4/9: 1 May falls within the octave of the Solemnity of St Joseph (or on its octave day).;;none
+# The commemoration of St Joseph the Worker is omitted as being of the same Person (Additiones,;;none
+# Tit. V n. 7; D16): SS Philip and James with the commemoration of the octave only.;;none
+05-01=05-01;;1954c
+#--- Breviarium Romanum reset (1954c): end ---;;none

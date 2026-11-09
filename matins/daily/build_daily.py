@@ -46,6 +46,13 @@ CALENDARS = {
     "1906": ("Tridentine - 1906", "Roman Breviary, 1906"),
     "1939": ("Divino Afflatu - 1939", "Roman Breviary, 1939 (Divino Afflatu)"),
     "1954": ("Divino Afflatu - 1954", "Roman Breviary, 1954 (Divino Afflatu)"),
+    # The Breviarium Romanum reprint's calendar: Divino Afflatu with the universal additions to
+    # 1962 (the reforms left out). Its files (Tabulae/Kalendaria/1954c.txt, Sancti/*da, 05-01w,
+    # the appended transfer lines, the version line in data.txt and the dialogs) come from that
+    # project's do-overlay/, applied with its pipeline/do_overlay.sh; checked there against this
+    # copy of the engine (DO_ROOT=... make calendar-check layers-check).
+    "divino-afflatu-1962": ("Divino Afflatu - 1954 cum additamentis",
+                            "Roman Breviary, Divino Afflatu, with the additions to 1962"),
     "1955": ("Reduced - 1955", "Roman Breviary, 1955 (simplified rubrics)"),
     "1960": ("Rubrics 1960 - 1960", "Roman Breviary, 1960"),
     "1960-usa": ("Rubrics 1960 - 2020 USA", "Roman Breviary, 1960, with the current US calendar"),

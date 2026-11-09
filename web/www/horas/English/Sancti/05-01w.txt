@@ -1,0 +1,26 @@
+[Officium]
+@Sancti/05-01r
+
+[Rank]
+;;Duplex;;3;;
+
+[Ant 1]
+@Sancti/05-01r
+
+[Versum 1]
+@Sancti/05-01r
+
+[Ant 2]
+@Sancti/05-01r
+
+[Versum 2]
+@Sancti/05-01r
+
+[Ant 3]
+@Sancti/05-01r
+
+[Versum 3]
+@Sancti/05-01r
+
+[Oratio]
+@Sancti/05-01r

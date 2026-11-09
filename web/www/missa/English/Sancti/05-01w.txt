@@ -1,0 +1,14 @@
+[Officium]
+@Sancti/05-01r
+
+[Rank]
+;;Simplex;;1.1;;
+
+[Oratio]
+@Sancti/05-01r
+
+[Secreta]
+@Sancti/05-01r
+
+[Postcommunio]
+@Sancti/05-01r
