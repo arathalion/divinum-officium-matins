@@ -128,8 +128,15 @@ def _ref(m):
     return out + ("." if not rest.strip() or rest.lstrip()[:1] in ")]\u201d\"'" or rest.lstrip()[:1].isupper() else "")
 
 
+_BARE_REF = re.compile(r"\((I?[ivxlc]+)\.\s?(" + _VERSES + r")[.,]?\)")
+
+
 def references(s):
     s = _REF.sub(_ref, s)
+    # A reference to the book just named gives only chapter and verse: "(xviii. 35.)".
+    s = _BARE_REF.sub(lambda m: f"(chapter {words(roman(m.group(1)))}, {_verses(m.group(2))})"
+                      + ("." if m.group(0).endswith(".)") else "")
+                      if roman(m.group(1)) else m.group(0), s)
     return re.sub(r"\bBk\. ([ivxlc]+)\.", lambda m: f"Book {words(roman(m.group(1)) or 0)}.", s)
 
 

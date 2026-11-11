@@ -46,6 +46,11 @@ _CITE = re.compile(
 
 
 _STRAY_SUBST = re.compile(r"\s+s/([^/\s]*)/([^/\s]*)/[a-z]*\s*$")
+_MID_TILDE = re.compile(r"(?<=\s)~(?=\S)")
+# A lone "l" or "1" between sentences, left from a footnote mark ("Canons. l Once"),
+# but not the number of a book ("1 Cor.").
+_STRAY_MARK = re.compile(r"(?<=[.;:]) [l1](?= (?!(?:John|Peter|Kings|Tim|Cor|Thess|Mach|Par|Esd|Pet)[a-z]*\b)"
+                         r"[A-Z][a-z]+\b(?!\.))")
 
 
 def _normalise(text):
@@ -79,8 +84,10 @@ def _normalise(text):
             joined.append(line)
     if joined and joined[-1].endswith("~"):
         joined[-1] = joined[-1][:-1].rstrip()  # nothing follows to join
-    # A "~" left at the start of a line joins nothing (a slip in a few sources).
-    return [re.sub(r"\s+", " ", l.lstrip("~")).strip() if l.strip() else "" for l in joined]
+    # A "~" left at the start of a line, or inside one ("sought and ~(in 1556)"),
+    # joins nothing (a slip in a few sources).
+    return [re.sub(r"\s+", " ", _STRAY_MARK.sub("", _MID_TILDE.sub("", l.lstrip("~")))).strip() if l.strip() else ""
+            for l in joined]
 
 
 def _tidy(s):
