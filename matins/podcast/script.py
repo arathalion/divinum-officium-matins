@@ -44,7 +44,7 @@ PRONOUNCE = [
     (r"\b([Pp])asch", r"\1ask"),           # Pasch, Paschal
     (r"\b([Cc])atechumen", r"\1atakyumen"),
     (r"\bRavenna\b", "Revenna"),
-    (r"\bTe Deum\b", "Tay Dayoom"),     # Church Latin, not "tedium"        # stress on the second syllable, not "RAY-vuh-nuh"
+    (r"\bTe Deum\b", "Tay Dayum"),       # Church Latin, not "tedium"        # stress on the second syllable, not "RAY-vuh-nuh"
     (r"Nabuchodonosor", "Nabukodonosor"),
     (r"æ", "ae"), (r"Æ", "Ae"), (r"œ", "oe"),
 ]
@@ -205,7 +205,8 @@ def clean(s):
 # breath; long sentences are split at a colon or semicolon with a shorter one.
 SENTENCE = 0.6
 CLAUSE = 0.3
-HEADING = 1.0      # after a title, and before a responsory
+HEADING = 1.0      # after a title
+RESPONSORY = 2.0   # between a lesson and its responsory
 PART = 1.2         # after a block of text inside a lesson
 LESSON = 2.0       # after a lesson and its responsory
 NOCTURN_GAP = 2.5  # before a new Nocturn
@@ -268,7 +269,7 @@ def script(doc):
         gap(PART)
         resp = t.get("responsory") or []
         if resp:
-            gap(HEADING)  # a pause, not an announcement, before the responsory
+            gap(RESPONSORY)  # a pause, not an announcement, before the responsory
             for r in resp:
                 if r["type"] == "respond":
                     say(" ".join(x for x in (r["text"], r.get("repeat", "")) if x), PART)
