@@ -72,6 +72,13 @@ def _num(tok):
 
 
 def english_tempora(latin):
+    # "Dominica XXIV et ultima post Pentecosten": the Twenty-fourth and Last Sunday.
+    m = re.fullmatch(r"(.*\b(\w+)) et ultim(?:a|am|æ|ae) (.+)", re.sub(r"\s+", " ", latin).strip(), re.I)
+    if m and _num(m.group(2)):
+        en = english_tempora(f"{m.group(1)} {m.group(3)}")
+        word = ORD[_num(m.group(2))]
+        if word in en:
+            return en.replace(word, f"{word} and Last", 1)
     t = re.sub(r"\s+", " ", latin).strip()
     low = t.lower()
     if low in FIXED:
