@@ -384,6 +384,7 @@ def build_one(date, cal, lang, out_dir, corpus_titles):
         local = L.parse_lesson(les["vernacular"], "english" if lang == "en" else "latin")
         if lang == "en":
             L.align_cites(la, local)
+            L.align_responsory(la, local)
         # The breviary gives only the Gospel's opening words; use the full text.
         gospels.complete(la, local if lang == "en" else None)
         if not body_words(la) and not body_words(local):

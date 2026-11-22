@@ -143,6 +143,21 @@ def align_cites(latin, english):
     return english
 
 
+def align_responsory(latin, english):
+    """Where the English respond has no mark before the asterisk ("...my Lord * Whom"),
+    give it the Latin's ("...Domini mei Jesu Christi: * Quem")."""
+    la = [r for r in latin["responsory"] if r[0] == "R" and len(r) > 2 and r[2]]
+    en = [r for r in english["responsory"] if r[0] == "R" and len(r) > 2 and r[2]]
+    if len(la) != len(en):
+        return english
+    for a, b in zip(la, en):
+        b[1] = b[1].rstrip()
+        if b[1] and b[1][-1] not in ".,;:!?)\u2019\u201d'\"":
+            mark = a[1].rstrip()[-1:]
+            b[1] += mark if mark in ",;:.!?" else ","
+    return english
+
+
 # The English translation writes regnal numbers with a full stop ("Clement IX.
 # inscribed his name"), which now reads as the end of a sentence. Drop it where
 # a lower-case word follows; references such as "Book I. ch. 18" are left alone.
